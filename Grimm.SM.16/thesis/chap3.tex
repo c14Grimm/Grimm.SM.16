@@ -1,0 +1,115 @@
+%% This is an example first chapter.  You should put chapter/appendix that you
+%% write into a separate file, and add a line \include{yourfilename} to
+%% main.tex, where `yourfilename.tex' is the name of the chapter/appendix file.
+%% You can process specific files by typing their names in at the 
+%% \files=
+%% prompt when you run the file main.tex through LaTeX.
+\chapter{Tensor-Train Decomposition}\label{chp:TT}
+
+One method of handling the curse of dimensionality is to reduce the number of states that must be examined. If a problem has a low-rank representation, tensor-train decomposition may be used to reduce the number of states employed to compute the solution to a problem. Tensor-train decomposition, as outlined in Oseledets's "Tensor-train decomposition" and "TT-cross approximation for multidimensional arrays," takes advantage of the structure of tensors \cite{Osel1,Osel2}. This decomposition takes advantage of single value decomposition (SVD) to create compact tensors. This chapter will start by providing a description of tensors in general. Next, the chapter will explain how tensor-train decomposition works and under what circumstances this decomposition works best. Finally, a series of methods for maintain low-rank will be provided along with the TT-SVD algorithm.
+
+\section{Description of Tensors}
+Tensors are another way of representing a multidimensional array. Given a multidimensional array or tensor \textbf{A}, the element at $A(i_1,i_2,...,i_d)$, where $d$ is the dimensionality of the tensor and $i_j$ is the $i^{th}$ entry of the $j^{th}$ dimension of the tensor, can be given by:
+
+\begin{equation}\label{eqn4}
+A(i_1,...,i_d) = \sum_{\alpha=1}^{r}U_1(i_1,\alpha)U_2(i_2,\alpha)...U_d(i_d,\alpha).
+\end{equation}
+The $d$ matrices $U_k = [U_k(i_k,\alpha)]$ are called canonical factors while the value $r$ is called the tensor rank and is the minimal number of summands required to represent the entire tensor \textbf{A} in the form of \ref{eqn4}. \cite{Osel1}
+
+\section{Tensor-Train Decomposition}
+A tensor \textbf{B} can be approximated with a tensor-train \textbf{A} created from the product of a series of matrices:
+\begin{equation}\label{tensaprox}
+A(i_1,i_2,...,i_d) = G_1(i_1)G_2(i_2)...G_d(i_d).
+\end{equation}
+$G_k(i_k)$, also called a tensor core, is an $r_{k-1} \times r_k$ matrix where $r_0 = r_d=1$ is imposed. These tensor cores can also be represented by a three-dimensional array of size $r_{k-1} \times n_k \times r_k$ that has elements $G_k(\alpha_{k-1},i_k,\alpha_k)= G_k(i_k)_{\alpha_{k-1},\alpha_k}$. Therefore any individual element of a tensor-train can be calculated by:
+\begin{equation}\label{eqn5}
+A(i_1,...,i_d) = \sum_{\alpha_0,...,\alpha_{d-1},\alpha_d}G_1(\alpha_0,i_1,\alpha_1)G_2(\alpha_1,i_2,\alpha_2)...G_d(\alpha_{d-1},i_d,\alpha_d)
+\end{equation}
+As can be seen in \Cref{eqn5}, in order to compute the individual elements of the tensor all the tensor cores are multiplied and then summed over the auxiliary indices $a_k$. It is from this process that the decomposition gets the name tensor-train. This decomposition makes it possible to represent all elements in the tensor \textbf{A} with $d$ three-dimensional arrays.
+ 
+Since the size of the tensor cores are determined by ranks $r_k$, determining these ranks are pivotal to the compressibility of tensor-train decomposition. The rank $r_k$ is dependent on the rank of the $k^{th}$ unfolding matrix $A_k$ which has the form:
+\begin{equation}\label{unfold}
+A_k = A_k(i_1,...,i_k;i_{k+1},...,i_d) = A(i_1,...,i_d).
+\end{equation}
+These unfolding matrices can be determined by the MATLAB reshape function as such:
+\begin{equation*}
+A_k = \textnormal{reshape} (\textbf{A},\prod_{s=1}^{k}n_s,\prod_{s=k+1}^{d}n_s).
+\end{equation*}
+By determining the rank of these unfolding matrices, a bound on the tensor-train ranks can be determined with respect to \Cref{ttranks}. \cite{Osel1}
+\begin{theorem}[Bound on TT-Ranks \cite{Osel1}]\label{ttranks}
+If for each unfolding matrix $A_k$ of form \ref{unfold} of a d-dimensional tensor \textbf{A}
+\begin{equation*}
+\textnormal{rank }A_k = r_k, 
+\end{equation*}
+then there exists a decomposition \ref{eqn5} with TT-ranks not higher than $r_k$.
+\end{theorem}
+
+\section{Methods of Maintaining Low Order}
+Given certain tensors it may be the case that the unfolding matrices do not meet the low rank requirements of tensor-train decomposition. The unfolding matrices can be replaced by approximate low rank unfolding matrices $R_k$ such that:
+\begin{equation}\label{eqn6}
+A_k = R_k + E_k,\textnormal{rank } R_k = r_k, \| E_k \| = \varepsilon_k, k = 1,...,d-1.
+\end{equation}
+This results in a new tensor \textbf{B} where the norm of the difference between the new tensor and the old tensor is bounded by an error constant as given by:
+\begin{theorem}[TT Approximation \cite{Osel1}]\label{ttaprox}
+Suppose that the unfoldings $A_k$ of the tensor \textbf{A} satisfy \ref{eqn6}. Then TT-SVD computes a tensor \textbf{B} in the TT-format with TT-ranks $r_k$ and
+\begin{equation*}
+\| \textbf{A}-\textbf{B}\| \leq \sqrt{\sum_{k=1}^{d-1}\varepsilon_k^2}.
+\end{equation*}    
+\end{theorem}
+The results of \Cref{ttaprox} can be used to create a tensor in TT-format as detailed in \Cref{ttsvd}.
+
+\begin{algorithm}
+\caption{TT-SVD \cite{Osel1}}\label{ttsvd}
+\begin{algorithmic}[1]
+	\Require $d$-dimensional tensor \textbf{A}; Prescribed accuracy $\varepsilon$.
+	\Ensure Cores $G_1,...,G_d$ of the TT-approximation \textbf{B} to \textbf{A} in the TT-format with TT-ranks $\hat{r_k}$ equal to the $\delta$-ranks of the unfoldings $A_k$ of \textbf{A}, where $\delta = \dfrac{\varepsilon}{\sqrt{d-1}}\|A\|_F.$
+	\Statex The computed approximation satisfies
+	\begin{equation*}
+	\| \textbf{A}-\textbf{B}\|_F \leq \varepsilon\|\textbf{A}\|_F.
+	\end{equation*} 
+	\State \{Initialization\}
+	\Statex	Compute truncation parameter $\delta = \dfrac{\varepsilon}{\sqrt{d-1}}\|A\|_F.$ 
+	\State Temporary tensor: $\textbf{C}=\textbf{A}, r_0 = 1.$
+	\For{ $k = 1 \textnormal{ to } d-1 $} \do{}
+		\State $C:= \textnormal{reshape} (C,[r_{k-1}n_k,\dfrac{\textnormal{numel}(C)}{r_{k-1}n_k}]).$
+		\State Compute $\delta$-truncated SVD: $C = USV + E, \|E\|_F \leq \delta, r_k = \textnormal{rank}_\delta(C).$
+		\State New core: $G_k := \textnormal{reshape}(U,[r_{k-1},n_k,r_k]).$
+		\State $C:=SV^T.$
+	\EndFor
+	\State $G_d =C$
+	\State Return tensor \textbf{B} in TT-format with cores $G_1,...,G_d$.
+\end{algorithmic}
+\end{algorithm}
+
+The largest benefit of tensor-trains is that they greatly reduce the complexity of high-dimensional calculations. Generally these computations have complexity that is linear with dimension but polynomially with rank. However, many of these tensor-train computations have the unfortunate effect of increasing the rank of the final tensor-train. For example, adding two tensor-trains with the same rank takes next to no computations but doubles the number of ranks in the resulting tensor-train. Taking the scalar product of two tensor-trains takes $O(dnr^4)$ computations but results in $O(r^2)$ ranks. In order to keep the tensor-train low-rank, TT-rounding can be used to create a new tensor $\textbf{B}$ with $\delta$-ranks such that $\delta = \dfrac{\varepsilon}{\sqrt{d-1}}\| A\|$. This new approximation maintains an $\varepsilon$-level accuracy and only requires $O(dnr^2+dr^4)$ computations:
+\begin{equation*}
+\| \textbf{A}-\textbf{B}\| \leq \varepsilon \| \textbf{A} \|.
+\end{equation*}
+A detailed explanation for TT-rounding can be found in 
+\begin{algorithm}
+\caption{TT-Rounding \cite{Osel1}}\label{ttround}
+\begin{algorithmic}[1]
+	\Require $d$-dimensional tensor \textbf{A} in the TT-format; Required accuracy $\varepsilon$.
+	\Ensure \textbf{B} in the TT-format with TT-ranks $\hat{r_k}$ equal to the $\delta$-ranks of the unfoldings $A_k$ of \textbf{A}, where $\delta = \dfrac{\varepsilon}{\sqrt{d-1}}\|A\|_F.$ The computed approximation satisfies
+	\begin{equation*}
+	\| \textbf{A}-\textbf{B}\|_F \leq \varepsilon\|\textbf{A}\|_F.
+	\end{equation*}
+	\State Let $G_k, k = 1,...,d,$ be cores of \textbf{A}. 
+	\State \{Initialization\}
+	\Statex	Compute truncation parameter $\delta = \dfrac{\varepsilon}{\sqrt{d-1}}\|A\|_F.$
+	\State \{Right-to-left orthogonalization\} 
+	\For{ $k = d \textnormal{ to 2 step}-1 $} \do{}
+		\State $[G_k(\beta_{k-1};i_k\beta_k),R(\alpha_{k-1},\beta_{k-1})] := QR_{rows}(G_k(\alpha_{k-1};i_k\beta_k)).$
+		\State $G_{k-1} := G_k \times_3 R$
+	\EndFor
+	\State \{Compression of the orthogonalized representation\}
+	\For{ $k = 1 \textnormal{ to }d-1 $} \do{}
+		\State \{Compute $\delta$-truncated SVD\}
+		\Statex $[G_k(\beta_{k-1}i_k;\gamma_k),\Lambda,V(\beta_k,\gamma_k)] := SVD_\delta[G_k(\beta_{k-1}i_k;\beta_k)].$
+		\State $G_{k+1} := G_{k+1} \times_1 (V\Lambda)^T$
+	\EndFor
+	\State Return $G_k, k = 1,...,d,$ as cores of \textbf{B}.
+\end{algorithmic}
+\end{algorithm}
+
+\cite{Osel1,Osel2} can be referenced for detailed algorithms and further proofs.

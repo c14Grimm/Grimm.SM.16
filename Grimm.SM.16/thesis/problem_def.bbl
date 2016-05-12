@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{basar}
+T.~Başar and G.~Olsder.
+\newblock {\em Dynamic Noncooperative Game Theory, 2nd Edition}.
+\newblock Society for Industrial and Applied Mathematics, New York, 1998.
+
+\bibitem{dubins}
+L.E. Dubins.
+\newblock On curves of minimal length with a constraint on average curvature,
+  and with prescribed initial and terminal positions and tangents.
+\newblock {\em American Journal of Mathematics}, 79(3):497--516, 1957.
+
+\bibitem{fuden}
+D.~Fudenberg and J.~Tirole.
+\newblock {\em Game Theory}.
+\newblock The MIT Press, Cambridge, Massachusetts, 1991.
+
+\end{thebibliography}

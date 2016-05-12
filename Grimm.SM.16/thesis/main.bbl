@@ -1,0 +1,64 @@
+\begin{thebibliography}{10}
+
+\bibitem{basar}
+T.~Başar and G.~Olsder.
+\newblock {\em Dynamic Noncooperative Game Theory, 2nd Edition}.
+\newblock Society for Industrial and Applied Mathematics, New York, 1998.
+
+\bibitem{bardi1}
+M.~Bardi and P.~Soravia.
+\newblock Hamilton-jacobi equations with singular boundary conditions on a free
+  boundary and applications to differential games.
+\newblock {\em Transactions of the American Mathematical Society},
+  325(1):205--229, 1991.
+
+\bibitem{bardi2}
+M.~Bardi, P.~Soravia, and M.~Falcone.
+\newblock Fully discrete schemes for the value function of pursuit-evasion
+  games.
+\newblock In T.~Basar and A.~Haurie, editors, {\em Advances in Dynamic Games
+  and Applications, part II}, pages 89--105. Birkh{\"a}user Boston, 1994.
+
+\bibitem{bert}
+D.~Bertsekas.
+\newblock {\em Dynamic Programming and Optimal Control, Volume 1}.
+\newblock Athena Scientific, Belmont, Massachusetts, 2005.
+
+\bibitem{dubins}
+L.E. Dubins.
+\newblock On curves of minimal length with a constraint on average curvature,
+  and with prescribed initial and terminal positions and tangents.
+\newblock {\em American Journal of Mathematics}, 79(3):497--516, 1957.
+
+\bibitem{Gorod}
+A.~Gorodetsky, S.~Karaman, and Y.~Marzouk.
+\newblock Efficient high-dimensional stochastic optimal motion control using
+  tensor-train decomposition.
+\newblock {\em Robotics: Science and Systems}, 2015.
+
+\bibitem{isaacs}
+R.~Isaacs.
+\newblock {\em Differential Games}.
+\newblock Wiley, Chichester, 1965.
+
+\bibitem{karaman}
+S.~Karaman and E.~Frazzoli.
+\newblock Incremental sampling-based algorithms for a class of pursuit-evasion
+  games.
+\newblock In David Hsu, Volkan Isler, Jean-Claude Latombe, and Ming~C. Lin,
+  editors, {\em Algorithmic Foundations of Robotics IX: Selected Contributions
+  of the Ninth International Workshop on the Algorithmic Foundations of
+  Robotics}, pages 71--87. Springer Berlin Heidelberg, Berlin, Heidelberg,
+  2011.
+
+\bibitem{Osel1}
+I.V. Oseledets.
+\newblock Tensor-train decomposition.
+\newblock {\em SIAM Journal on Scientific Computing}, 33(5):2295--2317, 2011.
+
+\bibitem{Osel2}
+I.V. Oseledets and E.~Tyrtyshnikov.
+\newblock Tt-cross approximation for multidimensional arrays.
+\newblock {\em Linear Algebra and its Applications}, 432(2010):70--88, 2009.
+
+\end{thebibliography}

@@ -1,0 +1,34 @@
+\contentsline {chapter}{\numberline {1}Introduction}{15}
+\contentsline {section}{\numberline {1.1}Motivation for Solving Pursuit-Evasion Games}{16}
+\contentsline {section}{\numberline {1.2}Description of Pursuit-Evasion Games}{16}
+\contentsline {section}{\numberline {1.3}Dynamic Programming}{18}
+\contentsline {subsection}{\numberline {1.3.1}Value Iteration}{19}
+\contentsline {subsection}{\numberline {1.3.2}Policy Iteration}{20}
+\contentsline {chapter}{\numberline {2}Applications of Dynamic Programming and other methods for Solving Pursuit-Evasion Games}{23}
+\contentsline {section}{\numberline {2.1}One-Dimensional Boundary Value Problems}{23}
+\contentsline {section}{\numberline {2.2}RRT*}{27}
+\contentsline {chapter}{\numberline {3}Tensor-Train Decomposition}{37}
+\contentsline {section}{\numberline {3.1}Description of Tensors}{37}
+\contentsline {section}{\numberline {3.2}Tensor-Train Decomposition}{38}
+\contentsline {section}{\numberline {3.3}Methods of Maintaining Low Order}{39}
+\contentsline {chapter}{\numberline {4}Tensor-based Value Iteration}{43}
+\contentsline {section}{\numberline {4.1}Stochastic Optimal Motion Control}{43}
+\contentsline {section}{\numberline {4.2}Tensor-based Value Iteration Algorithm}{45}
+\contentsline {section}{\numberline {4.3}Test and Results}{46}
+\contentsline {chapter}{\numberline {5}Tensor-Based Value Iteration for Pursuit-Evasion Games}{49}
+\contentsline {section}{\numberline {5.1}Description of Problem}{49}
+\contentsline {section}{\numberline {5.2}Best Response}{51}
+\contentsline {subsection}{\numberline {5.2.1}Modifications to Tensor-based Value Iteration}{53}
+\contentsline {chapter}{\numberline {6}Application of Tensor-Based Value Iteration to Pursuit-Evasion Problems}{55}
+\contentsline {section}{\numberline {6.1}Four-Dimensional Problem}{55}
+\contentsline {subsection}{\numberline {6.1.1}Problem Definition}{56}
+\contentsline {subsection}{\numberline {6.1.2}Analytic Solution}{58}
+\contentsline {subsection}{\numberline {6.1.3}Traditional Value Iteration}{59}
+\contentsline {subsection}{\numberline {6.1.4}Tensor-Based Value Iteration}{67}
+\contentsline {subsection}{\numberline {6.1.5}Comparison of Traditional Value Iteration and TVI}{73}
+\contentsline {section}{\numberline {6.2}Six-Dimensional Problem}{79}
+\contentsline {subsection}{\numberline {6.2.1}Solving the Six-Dimensional Pursuit-Evasion Problem}{81}
+\contentsline {chapter}{\numberline {7}Conclusion}{95}
+\contentsline {section}{\numberline {7.1}Summary of Results}{95}
+\contentsline {section}{\numberline {7.2}Future Directions}{96}
+\contentsline {section}{\numberline {7.3}Final Remarks}{97}

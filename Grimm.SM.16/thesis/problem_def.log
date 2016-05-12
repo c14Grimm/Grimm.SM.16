@@ -1,0 +1,1508 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.10.17)  1 MAY 2016 23:26
+entering extended mode
+**problem_def.tex
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\problem_def.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\mitthesis.cls
+Document Class: mitthesis 1999/10/20
+\vithesis=\count79
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+Thesis document copyright MIT unless otherwise (manually) specified
+\@titlesupervisor=\box26
+\@abstractsupervisor=\box27
+\c@savepage=\count89
+) (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\lgrind.sty
+Package: lgrind 1997/01/30 v3.4 LGrind environment and supporting stuff
+\lc@unt=\count90
+\ln@xt=\count91
+\LGnuminterval=\count92
+\LGindent=\skip43
+\LGsloppy=\skip44
+\procbox=\box28
+\ls@far=\box29
+\tb@x=\box30
+\TBw@d=\dimen103
+\@ts=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen105
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip10
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks15
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks16
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks17
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\euscript.sty"
+Package: euscript 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen116
+\extrarowheight=\dimen117
+\NC@list=\toks20
+\extratabsurround=\skip48
+\backup@length=\skip49
+)
+\everycr=\toks21
+\minrowclearance=\skip50
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\bm.sty"
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty"
+Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
+)
+\c@theorem=\count106
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\cmap\cmap.sty"
+Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)<<t1.cmap>>)
+Including all files.
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\problem_def.aux
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\body.aux)
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\appa.aux)
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\appb.aux)
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\biblio.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count107
+\scratchdimen=\dimen118
+\scratchbox=\box33
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen119
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks23
+) (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\body.tex
+Chapter 1.
+<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+eus on input line 13.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\ueus.fd"
+File: ueus.fd 2013/01/14 v3.01 Euler Script
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+Overfull \hbox (32.81706pt too wide) in alignment at lines 157--160
+ [][][] []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10])
+[11] (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\appa.tex [12
+
+
+
+]
+Chapter 2.
+[13] [14]) (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\appb.tex
+Chapter 3.
+<figures/VIpursplot1.pdf, id=63, 144.54pt x 89.33063pt>
+File: figures/VIpursplot1.pdf Graphic file (type pdf)
+
+<use figures/VIpursplot1.pdf>
+Package pdftex.def Info: figures/VIpursplot1.pdf used on input line 8.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [15
+
+
+
+
+] [16 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursplot1.
+pdf>]
+<figures/VIpursplot2.pdf, id=85, 144.54pt x 89.33063pt>
+File: figures/VIpursplot2.pdf Graphic file (type pdf)
+
+<use figures/VIpursplot2.pdf>
+Package pdftex.def Info: figures/VIpursplot2.pdf used on input line 18.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [17 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursplot2.p
+df>]
+<figures/VIpursplot3.pdf, id=104, 144.54pt x 89.33063pt>
+File: figures/VIpursplot3.pdf Graphic file (type pdf)
+
+<use figures/VIpursplot3.pdf>
+Package pdftex.def Info: figures/VIpursplot3.pdf used on input line 28.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [18 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursplot3.p
+df>]
+<figures/VIpursplot4.pdf, id=123, 144.54pt x 89.33063pt>
+File: figures/VIpursplot4.pdf Graphic file (type pdf)
+
+<use figures/VIpursplot4.pdf>
+Package pdftex.def Info: figures/VIpursplot4.pdf used on input line 38.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [19 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursplot4.p
+df>]
+<figures/VIpursplot5.pdf, id=143, 144.54pt x 89.33063pt>
+File: figures/VIpursplot5.pdf Graphic file (type pdf)
+
+<use figures/VIpursplot5.pdf>
+Package pdftex.def Info: figures/VIpursplot5.pdf used on input line 48.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [20 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursplot5.p
+df>]
+<figures/VIpursplot6.pdf, id=162, 144.54pt x 89.33063pt>
+File: figures/VIpursplot6.pdf Graphic file (type pdf)
+
+<use figures/VIpursplot6.pdf>
+Package pdftex.def Info: figures/VIpursplot6.pdf used on input line 58.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [21 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursplot6.p
+df>]
+<figures/VIpursplot7.pdf, id=181, 144.54pt x 89.33063pt>
+File: figures/VIpursplot7.pdf Graphic file (type pdf)
+
+<use figures/VIpursplot7.pdf>
+Package pdftex.def Info: figures/VIpursplot7.pdf used on input line 68.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [22 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursplot7.p
+df>]
+<figures/VIpursplot8.pdf, id=200, 144.54pt x 89.33063pt>
+File: figures/VIpursplot8.pdf Graphic file (type pdf)
+
+<use figures/VIpursplot8.pdf>
+Package pdftex.def Info: figures/VIpursplot8.pdf used on input line 78.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [23 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursplot8.p
+df>]
+<figures/VIpursue0.png, id=219, 1736.4875pt x 323.2075pt>
+File: figures/VIpursue0.png Graphic file (type png)
+
+<use figures/VIpursue0.png>
+Package pdftex.def Info: figures/VIpursue0.png used on input line 88.
+(pdftex.def)             Requested size: 434.12082pt x 80.80167pt.
+
+Overfull \hbox (0.50082pt too wide) in paragraph at lines 88--89
+ [][] 
+ []
+
+[24 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursue0.png>
+] <figures/VIpursue10.png, id=223, 1741.50626pt x 324.21124pt>
+File: figures/VIpursue10.png Graphic file (type png)
+
+<use figures/VIpursue10.png>
+Package pdftex.def Info: figures/VIpursue10.png used on input line 98.
+(pdftex.def)             Requested size: 435.3755pt x 81.05261pt.
+
+Overfull \hbox (1.75551pt too wide) in paragraph at lines 98--99
+ [][] 
+ []
+
+[25 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursue10.png
+>] <figures/VIpursue98.png, id=228, 1738.495pt x 322.20375pt>
+File: figures/VIpursue98.png Graphic file (type png)
+
+<use figures/VIpursue98.png>
+Package pdftex.def Info: figures/VIpursue98.png used on input line 108.
+(pdftex.def)             Requested size: 434.62268pt x 80.55074pt.
+
+Overfull \hbox (1.00269pt too wide) in paragraph at lines 108--109
+ [][] 
+ []
+
+[26 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursue98.png
+>] <figures/VIpursue99.png, id=232, 1754.555pt x 322.20375pt>
+File: figures/VIpursue99.png Graphic file (type png)
+
+<use figures/VIpursue99.png>
+Package pdftex.def Info: figures/VIpursue99.png used on input line 118.
+(pdftex.def)             Requested size: 438.63768pt x 80.55074pt.
+
+Overfull \hbox (5.01768pt too wide) in paragraph at lines 118--119
+ [][] 
+ []
+
+[27 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursue99.png
+>] <figures/VIevadplot1.pdf, id=236, 144.54pt x 89.33063pt>
+File: figures/VIevadplot1.pdf Graphic file (type pdf)
+
+<use figures/VIevadplot1.pdf>
+Package pdftex.def Info: figures/VIevadplot1.pdf used on input line 128.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [28 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadplot1.p
+df>]
+<figures/VIevadplot2.pdf, id=256, 144.54pt x 89.33063pt>
+File: figures/VIevadplot2.pdf Graphic file (type pdf)
+
+<use figures/VIevadplot2.pdf>
+Package pdftex.def Info: figures/VIevadplot2.pdf used on input line 138.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [29 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadplot2.p
+df>]
+<figures/VIevadplot3.pdf, id=276, 144.54pt x 89.33063pt>
+File: figures/VIevadplot3.pdf Graphic file (type pdf)
+
+<use figures/VIevadplot3.pdf>
+Package pdftex.def Info: figures/VIevadplot3.pdf used on input line 148.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [30 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadplot3.p
+df>]
+<figures/VIevadplot4.pdf, id=296, 144.54pt x 89.33063pt>
+File: figures/VIevadplot4.pdf Graphic file (type pdf)
+
+<use figures/VIevadplot4.pdf>
+Package pdftex.def Info: figures/VIevadplot4.pdf used on input line 158.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [31 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadplot4.p
+df>]
+<figures/VIevadplot5.pdf, id=317, 144.54pt x 89.33063pt>
+File: figures/VIevadplot5.pdf Graphic file (type pdf)
+
+<use figures/VIevadplot5.pdf>
+Package pdftex.def Info: figures/VIevadplot5.pdf used on input line 168.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [32 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadplot5.p
+df>]
+<figures/VIevadplot6.pdf, id=337, 144.54pt x 89.33063pt>
+File: figures/VIevadplot6.pdf Graphic file (type pdf)
+
+<use figures/VIevadplot6.pdf>
+Package pdftex.def Info: figures/VIevadplot6.pdf used on input line 178.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [33 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadplot6.p
+df>]
+<figures/VIevadplot7.pdf, id=357, 144.54pt x 89.33063pt>
+File: figures/VIevadplot7.pdf Graphic file (type pdf)
+
+<use figures/VIevadplot7.pdf>
+Package pdftex.def Info: figures/VIevadplot7.pdf used on input line 188.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [34 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadplot7.p
+df>]
+<figures/VIevadplot8.pdf, id=377, 144.54pt x 89.33063pt>
+File: figures/VIevadplot8.pdf Graphic file (type pdf)
+
+<use figures/VIevadplot8.pdf>
+Package pdftex.def Info: figures/VIevadplot8.pdf used on input line 198.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [35 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadplot8.p
+df>]
+<figures/VIevade0.png, id=397, 1719.42375pt x 317.185pt>
+File: figures/VIevade0.png Graphic file (type png)
+
+<use figures/VIevade0.png>
+Package pdftex.def Info: figures/VIevade0.png used on input line 208.
+(pdftex.def)             Requested size: 429.85489pt x 79.29605pt.
+ [36 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevade0.png>
+]
+<figures/VIevade10.png, id=401, 1738.495pt x 316.18124pt>
+File: figures/VIevade10.png Graphic file (type png)
+
+<use figures/VIevade10.png>
+Package pdftex.def Info: figures/VIevade10.png used on input line 218.
+(pdftex.def)             Requested size: 434.62268pt x 79.0451pt.
+
+Overfull \hbox (1.00269pt too wide) in paragraph at lines 218--219
+ [][] 
+ []
+
+[37 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevade10.png>
+] <figures/VIevade98.png, id=406, 1745.52126pt x 322.20375pt>
+File: figures/VIevade98.png Graphic file (type png)
+
+<use figures/VIevade98.png>
+Package pdftex.def Info: figures/VIevade98.png used on input line 228.
+(pdftex.def)             Requested size: 436.37924pt x 80.55074pt.
+
+Overfull \hbox (2.75925pt too wide) in paragraph at lines 228--229
+ [][] 
+ []
+
+[38 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevade98.png>
+] <figures/VIevade99.png, id=410, 1739.49875pt x 323.2075pt>
+File: figures/VIevade99.png Graphic file (type png)
+
+<use figures/VIevade99.png>
+Package pdftex.def Info: figures/VIevade99.png used on input line 238.
+(pdftex.def)             Requested size: 434.87363pt x 80.80167pt.
+
+Overfull \hbox (1.25363pt too wide) in paragraph at lines 238--239
+ [][] 
+ []
+
+[39 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevade99.png>
+] <figures/VIpursbr1plot1.pdf, id=414, 144.54pt x 89.33063pt>
+File: figures/VIpursbr1plot1.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr1plot1.pdf>
+Package pdftex.def Info: figures/VIpursbr1plot1.pdf used on input line 248.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [40 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr1plot
+1.pdf>]
+<figures/VIpursbr1plot2.pdf, id=433, 144.54pt x 89.33063pt>
+File: figures/VIpursbr1plot2.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr1plot2.pdf>
+Package pdftex.def Info: figures/VIpursbr1plot2.pdf used on input line 258.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [41 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr1plot
+2.pdf>]
+<figures/VIpursbr1plot3.pdf, id=452, 144.54pt x 89.33063pt>
+File: figures/VIpursbr1plot3.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr1plot3.pdf>
+Package pdftex.def Info: figures/VIpursbr1plot3.pdf used on input line 268.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [42 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr1plot
+3.pdf>]
+<figures/VIpursbr1plot4.pdf, id=471, 144.54pt x 89.33063pt>
+File: figures/VIpursbr1plot4.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr1plot4.pdf>
+Package pdftex.def Info: figures/VIpursbr1plot4.pdf used on input line 278.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [43 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr1plot
+4.pdf>]
+<figures/VIpursbr1plot5.pdf, id=491, 144.54pt x 89.33063pt>
+File: figures/VIpursbr1plot5.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr1plot5.pdf>
+Package pdftex.def Info: figures/VIpursbr1plot5.pdf used on input line 288.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [44 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr1plot
+5.pdf>]
+<figures/VIpursbr1plot6.pdf, id=510, 144.54pt x 89.33063pt>
+File: figures/VIpursbr1plot6.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr1plot6.pdf>
+Package pdftex.def Info: figures/VIpursbr1plot6.pdf used on input line 298.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [45 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr1plot
+6.pdf>]
+<figures/VIpursbr1plot7.pdf, id=529, 144.54pt x 89.33063pt>
+File: figures/VIpursbr1plot7.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr1plot7.pdf>
+Package pdftex.def Info: figures/VIpursbr1plot7.pdf used on input line 308.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [46 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr1plot
+7.pdf>]
+<figures/VIpursbr1plot8.pdf, id=548, 144.54pt x 89.33063pt>
+File: figures/VIpursbr1plot8.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr1plot8.pdf>
+Package pdftex.def Info: figures/VIpursbr1plot8.pdf used on input line 318.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [47 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr1plot
+8.pdf>]
+<figures/VIpursue1br0.png, id=567, 1748.5325pt x 321.2pt>
+File: figures/VIpursue1br0.png Graphic file (type png)
+
+<use figures/VIpursue1br0.png>
+Package pdftex.def Info: figures/VIpursue1br0.png used on input line 328.
+(pdftex.def)             Requested size: 437.13205pt x 80.2998pt.
+
+Overfull \hbox (3.51205pt too wide) in paragraph at lines 328--329
+ [][] 
+ []
+
+[48 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursue1br0.p
+ng>] <figures/VIpursue1br10.png, id=571, 1738.495pt x 325.215pt>
+File: figures/VIpursue1br10.png Graphic file (type png)
+
+<use figures/VIpursue1br10.png>
+Package pdftex.def Info: figures/VIpursue1br10.png used on input line 338.
+(pdftex.def)             Requested size: 434.62268pt x 81.30354pt.
+
+Overfull \hbox (1.00269pt too wide) in paragraph at lines 338--339
+ [][] 
+ []
+
+[49 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursue1br10.
+png>] <figures/VIpursue1br98.png, id=576, 1728.4575pt x 321.2pt>
+File: figures/VIpursue1br98.png Graphic file (type png)
+
+<use figures/VIpursue1br98.png>
+Package pdftex.def Info: figures/VIpursue1br98.png used on input line 348.
+(pdftex.def)             Requested size: 432.11331pt x 80.2998pt.
+ [50 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursue1br98
+.png>]
+<figures/VIpursue1br99.png, id=580, 1733.47626pt x 319.1925pt>
+File: figures/VIpursue1br99.png Graphic file (type png)
+
+<use figures/VIpursue1br99.png>
+Package pdftex.def Info: figures/VIpursue1br99.png used on input line 358.
+(pdftex.def)             Requested size: 433.36801pt x 79.79793pt.
+ [51 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursue1br99
+.png>]
+<figures/VIevadbrplot1.pdf, id=584, 144.54pt x 89.33063pt>
+File: figures/VIevadbrplot1.pdf Graphic file (type pdf)
+
+<use figures/VIevadbrplot1.pdf>
+Package pdftex.def Info: figures/VIevadbrplot1.pdf used on input line 368.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [52 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadbrplot1
+.pdf>]
+<figures/VIevadbrplot2.pdf, id=603, 144.54pt x 89.33063pt>
+File: figures/VIevadbrplot2.pdf Graphic file (type pdf)
+
+<use figures/VIevadbrplot2.pdf>
+Package pdftex.def Info: figures/VIevadbrplot2.pdf used on input line 378.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [53 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadbrplot2
+.pdf>]
+<figures/VIevadbrplot3.pdf, id=622, 144.54pt x 89.33063pt>
+File: figures/VIevadbrplot3.pdf Graphic file (type pdf)
+
+<use figures/VIevadbrplot3.pdf>
+Package pdftex.def Info: figures/VIevadbrplot3.pdf used on input line 388.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [54 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadbrplot3
+.pdf>]
+<figures/VIevadbrplot4.pdf, id=641, 144.54pt x 89.33063pt>
+File: figures/VIevadbrplot4.pdf Graphic file (type pdf)
+
+<use figures/VIevadbrplot4.pdf>
+Package pdftex.def Info: figures/VIevadbrplot4.pdf used on input line 398.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [55 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadbrplot4
+.pdf>]
+<figures/VIevadbrplot5.pdf, id=661, 144.54pt x 89.33063pt>
+File: figures/VIevadbrplot5.pdf Graphic file (type pdf)
+
+<use figures/VIevadbrplot5.pdf>
+Package pdftex.def Info: figures/VIevadbrplot5.pdf used on input line 408.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [56 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadbrplot5
+.pdf>]
+<figures/VIevadbrplot6.pdf, id=680, 144.54pt x 89.33063pt>
+File: figures/VIevadbrplot6.pdf Graphic file (type pdf)
+
+<use figures/VIevadbrplot6.pdf>
+Package pdftex.def Info: figures/VIevadbrplot6.pdf used on input line 418.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [57 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadbrplot6
+.pdf>]
+<figures/VIevadbrplot7.pdf, id=699, 144.54pt x 89.33063pt>
+File: figures/VIevadbrplot7.pdf Graphic file (type pdf)
+
+<use figures/VIevadbrplot7.pdf>
+Package pdftex.def Info: figures/VIevadbrplot7.pdf used on input line 428.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [58 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadbrplot7
+.pdf>]
+<figures/VIevadbrplot8.pdf, id=718, 144.54pt x 89.33063pt>
+File: figures/VIevadbrplot8.pdf Graphic file (type pdf)
+
+<use figures/VIevadbrplot8.pdf>
+Package pdftex.def Info: figures/VIevadbrplot8.pdf used on input line 438.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [59 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadbrplot8
+.pdf>]
+<figures/VIevadebr0.png, id=737, 1738.495pt x 322.20375pt>
+File: figures/VIevadebr0.png Graphic file (type png)
+
+<use figures/VIevadebr0.png>
+Package pdftex.def Info: figures/VIevadebr0.png used on input line 448.
+(pdftex.def)             Requested size: 434.62268pt x 80.55074pt.
+
+Overfull \hbox (1.00269pt too wide) in paragraph at lines 448--449
+ [][] 
+ []
+
+[60 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadebr0.png
+>] <figures/VIevadebr10.png, id=741, 1740.5025pt x 325.215pt>
+File: figures/VIevadebr10.png Graphic file (type png)
+
+<use figures/VIevadebr10.png>
+Package pdftex.def Info: figures/VIevadebr10.png used on input line 458.
+(pdftex.def)             Requested size: 435.12456pt x 81.30354pt.
+
+Overfull \hbox (1.50456pt too wide) in paragraph at lines 458--459
+ [][] 
+ []
+
+[61 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadebr10.pn
+g>] <figures/VIevadebr98.png, id=746, 1750.54pt x 319.1925pt>
+File: figures/VIevadebr98.png Graphic file (type png)
+
+<use figures/VIevadebr98.png>
+Package pdftex.def Info: figures/VIevadebr98.png used on input line 468.
+(pdftex.def)             Requested size: 437.63393pt x 79.79793pt.
+
+Overfull \hbox (4.01393pt too wide) in paragraph at lines 468--469
+ [][] 
+ []
+
+[62 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadebr98.pn
+g>] <figures/VIevadebr99.png, id=750, 1736.4875pt x 318.18875pt>
+File: figures/VIevadebr99.png Graphic file (type png)
+
+<use figures/VIevadebr99.png>
+Package pdftex.def Info: figures/VIevadebr99.png used on input line 478.
+(pdftex.def)             Requested size: 434.12082pt x 79.54698pt.
+
+Overfull \hbox (0.50082pt too wide) in paragraph at lines 478--479
+ [][] 
+ []
+
+[63 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIevadebr99.pn
+g>] <figures/VIpursbr2plot1.pdf, id=754, 144.54pt x 89.33063pt>
+File: figures/VIpursbr2plot1.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr2plot1.pdf>
+Package pdftex.def Info: figures/VIpursbr2plot1.pdf used on input line 488.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [64 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr2plot
+1.pdf>]
+<figures/VIpursbr2plot2.pdf, id=773, 144.54pt x 89.33063pt>
+File: figures/VIpursbr2plot2.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr2plot2.pdf>
+Package pdftex.def Info: figures/VIpursbr2plot2.pdf used on input line 498.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [65 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr2plot
+2.pdf>]
+<figures/VIpursbr2plot3.pdf, id=792, 144.54pt x 89.33063pt>
+File: figures/VIpursbr2plot3.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr2plot3.pdf>
+Package pdftex.def Info: figures/VIpursbr2plot3.pdf used on input line 508.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [66 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr2plot
+3.pdf>]
+<figures/VIpursbr2plot4.pdf, id=811, 144.54pt x 89.33063pt>
+File: figures/VIpursbr2plot4.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr2plot4.pdf>
+Package pdftex.def Info: figures/VIpursbr2plot4.pdf used on input line 518.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [67 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr2plot
+4.pdf>]
+<figures/VIpursbr2plot5.pdf, id=831, 144.54pt x 89.33063pt>
+File: figures/VIpursbr2plot5.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr2plot5.pdf>
+Package pdftex.def Info: figures/VIpursbr2plot5.pdf used on input line 528.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [68 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr2plot
+5.pdf>]
+<figures/VIpursbr2plot6.pdf, id=850, 144.54pt x 89.33063pt>
+File: figures/VIpursbr2plot6.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr2plot6.pdf>
+Package pdftex.def Info: figures/VIpursbr2plot6.pdf used on input line 538.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [69 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr2plot
+6.pdf>]
+<figures/VIpursbr2plot7.pdf, id=869, 144.54pt x 89.33063pt>
+File: figures/VIpursbr2plot7.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr2plot7.pdf>
+Package pdftex.def Info: figures/VIpursbr2plot7.pdf used on input line 548.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [70 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr2plot
+7.pdf>]
+<figures/VIpursbr2plot8.pdf, id=888, 144.54pt x 89.33063pt>
+File: figures/VIpursbr2plot8.pdf Graphic file (type pdf)
+
+<use figures/VIpursbr2plot8.pdf>
+Package pdftex.def Info: figures/VIpursbr2plot8.pdf used on input line 558.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [71 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursbr2plot
+8.pdf>]
+<figures/VIpursue2br0.png, id=907, 1729.46124pt x 319.1925pt>
+File: figures/VIpursue2br0.png Graphic file (type png)
+
+<use figures/VIpursue2br0.png>
+Package pdftex.def Info: figures/VIpursue2br0.png used on input line 568.
+(pdftex.def)             Requested size: 432.36426pt x 79.79793pt.
+ [72 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursue2br0.
+png>]
+<figures/VIpursue2br99.png, id=911, 1740.5025pt x 321.2pt>
+File: figures/VIpursue2br99.png Graphic file (type png)
+
+<use figures/VIpursue2br99.png>
+Package pdftex.def Info: figures/VIpursue2br99.png used on input line 578.
+(pdftex.def)             Requested size: 435.12456pt x 80.2998pt.
+
+Overfull \hbox (1.50456pt too wide) in paragraph at lines 578--579
+ [][] 
+ []
+
+[73 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/VIpursue2br99.
+png>] <figures/TTVIpursplot1.pdf, id=916, 144.54pt x 89.33063pt>
+File: figures/TTVIpursplot1.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursplot1.pdf>
+Package pdftex.def Info: figures/TTVIpursplot1.pdf used on input line 588.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [74 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursplot1
+.pdf>]
+<figures/TTVIpursplot2.pdf, id=935, 144.54pt x 89.33063pt>
+File: figures/TTVIpursplot2.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursplot2.pdf>
+Package pdftex.def Info: figures/TTVIpursplot2.pdf used on input line 598.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [75 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursplot2
+.pdf>]
+<figures/TTVIpursplot3.pdf, id=954, 144.54pt x 89.33063pt>
+File: figures/TTVIpursplot3.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursplot3.pdf>
+Package pdftex.def Info: figures/TTVIpursplot3.pdf used on input line 608.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [76 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursplot3
+.pdf>]
+<figures/TTVIpursplot4.pdf, id=973, 144.54pt x 89.33063pt>
+File: figures/TTVIpursplot4.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursplot4.pdf>
+Package pdftex.def Info: figures/TTVIpursplot4.pdf used on input line 618.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [77 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursplot4
+.pdf>]
+<figures/TTVIpursplot5.pdf, id=992, 144.54pt x 89.33063pt>
+File: figures/TTVIpursplot5.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursplot5.pdf>
+Package pdftex.def Info: figures/TTVIpursplot5.pdf used on input line 628.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [78 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursplot5
+.pdf>]
+<figures/TTVIpursplot6.pdf, id=1011, 144.54pt x 89.33063pt>
+File: figures/TTVIpursplot6.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursplot6.pdf>
+Package pdftex.def Info: figures/TTVIpursplot6.pdf used on input line 638.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [79 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursplot6
+.pdf>]
+<figures/TTVIpursplot7.pdf, id=1031, 144.54pt x 89.33063pt>
+File: figures/TTVIpursplot7.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursplot7.pdf>
+Package pdftex.def Info: figures/TTVIpursplot7.pdf used on input line 648.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [80 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursplot7
+.pdf>]
+<figures/TTVIpursplot8.pdf, id=1050, 144.54pt x 89.33063pt>
+File: figures/TTVIpursplot8.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursplot8.pdf>
+Package pdftex.def Info: figures/TTVIpursplot8.pdf used on input line 658.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [81 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursplot8
+.pdf>]
+<figures/TTVIpursue0.png, id=1069, 1735.48375pt x 319.1925pt>
+File: figures/TTVIpursue0.png Graphic file (type png)
+
+<use figures/TTVIpursue0.png>
+Package pdftex.def Info: figures/TTVIpursue0.png used on input line 668.
+(pdftex.def)             Requested size: 433.86987pt x 79.79793pt.
+ [82 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursue0.p
+ng>]
+<figures/TTVIpursue10.png, id=1073, 1731.46875pt x 320.19624pt>
+File: figures/TTVIpursue10.png Graphic file (type png)
+
+<use figures/TTVIpursue10.png>
+Package pdftex.def Info: figures/TTVIpursue10.png used on input line 678.
+(pdftex.def)             Requested size: 432.86613pt x 80.04886pt.
+ [83 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursue10.
+png>]
+<figures/TTVIpursue98.png, id=1077, 1733.47626pt x 319.1925pt>
+File: figures/TTVIpursue98.png Graphic file (type png)
+
+<use figures/TTVIpursue98.png>
+Package pdftex.def Info: figures/TTVIpursue98.png used on input line 688.
+(pdftex.def)             Requested size: 433.36801pt x 79.79793pt.
+ [84 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursue98.
+png>]
+<figures/TTVIpursue99.png, id=1081, 1739.49875pt x 320.19624pt>
+File: figures/TTVIpursue99.png Graphic file (type png)
+
+<use figures/TTVIpursue99.png>
+Package pdftex.def Info: figures/TTVIpursue99.png used on input line 698.
+(pdftex.def)             Requested size: 434.87363pt x 80.04886pt.
+
+Overfull \hbox (1.25363pt too wide) in paragraph at lines 698--699
+ [][] 
+ []
+
+[85 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursue99.p
+ng>] <figures/TTVIevadplot1.pdf, id=1086, 144.54pt x 89.33063pt>
+File: figures/TTVIevadplot1.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadplot1.pdf>
+Package pdftex.def Info: figures/TTVIevadplot1.pdf used on input line 708.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [86 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadplot1
+.pdf>]
+<figures/TTVIevadplot2.pdf, id=1106, 144.54pt x 89.33063pt>
+File: figures/TTVIevadplot2.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadplot2.pdf>
+Package pdftex.def Info: figures/TTVIevadplot2.pdf used on input line 718.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [87 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadplot2
+.pdf>]
+<figures/TTVIevadplot3.pdf, id=1126, 144.54pt x 89.33063pt>
+File: figures/TTVIevadplot3.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadplot3.pdf>
+Package pdftex.def Info: figures/TTVIevadplot3.pdf used on input line 728.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [88 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadplot3
+.pdf>]
+<figures/TTVIevadplot4.pdf, id=1146, 144.54pt x 89.33063pt>
+File: figures/TTVIevadplot4.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadplot4.pdf>
+Package pdftex.def Info: figures/TTVIevadplot4.pdf used on input line 738.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [89 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadplot4
+.pdf>]
+<figures/TTVIevadplot5.pdf, id=1166, 144.54pt x 89.33063pt>
+File: figures/TTVIevadplot5.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadplot5.pdf>
+Package pdftex.def Info: figures/TTVIevadplot5.pdf used on input line 748.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [90 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadplot5
+.pdf>]
+<figures/TTVIevadplot6.pdf, id=1186, 144.54pt x 89.33063pt>
+File: figures/TTVIevadplot6.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadplot6.pdf>
+Package pdftex.def Info: figures/TTVIevadplot6.pdf used on input line 758.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [91 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadplot6
+.pdf>]
+<figures/TTVIevadplot7.pdf, id=1207, 144.54pt x 89.33063pt>
+File: figures/TTVIevadplot7.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadplot7.pdf>
+Package pdftex.def Info: figures/TTVIevadplot7.pdf used on input line 768.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [92 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadplot7
+.pdf>]
+<figures/TTVIevadplot8.pdf, id=1227, 144.54pt x 89.33063pt>
+File: figures/TTVIevadplot8.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadplot8.pdf>
+Package pdftex.def Info: figures/TTVIevadplot8.pdf used on input line 778.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [93 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadplot8
+.pdf>]
+<figures/TTVIevade0.png, id=1247, 1727.45375pt x 323.2075pt>
+File: figures/TTVIevade0.png Graphic file (type png)
+
+<use figures/TTVIevade0.png>
+Package pdftex.def Info: figures/TTVIevade0.png used on input line 788.
+(pdftex.def)             Requested size: 431.86238pt x 80.80167pt.
+ [94 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevade0.pn
+g>]
+<figures/TTVIevade10.png, id=1251, 1740.5025pt x 321.2pt>
+File: figures/TTVIevade10.png Graphic file (type png)
+
+<use figures/TTVIevade10.png>
+Package pdftex.def Info: figures/TTVIevade10.png used on input line 798.
+(pdftex.def)             Requested size: 435.12456pt x 80.2998pt.
+
+Overfull \hbox (1.50456pt too wide) in paragraph at lines 798--799
+ [][] 
+ []
+
+[95 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevade10.pn
+g>] <figures/TTVIevade98.png, id=1255, 1745.52126pt x 328.22626pt>
+File: figures/TTVIevade98.png Graphic file (type png)
+
+<use figures/TTVIevade98.png>
+Package pdftex.def Info: figures/TTVIevade98.png used on input line 808.
+(pdftex.def)             Requested size: 436.37924pt x 82.05635pt.
+
+Overfull \hbox (2.75925pt too wide) in paragraph at lines 808--809
+ [][] 
+ []
+
+[96 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevade98.pn
+g>] <figures/TTVIevade99.png, id=1259, 1750.54pt x 323.2075pt>
+File: figures/TTVIevade99.png Graphic file (type png)
+
+<use figures/TTVIevade99.png>
+Package pdftex.def Info: figures/TTVIevade99.png used on input line 818.
+(pdftex.def)             Requested size: 437.63393pt x 80.80167pt.
+
+Overfull \hbox (4.01393pt too wide) in paragraph at lines 818--819
+ [][] 
+ []
+
+[97 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevade99.pn
+g>] <figures/TTVIpursbr1plot1.pdf, id=1264, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr1plot1.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr1plot1.pdf>
+Package pdftex.def Info: figures/TTVIpursbr1plot1.pdf used on input line 828.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [98 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr1pl
+ot1.pdf>]
+<figures/TTVIpursbr1plot2.pdf, id=1283, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr1plot2.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr1plot2.pdf>
+Package pdftex.def Info: figures/TTVIpursbr1plot2.pdf used on input line 838.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [99 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr1pl
+ot2.pdf>]
+<figures/TTVIpursbr1plot3.pdf, id=1302, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr1plot3.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr1plot3.pdf>
+Package pdftex.def Info: figures/TTVIpursbr1plot3.pdf used on input line 848.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [100 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr1p
+lot3.pdf>]
+<figures/TTVIpursbr1plot4.pdf, id=1321, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr1plot4.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr1plot4.pdf>
+Package pdftex.def Info: figures/TTVIpursbr1plot4.pdf used on input line 858.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [101 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr1p
+lot4.pdf>]
+<figures/TTVIpursbr1plot5.pdf, id=1340, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr1plot5.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr1plot5.pdf>
+Package pdftex.def Info: figures/TTVIpursbr1plot5.pdf used on input line 868.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [102 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr1p
+lot5.pdf>]
+<figures/TTVIpursbr1plot6.pdf, id=1359, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr1plot6.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr1plot6.pdf>
+Package pdftex.def Info: figures/TTVIpursbr1plot6.pdf used on input line 878.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [103 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr1p
+lot6.pdf>]
+<figures/TTVIpursbr1plot7.pdf, id=1379, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr1plot7.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr1plot7.pdf>
+Package pdftex.def Info: figures/TTVIpursbr1plot7.pdf used on input line 888.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [104 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr1p
+lot7.pdf>]
+<figures/TTVIpursbr1plot8.pdf, id=1398, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr1plot8.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr1plot8.pdf>
+Package pdftex.def Info: figures/TTVIpursbr1plot8.pdf used on input line 898.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [105 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr1p
+lot8.pdf>]
+<figures/TTVIpursue1br0.png, id=1417, 1740.5025pt x 326.21875pt>
+File: figures/TTVIpursue1br0.png Graphic file (type png)
+
+<use figures/TTVIpursue1br0.png>
+Package pdftex.def Info: figures/TTVIpursue1br0.png used on input line 908.
+(pdftex.def)             Requested size: 435.12456pt x 81.55447pt.
+
+Overfull \hbox (1.50456pt too wide) in paragraph at lines 908--909
+ [][] 
+ []
+
+[106 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursue1br
+0.png>] <figures/TTVIpursue1br10.png, id=1421, 1732.4725pt x 317.185pt>
+File: figures/TTVIpursue1br10.png Graphic file (type png)
+
+<use figures/TTVIpursue1br10.png>
+Package pdftex.def Info: figures/TTVIpursue1br10.png used on input line 918.
+(pdftex.def)             Requested size: 433.11707pt x 79.29605pt.
+ [107 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursue1b
+r10.png>]
+<figures/TTVIpursue1br98.png, id=1425, 1731.46875pt x 317.185pt>
+File: figures/TTVIpursue1br98.png Graphic file (type png)
+
+<use figures/TTVIpursue1br98.png>
+Package pdftex.def Info: figures/TTVIpursue1br98.png used on input line 928.
+(pdftex.def)             Requested size: 432.86613pt x 79.29605pt.
+ [108 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursue1b
+r98.png>]
+<figures/TTVIpursue1br99.png, id=1429, 1738.495pt x 324.21124pt>
+File: figures/TTVIpursue1br99.png Graphic file (type png)
+
+<use figures/TTVIpursue1br99.png>
+Package pdftex.def Info: figures/TTVIpursue1br99.png used on input line 938.
+(pdftex.def)             Requested size: 434.62268pt x 81.05261pt.
+
+Overfull \hbox (1.00269pt too wide) in paragraph at lines 938--939
+ [][] 
+ []
+
+[109 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursue1br
+99.png>] <figures/TTVIevadbrplot1.pdf, id=1434, 144.54pt x 89.33063pt>
+File: figures/TTVIevadbrplot1.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadbrplot1.pdf>
+Package pdftex.def Info: figures/TTVIevadbrplot1.pdf used on input line 948.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [110 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadbrpl
+ot1.pdf>]
+<figures/TTVIevadbrplot2.pdf, id=1453, 144.54pt x 89.33063pt>
+File: figures/TTVIevadbrplot2.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadbrplot2.pdf>
+Package pdftex.def Info: figures/TTVIevadbrplot2.pdf used on input line 958.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [111 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadbrpl
+ot2.pdf>]
+<figures/TTVIevadbrplot3.pdf, id=1472, 144.54pt x 89.33063pt>
+File: figures/TTVIevadbrplot3.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadbrplot3.pdf>
+Package pdftex.def Info: figures/TTVIevadbrplot3.pdf used on input line 968.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [112 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadbrpl
+ot3.pdf>]
+<figures/TTVIevadbrplot4.pdf, id=1491, 144.54pt x 89.33063pt>
+File: figures/TTVIevadbrplot4.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadbrplot4.pdf>
+Package pdftex.def Info: figures/TTVIevadbrplot4.pdf used on input line 978.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [113 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadbrpl
+ot4.pdf>]
+<figures/TTVIevadbrplot5.pdf, id=1510, 144.54pt x 89.33063pt>
+File: figures/TTVIevadbrplot5.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadbrplot5.pdf>
+Package pdftex.def Info: figures/TTVIevadbrplot5.pdf used on input line 988.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [114 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadbrpl
+ot5.pdf>]
+<figures/TTVIevadbrplot6.pdf, id=1529, 144.54pt x 89.33063pt>
+File: figures/TTVIevadbrplot6.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadbrplot6.pdf>
+Package pdftex.def Info: figures/TTVIevadbrplot6.pdf used on input line 998.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [115 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadbrpl
+ot6.pdf>]
+<figures/TTVIevadbrplot7.pdf, id=1549, 144.54pt x 89.33063pt>
+File: figures/TTVIevadbrplot7.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadbrplot7.pdf>
+Package pdftex.def Info: figures/TTVIevadbrplot7.pdf used on input line 1008.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [116 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadbrpl
+ot7.pdf>]
+<figures/TTVIevadbrplot8.pdf, id=1568, 144.54pt x 89.33063pt>
+File: figures/TTVIevadbrplot8.pdf Graphic file (type pdf)
+
+<use figures/TTVIevadbrplot8.pdf>
+Package pdftex.def Info: figures/TTVIevadbrplot8.pdf used on input line 1018.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [117 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadbrpl
+ot8.pdf>]
+<figures/TTVIevadebr0.png, id=1587, 1750.54pt x 326.21875pt>
+File: figures/TTVIevadebr0.png Graphic file (type png)
+
+<use figures/TTVIevadebr0.png>
+Package pdftex.def Info: figures/TTVIevadebr0.png used on input line 1028.
+(pdftex.def)             Requested size: 437.63393pt x 81.55447pt.
+
+Overfull \hbox (4.01393pt too wide) in paragraph at lines 1028--1029
+ [][] 
+ []
+
+[118 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadebr0.
+png>] <figures/TTVIevadebr10.png, id=1591, 1740.5025pt x 318.18875pt>
+File: figures/TTVIevadebr10.png Graphic file (type png)
+
+<use figures/TTVIevadebr10.png>
+Package pdftex.def Info: figures/TTVIevadebr10.png used on input line 1038.
+(pdftex.def)             Requested size: 435.12456pt x 79.54698pt.
+
+Overfull \hbox (1.50456pt too wide) in paragraph at lines 1038--1039
+ [][] 
+ []
+
+[119 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadebr10
+.png>] <figures/TTVIevadebr98.png, id=1595, 1749.53625pt x 320.19624pt>
+File: figures/TTVIevadebr98.png Graphic file (type png)
+
+<use figures/TTVIevadebr98.png>
+Package pdftex.def Info: figures/TTVIevadebr98.png used on input line 1048.
+(pdftex.def)             Requested size: 437.383pt x 80.04886pt.
+
+Overfull \hbox (3.763pt too wide) in paragraph at lines 1048--1049
+ [][] 
+ []
+
+[120 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadebr98
+.png>] <figures/TTVIevadebr99.png, id=1599, 1740.5025pt x 326.21875pt>
+File: figures/TTVIevadebr99.png Graphic file (type png)
+
+<use figures/TTVIevadebr99.png>
+Package pdftex.def Info: figures/TTVIevadebr99.png used on input line 1058.
+(pdftex.def)             Requested size: 435.12456pt x 81.55447pt.
+
+Overfull \hbox (1.50456pt too wide) in paragraph at lines 1058--1059
+ [][] 
+ []
+
+[121 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIevadebr99
+.png>] <figures/TTVIpursbr2plot1.pdf, id=1604, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr2plot1.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr2plot1.pdf>
+Package pdftex.def Info: figures/TTVIpursbr2plot1.pdf used on input line 1068.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [122 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr2p
+lot1.pdf>]
+<figures/TTVIpursbr2plot2.pdf, id=1623, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr2plot2.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr2plot2.pdf>
+Package pdftex.def Info: figures/TTVIpursbr2plot2.pdf used on input line 1078.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [123 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr2p
+lot2.pdf>]
+<figures/TTVIpursbr2plot3.pdf, id=1642, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr2plot3.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr2plot3.pdf>
+Package pdftex.def Info: figures/TTVIpursbr2plot3.pdf used on input line 1088.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [124 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr2p
+lot3.pdf>]
+<figures/TTVIpursbr2plot4.pdf, id=1661, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr2plot4.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr2plot4.pdf>
+Package pdftex.def Info: figures/TTVIpursbr2plot4.pdf used on input line 1098.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [125 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr2p
+lot4.pdf>]
+<figures/TTVIpursbr2plot5.pdf, id=1680, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr2plot5.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr2plot5.pdf>
+Package pdftex.def Info: figures/TTVIpursbr2plot5.pdf used on input line 1108.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [126 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr2p
+lot5.pdf>]
+<figures/TTVIpursbr2plot6.pdf, id=1699, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr2plot6.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr2plot6.pdf>
+Package pdftex.def Info: figures/TTVIpursbr2plot6.pdf used on input line 1118.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [127 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr2p
+lot6.pdf>]
+<figures/TTVIpursbr2plot7.pdf, id=1719, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr2plot7.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr2plot7.pdf>
+Package pdftex.def Info: figures/TTVIpursbr2plot7.pdf used on input line 1128.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [128 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr2p
+lot7.pdf>]
+<figures/TTVIpursbr2plot8.pdf, id=1738, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr2plot8.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr2plot8.pdf>
+Package pdftex.def Info: figures/TTVIpursbr2plot8.pdf used on input line 1138.
+(pdftex.def)             Requested size: 433.61888pt x 267.99115pt.
+ [129 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr2p
+lot8.pdf>]
+<figures/TTVIpursue2br0.png, id=1757, 1727.45375pt x 325.215pt>
+File: figures/TTVIpursue2br0.png Graphic file (type png)
+
+<use figures/TTVIpursue2br0.png>
+Package pdftex.def Info: figures/TTVIpursue2br0.png used on input line 1148.
+(pdftex.def)             Requested size: 431.86238pt x 81.30354pt.
+ [130 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursue2b
+r0.png>]
+<figures/TTVIpursue2br99.png, id=1761, 1737.49126pt x 321.2pt>
+File: figures/TTVIpursue2br99.png Graphic file (type png)
+
+<use figures/TTVIpursue2br99.png>
+Package pdftex.def Info: figures/TTVIpursue2br99.png used on input line 1158.
+(pdftex.def)             Requested size: 434.37175pt x 80.2998pt.
+
+Overfull \hbox (0.75175pt too wide) in paragraph at lines 1158--1159
+ [][] 
+ []
+
+[131 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursue2br
+99.png>] <figures/TTVIpursbr2relplot.pdf, id=1765, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr2relplot.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr2relplot.pdf>
+Package pdftex.def Info: figures/TTVIpursbr2relplot.pdf used on input line 1168
+.
+(pdftex.def)             Requested size: 36.1349pt x 22.3326pt.
+ [132 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr2r
+elplot.pdf>]
+<figures/TTVIpursbr2phaseplot.pdf, id=1784, 144.54pt x 89.33063pt>
+File: figures/TTVIpursbr2phaseplot.pdf Graphic file (type pdf)
+
+<use figures/TTVIpursbr2phaseplot.pdf>
+Package pdftex.def Info: figures/TTVIpursbr2phaseplot.pdf used on input line 11
+78.
+(pdftex.def)             Requested size: 36.1349pt x 22.3326pt.
+ [133 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/TTVIpursbr2p
+haseplot.pdf>])
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\biblio.tex
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\problem_def.bbl [134
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]))
+[135] (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\problem_def.aux
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\body.aux)
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\appa.aux)
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\appb.aux)
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\biblio.aux)) ) 
+Here is how much of TeX's memory you used:
+ 4910 strings out of 493921
+ 86008 string characters out of 3147269
+ 144818 words of memory out of 3000000
+ 7966 multiletter control sequences out of 15000+200000
+ 17723 words of font info for 52 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 34i,9n,28p,4769b,267s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\c
+grim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.p
+k> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
+600\ecbx1728.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
+knappen\ec\dpi600\ecrm1200.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/euler/eusm10.pfb>
+Output written on problem_def.pdf (135 pages, 4602914 bytes).
+PDF statistics:
+ 2007 PDF objects out of 2073 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 611 words of extra memory for PDF output out of 10000 (max. 10000000)
+
