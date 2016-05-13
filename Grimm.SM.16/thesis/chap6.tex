@@ -4,11 +4,11 @@
 %% You can process specific files by typing their names in at the 
 %% \files=
 %% prompt when you run the file main.tex through LaTeX.
-\chapter{Application of Tensor-Based Value Iteration to Pursuit-Evasion Problems}\label{chp:examples}
-Using the algorithms and problem definitions presented in the previous chapter, this chapter will detail how two example problems were solved. The first problem, a four-dimensional pursuit-evasion problem will be solved with both a traditional value iteration algorithm, \Cref{DPBRalg}, and the tensor-based value iteration algorithm, \Cref{BRTVIalg}. This will allow for comparisions between the two algorithms to demonstrate the benefits of using TVI. Next a six-dimensional pursuit-evasion problem will be solved that demonstrates TVI's ability to efficiently compute a solution for a problem that would take traditional value iteration days if not weeks to solve. The end of this chapter will also begin to detail a number of shortcomings with the TVI algorithm.  
+\chapter{Application of Best-Response Tensor-Train-Decomposition-Based Value Iteration}\label{chp:examples}
+Using the algorithms and problem definitions presented in the previous chapter, this chapter will detail how two example problems were solved. The first problem, a four-dimensional pursuit-evasion problem will be solved with both a traditional value iteration algorithm(VI), \Cref{DPBRalg}, and the BR-TT-VI algorithm, \Cref{BRTVIalg}. This will allow for comparisons between the two algorithms to demonstrate the benefits of using BR-TT-VI. Next a six-dimensional pursuit-evasion problem will be solved that demonstrates BR-TT-VI's ability to efficiently compute a solution for a problem that would take VI days if not weeks to solve. The end of this chapter will also begin to detail a number of shortcomings with the BR-TT-VI algorithm.  
 
 \section{Four-Dimensional Problem}
-The four-dimensional pursuit-evasion problem used here is simple enough to be solved analytically, with traditional value iteration, and with TVI. This problem is used to show the accuracy of the TVI approximation and demonstrate the advantages of using TVI over normal value iteration. This section will start with a definition of the four-dimensional pursuit-evasion problem as well as a brief explanation for the optimal analytic solution to the problem. Next, it will be explained how the traditional value iteration was accomplished and the results of this algorithm. Afterwards it will be detailed how the TVI was used and the results of this algorithm. Finally, a comparison will be made between the results of traditional value iteration and TVI.   
+The four-dimensional pursuit-evasion problem used here is simple enough to be solved analytically, with VI, and with BR-TT-VI. This problem is used to show the accuracy of the BR-TT-VI approximation and demonstrate the advantages of using BR-TT-VI over VI. This section will start with a definition of the four-dimensional pursuit-evasion problem as well as a brief explanation for the optimal analytic solution to the problem. Next, it will be explained how VI was accomplished and the results of this algorithm. Afterwards it will be detailed how the BR-TT-VI was used and the results of this algorithm. Finally, a comparison will be made between the results of VI and BR-TT-VI.   
 \subsection{Problem Definition}
 The four-dimensional pursuit-evasion problem used here has the pursuer attempting to reduce the distance to or capture the evader, while the evader attempts to maximize the distance between itself and the pursuer. A pursuer and evader are modeled in a $10 \times 10$ two-dimensional  state space with simple Euclidean dynamics. The four dimensions are the $x$ position of the pursuer $x_1$, the $y$ position of the pursuer $y_1$, the $x$ position of the evader $x_2$, and the $y$ position of the evader $y_2$. This results in a state space such that $z_i = (x_1,y_1,x_2,y_2)$. Each of the dimensions are bounded as follows:
 \begin{eqnarray*}
@@ -43,7 +43,7 @@ Value iteration can be used to solve for the optimal cost at each state. The pro
 \begin{equation}\label{4cost}
 G(z_i,u_1,u_2)= 10+(x_1-x_2)^2+(y_1-y_2)^2.
 \end{equation}
-The constant of $10$ is added to provided a buffer for the TVI approximation in order to prevent negative values. A discount factor of $\gamma = 0.7$ was chosen. Applying the state cost function and discount factor to \Cref{pbell} results in the update functions for the four-dimensional pursuit-evasion problem:
+The constant of $10$ is added to provided a buffer for the BR-TT-VI approximation in order to prevent negative values. A discount factor of $\gamma = 0.7$ was chosen. Applying the state cost function and discount factor to \Cref{pbell} results in the update functions for the four-dimensional pursuit-evasion problem:
 \begin{equation}\label{4pbell}
 J_p^{(k+1,K)}(z_i)= \underset{u_1 }{\operatorname{min }}[10+(x_1-x_2)^2+(y_1-y_2)^2+0.7 J_p^{(k,K)}(z_j|z_i,u_1,u_2^K)],
 \end{equation}
@@ -78,7 +78,7 @@ Vx_2^*= \underset{Vx_2 }{\operatorname{arg max }}[((x_1 + Vx_1dt)-(x_2+Vx_2dt))^
 \begin{equation}\label{evadopty}
 Vy_2^*= \underset{Vy_2 }{\operatorname{arg max }}[((y_1 + Vy_1dt)-(y_2+Vy_2dt))^2].
 \end{equation}
-These analytically solutions can be used to check the validity of the results of both traditional value iteration and TVI. 
+These analytically solutions can be used to check the validity of the results of both VI and BR-TT-VI. 
 
 \subsection{Traditional Value Iteration}
 Before running the traditional value iteration algorithm, \Cref{DPBRalg}, both the pursuer and evader algorithm were run for 100 iterations to better characterize the algorithm when run past completion. First, both the pursuer and evader state cost were set to initialized such that $J^{(0,0)}_p(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$ and $J^{(0,0)}_e(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$. Next, the pursuer value iteration is run for one hundred iterations. It took approximately an hour and a half to run these one hundred iterations of pursuer value iteration, \Cref{4DVIrt}. The evolution of the pursuer state cost can be seen  in \Cref{100IR4DTPCP}. Take note of the minimal difference in the state cost between ten and a hundred iterations. Notice that the average norm converges to the optimal average norm, \Cref{100IR4DTnp}, and the difference between the average norm logarithmically decreases, \Cref{100IR4DTdnp}. The breakdown of the logarithmic decrease around the $95^{th}$ iteration is due to rounding error caused by the precision of float values.  
@@ -196,7 +196,7 @@ Evasion & 58.3154 & 5865.4880 \\\hline
 \end{center}
 \end{table}
 
-Traditional value iteration was also implemented with \Cref{DPBRalg}. This algorithm was ran twice, once at $\Delta_{max} = 1E-2$ and $\delta_{max} = 1E-2$ for an equal comparison with the TVI algorithm  and once where $\Delta_{max} = 1E-5$ and $\delta_{max} = 1E-5$ to determine optimality to a point where changes in the state cost were no longer noticeable. For the $(\Delta_{max} = 1E-2,\delta_{max} = 1E-2)$ case, on the first best response run both the pursuer and evader state costs converge to an average norm of 179 in about 10 iterations as can be seen by the blue line in \Cref{BR4DTSPnp,BR4DTSEnp}. Changes to the control on this run are minor enough that there are no major changes in state costs on the second run as can be seen by the red line segment in the same figures. This causes the algorithm to end after only two runs. To run the entire algorithm it took almost twenty minutes, \Cref{BRPRun}. 
+Traditional value iteration was also implemented with \Cref{DPBRalg}. This algorithm was ran twice, once at $\Delta_{max} = 10^{-2}$ and $\delta_{max} = 10^{-2}$ for an equal comparison with the BR-TT-VI algorithm  and once where $\Delta_{max} = 10^{-5}$ and $\delta_{max} = 10^{-5}$ to determine optimality to a point where changes in the state cost were no longer noticeable. For the $(\Delta_{max} = 10^{-2},\delta_{max} = 10^{-2})$ case, on the first best response run both the pursuer and evader state costs converge to an average norm of 179 in about 10 iterations as can be seen by the blue line in \Cref{BR4DTSPnp,BR4DTSEnp}. Changes to the control on this run are minor enough that there are no major changes in state costs on the second run as can be seen by the red line segment in the same figures. This causes the algorithm to end after only two runs. To run the entire algorithm it took almost twenty minutes, \Cref{BRPRun}. 
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.475\textwidth}
@@ -212,7 +212,7 @@ Traditional value iteration was also implemented with \Cref{DPBRalg}. This algor
 	\caption{Normalized difference in average norm between sequential pursuer state costs}
 	\label{BR4DTSPdnp}
 \end{subfigure}
-\caption{Pursuer diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta_{max} = 1E-2,\delta_{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run}
+\caption{Pursuer diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta_{max} = 10^{-2},\delta_{max} = 10^{-2})$. Blue solid line is the first run, while the red solid line is the second run}
 \label{BR4DTSPdiag}
 \end{figure}
 \begin{figure}[h!]
@@ -230,7 +230,7 @@ Traditional value iteration was also implemented with \Cref{DPBRalg}. This algor
 	\caption{Normalized difference in average norm between sequential evader state costs}
 	\label{BR4DTSEdnp}
 \end{subfigure}
-\caption{Evader diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta_{max} = 1E-2,\delta_{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run}
+\caption{Evader diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta_{max} = 10^{-2},\delta_{max} = 10^{-2})$. Blue solid line is the first run, while the red solid line is the second run}
 \label{BR4DTSEdiag}
 \end{figure}
 
@@ -250,7 +250,7 @@ The pursuer state costs monotonically decrease toward the evaders position, \Cre
 	\caption{Evader state cost when pursuer is at (1,1)}
 	\label{BR4DTSEcp}
 \end{subfigure}
-\caption{State Costs after running Best Response Value Iteration Algorithm with $(\Delta_{max} = 1E-2,\delta_{max} = 1E-2)$}
+\caption{State Costs after running Best Response Value Iteration Algorithm with $(\Delta_{max} = 10^{-2},\delta_{max} = 10^{-2})$}
 \label{BR4DTScp}
 \end{figure}
 \begin{figure}
@@ -374,7 +374,7 @@ The pursuer state costs monotonically decrease toward the evaders position, \Cre
 \label{BR4DTSGr}
 \end{figure}
 
-A $(\Delta_{max} = 1E-5,\delta_{max} = 1E-5)$ case was also implemented to ensure that the $(\Delta_{max} = 1E-2,\delta_{max} = 1E-2)$ case ran to an appropriate termination. On the first best response run both the pursuer and evader state costs converge to an average norm of 180.97 in just over 25 iterations as seen by the blue solid line in \Cref{BR4DTCPnp,BR4DTCEnp}. The second run of best response again produces no notable change in the state cost of either the pursuer or the evader as seen by the red solid line in the same figures. Because of this the average norm of 180.97 will be considered optimal for the four-dimensional problem. In order to get this more accurate response, the algorithm ran for almost an hour, \Cref{BRPRun}. Despite the much longer run time, the results of the pursuit-evasion game do not noticeably change as can be seen by \Cref{BR4DTCcp,BR4DTCGp,BR4DTCGr} mirroring \Cref{BR4DTScp,BR4DTSGp,BR4DTSGr}. 
+A $(\Delta_{max} = 10^{-5},\delta_{max} = 10^{-5})$ case was also implemented to ensure that the $(\Delta_{max} = 10^{-2},\delta_{max} = 10^{-2})$ case ran to an appropriate termination. On the first best response run both the pursuer and evader state costs converge to an average norm of 180.97 in just over 25 iterations as seen by the blue solid line in \Cref{BR4DTCPnp,BR4DTCEnp}. The second run of best response again produces no notable change in the state cost of either the pursuer or the evader as seen by the red solid line in the same figures. Because of this the average norm of 180.97 will be considered optimal for the four-dimensional problem. In order to get this more accurate response, the algorithm ran for almost an hour, \Cref{BRPRun}. Despite the much longer run time, the results of the pursuit-evasion game do not noticeably change as can be seen by \Cref{BR4DTCcp,BR4DTCGp,BR4DTCGr} mirroring \Cref{BR4DTScp,BR4DTSGp,BR4DTSGr}. 
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.475\textwidth}
@@ -390,7 +390,7 @@ A $(\Delta_{max} = 1E-5,\delta_{max} = 1E-5)$ case was also implemented to ensur
 	\caption{Normalized difference in average norm between sequential pursuer state costs}
 	\label{BR4DTCPdnp}
 \end{subfigure}
-\caption{Pursuer diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta_{max} = 1E-5,\delta_{max} = 1E-5)$. Blue solid line is the first run, while the red solid line is the second run}
+\caption{Pursuer diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta_{max} = 10^{-5},\delta_{max} = 10^{-5})$. Blue solid line is the first run, while the red solid line is the second run}
 \label{BR4DTCPdiag}
 \end{figure}
 \begin{figure}[h!]
@@ -408,7 +408,7 @@ A $(\Delta_{max} = 1E-5,\delta_{max} = 1E-5)$ case was also implemented to ensur
 	\caption{Normalized difference in average norm between sequential evader state costs}
 	\label{BR4DTCEdnp}
 \end{subfigure}
-\caption{Evader diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta_{max} = 1E-5,\delta_{max} = 1E-5)$. Blue solid line is the first run, while the red solid line is the second run}
+\caption{Evader diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta_{max} = 10^{-5},\delta_{max} = 10^{-5})$. Blue solid line is the first run, while the red solid line is the second run}
 \label{BR4DTCEdiag}
 \end{figure}
 \begin{figure}[h!]
@@ -426,7 +426,7 @@ A $(\Delta_{max} = 1E-5,\delta_{max} = 1E-5)$ case was also implemented to ensur
 	\caption{Evader state cost when pursuer is at (1,1)}
 	\label{BR4DTCEcp}
 \end{subfigure}
-\caption{State Costs after running Best Response Value Iteration Algorithm with $(\Delta_{max} = 1E-5,\delta_{max} = 1E-5)$}
+\caption{State Costs after running Best Response Value Iteration Algorithm with $(\Delta_{max} = 10^{-5},\delta_{max} = 10^{-5})$}
 \label{BR4DTCcp}
 \end{figure}
 \begin{figure}
@@ -550,8 +550,8 @@ A $(\Delta_{max} = 1E-5,\delta_{max} = 1E-5)$ case was also implemented to ensur
 \label{BR4DTCGr}
 \end{figure}             
 
-\subsection{Tensor-Based Value Iteration}
-Tensor-Based Value Iteration can also be used to solve the pursuit-evasion game with simple Euclidean dynamics. Just as with traditional value iteration, before running \Cref{BRTVIalg} both the pursuer and evader TVI were run for 100 iterations to characterize the algorithm when run past completion. Once again both the pursuer and evader state cost were set to initialized such that $J^{(0,0)}_p(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$ and $J^{(0,0)}_e(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$. The pursuer TVI is run first for one hundred iterations. These one hundred iterations only take about eight minutes, \Cref{4DTTVIrt}. The evolution of the pursuer state cost can be seen  in \Cref{100IR4DTVIPCP}. Once again there is very little difference between the state cost at ten iterations and a hundred iterations. Notice that the average norm converges to the optimal average norm, \Cref{100IR4DTVInp}. The difference between the average norm logarithmically decreases until a difference of about $10^{-3}$ at which point the plot fluctuates about this point \Cref{100IR4DTVIdnp}. Average tensor rank remains constant at 3.60, \Cref{100IR4DTVIrkp}, while the fraction of states used fluctuates between about 0.020 and 0.013 of the original $21^4$ states, \Cref{100IR4DTVIsp}. 
+\subsection{Tensor-Train-Decomposition-Based Value Iteration}
+Tensor-Train-Decomposition-Based Value Iteration(TT-VI) can also be used to solve the pursuit-evasion game with simple Euclidean dynamics. Just as with VI, before running \Cref{BRTVIalg} both the pursuer and evader TT-VI were run for 100 iterations to characterize the algorithm when run past completion. Once again both the pursuer and evader state cost were set to initialized such that $J^{(0,0)}_p(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$ and $J^{(0,0)}_e(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$. The pursuer TT-VI is run first for one hundred iterations. These one hundred iterations only take about eight minutes, \Cref{4DTTVIrt}. The evolution of the pursuer state cost can be seen  in \Cref{100IR4DTVIPCP}. Once again there is very little difference between the state cost at ten iterations and a hundred iterations. Notice that the average norm converges to the optimal average norm, \Cref{100IR4DTVInp}. The difference between the average norm logarithmically decreases until a difference of about $10^{-3}$ at which point the plot fluctuates about this point \Cref{100IR4DTVIdnp}. Average tensor rank remains constant at 3.60, \Cref{100IR4DTVIrkp}, while the fraction of states used fluctuates between about 0.020 and 0.013 of the original $21^4$ states, \Cref{100IR4DTVIsp}. 
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.475\textwidth}
@@ -581,7 +581,7 @@ Tensor-Based Value Iteration can also be used to solve the pursuit-evasion game 
 	\caption{Fraction of states used for the pursuer state cost tensor}
 	\label{100IR4DTVIsp}
 \end{subfigure}
-\caption{Diagnostic results of running 100 Iterations of Pursuit TVI}
+\caption{Diagnostic results of running 100 Iterations of Pursuit TT-VI}
 \label{100IR4DTVIdiag}
 \end{figure} 
 \begin{figure}
@@ -617,7 +617,7 @@ Tensor-Based Value Iteration can also be used to solve the pursuit-evasion game 
 \label{100IR4DTVIPCP}
 \end{figure}
 
-After the pursuer TVI is run for a hundred iterations, the evader TVI is run for a hundred iterations with the updated pursuer cost, $J^{(100,1)}_p$. Just like the pursuer TVI, the evader TVI only takes about eight minutes to complete a hundred iterations, \Cref{4DTTVIrt}. The evolution of the evader state cost can be seen  in \Cref{100IR4DTVIECP}. The average norm still converges to the optimal average norm, \Cref{100IR4DTVIEnp}. Just as with pursuer TVI the difference between the average norm logarithmically decreases until a difference of about $10^{-3}$ at which point the plot fluctuates about this point \Cref{100IR4DTVIEdnp}. Average tensor rank also remains constant at 3.60, \Cref{100IR4DTVIErkp}, while the fraction of states used fluctuates between about 0.020 and 0.013 of the original $21^4$ states, \Cref{100IR4DTVIEsp}. Just as with traditional value iteration, the average norm converges to approximately the same value as in \Cref{100IR4DTVInp}.
+After the pursuer TT-VI is run for a hundred iterations, the evader TT-VI is run for a hundred iterations with the updated pursuer cost, $J^{(100,1)}_p$. Just like the pursuer TT-VI, the evader TT-VI only takes about eight minutes to complete a hundred iterations, \Cref{4DTTVIrt}. The evolution of the evader state cost can be seen  in \Cref{100IR4DTVIECP}. The average norm still converges to the optimal average norm, \Cref{100IR4DTVIEnp}. Just as with pursuer TT-VI the difference between the average norm logarithmically decreases until a difference of about $10^{-3}$ at which point the plot fluctuates about this point \Cref{100IR4DTVIEdnp}. Average tensor rank also remains constant at 3.60, \Cref{100IR4DTVIErkp}, while the fraction of states used fluctuates between about 0.020 and 0.013 of the original $21^4$ states, \Cref{100IR4DTVIEsp}. Just as with VI, the average norm converges to approximately the same value as in \Cref{100IR4DTVInp}.
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.475\textwidth}
@@ -683,7 +683,7 @@ After the pursuer TVI is run for a hundred iterations, the evader TVI is run for
 \label{100IR4DTVIECP}
 \end{figure}
 \begin{table}
-\caption{4D TVI Program Run Times(sec)}
+\caption{4D TT-VI Program Run Times(sec)}
 \label{4DTTVIrt}
 \begin{center}
 \begin{tabular}{||r|c|c||}\hline
@@ -694,7 +694,7 @@ Evasion & 4.6160 & 483.1202 \\\hline
 \end{center}
 \end{table}
 
-The four-dimensional problem was also solved using \Cref{BRTVIalg}. $\Delta_{max} = 1E-2$ and $\delta_{max} = 1E-2$ were used as the best response and the value iteration accuracy respectively. On the first best response run both the pursuer and evader state costs converge to an average norm of 179 in about 10 iterations as can be seen by the solid blue line in \Cref{BR4DTVIPnp,BR4DTVIEnp}. The average rank for both the pursuer and evader stays at 3.6 throughout, \Cref{BR4DTVIPrkp,BR4DTVIErkp}. In determining the new state costs, less than $1/50$ of the total states is used for each iteration of TVI, \Cref{BR4DTVIPsp,BR4DTVIEsp}. On the second run of best response, the changes remain minor resulting in virtually no change to the norm, rank, or states used for both the pursuer and the evader as can be seen by the solid red line in the previous figures, \Cref{BR4DTVIPdiag,BR4DTVIEdiag}. The entire Best Response TVI algorithm for the four-dimensional problem takes less than two minutes to complete, \Cref{BRPRun}. 
+The four-dimensional problem was also solved using \Cref{BRTVIalg}. $\Delta_{max} = 10^{-2}$ and $\delta_{max} = 10^{-2}$ were used as the best response and the value iteration accuracy respectively. On the first best response run both the pursuer and evader state costs converge to an average norm of 179 in about 10 iterations as can be seen by the solid blue line in \Cref{BR4DTVIPnp,BR4DTVIEnp}. The average rank for both the pursuer and evader stays at 3.6 throughout, \Cref{BR4DTVIPrkp,BR4DTVIErkp}. In determining the new state costs, less than $1/50$ of the total states is used for each iteration of TT-VI, \Cref{BR4DTVIPsp,BR4DTVIEsp}. On the second run of best response, the changes remain minor resulting in virtually no change to the norm, rank, or states used for both the pursuer and the evader as can be seen by the solid red line in the previous figures, \Cref{BR4DTVIPdiag,BR4DTVIEdiag}. The entire BR-TT-VI algorithm for the four-dimensional problem takes less than two minutes to complete, \Cref{BRPRun}. 
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.475\textwidth}
@@ -724,7 +724,7 @@ The four-dimensional problem was also solved using \Cref{BRTVIalg}. $\Delta_{max
 	\caption{Fraction of states used for the pursuer state cost tensor}
 	\label{BR4DTVIPsp}
 \end{subfigure}
-\caption{Pursuer diagnostic results of running Best Response TVI Algorithm with $(\Delta_{max} = 1E-2,\delta_{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run}
+\caption{Pursuer diagnostic results of running BR-TT-VI Algorithm with $(\Delta_{max} = 10^{-2},\delta_{max} = 10^{-2})$. Blue solid line is the first run, while the red solid line is the second run}
 \label{BR4DTVIPdiag}
 \end{figure}
 \begin{figure}[h!]
@@ -756,7 +756,7 @@ The four-dimensional problem was also solved using \Cref{BRTVIalg}. $\Delta_{max
 	\caption{Fraction of states used for the evader state cost tensor}
 	\label{BR4DTVIEsp}
 \end{subfigure}
-\caption{Evader diagnostic results of running Best Response TVI Algorithm with $(\Delta_{max} = 1E-2,\delta_{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run}
+\caption{Evader diagnostic results of running Best Response TVI Algorithm with $(\Delta_{max} = 10^{-2},\delta_{max} = 10^{-2})$. Blue solid line is the first run, while the red solid line is the second run}
 \label{BR4DTVIEdiag}
 \end{figure}
 
@@ -776,7 +776,7 @@ The pursuer state costs monotonically decrease toward the evaders position, \Cre
 	\caption{Evader state cost when pursuer is at (1,1)}
 	\label{BR4DTVIEcp}
 \end{subfigure}
-\caption{State Costs after running Best Response TVI Algorithm with $(\Delta_{max} = 1E-2,\delta_{max} = 1E-2)$}
+\caption{State Costs after running BR-TT-VI Algorithm with $(\Delta_{max} = 10^{-2},\delta_{max} = 10^{-2})$}
 \label{BR4DTVIcp}
 \end{figure}
 \begin{figure}
@@ -900,16 +900,16 @@ The pursuer state costs monotonically decrease toward the evaders position, \Cre
 \label{BR4DTVIr}
 \end{figure}     
 
-\subsection{Comparison of Traditional Value Iteration and TVI}
-Both traditional value iteration and tensor-based value iteration can be used to solve the four-dimensional simple euclidean dynamics problem, however each method has its advantages and drawbacks. For the four-dimensional pursuit-evasion problem both traditional value iteration and TVI successfully solve the problem. This can be seen by the nearly identical solutions from all eight starting positions for both the state cost results from traditional value iteration and the state cost result from TVI as seen in \Cref{BR4DTSGp,BR4DTCGp,BR4DTVIp}. All average norms of the state costs also converge to the average norm of the optimal solution of 180.97, \Cref{BR4DTSPnp,BR4DTSEnp,BR4DTCPnp,BR4DTCEnp,BR4DTVIPnp,BR4DTVIEnp}. However, the precision of traditional value iteration can be more exact than TVI. This can be seen in the difference between \Cref{100IR4DTdnp,100IR4DTEdnp} and \Cref{100IR4DTVIdnp,100IR4DTVIEdnp}. While the traditional value iteration continues to become more precise until limited by the precision of the variable (about $10^{-16}$), TVI is constrained in its precision by the accuracy of the tensor approximation (for the given example about $10^{-3}$). Furthermore, TVI can only tighten its precision at the potential expense in increased run time. 
+\subsection{Comparison of Traditional Value Iteration and TT-VI}
+Both VI and TT-VI can be used to solve the four-dimensional simple euclidean dynamics problem, however each method has its advantages and drawbacks. For the four-dimensional pursuit-evasion problem both VI and TT-VI successfully solve the problem. This can be seen by the nearly identical solutions from all eight starting positions for both the state cost results from VI and the state cost result from TT-VI as seen in \Cref{BR4DTSGp,BR4DTCGp,BR4DTVIp}. All average norms of the state costs also converge to the average norm of the optimal solution of 180.97, \Cref{BR4DTSPnp,BR4DTSEnp,BR4DTCPnp,BR4DTCEnp,BR4DTVIPnp,BR4DTVIEnp}. However, the precision of VI can be more exact than TT-VI. This can be seen in the difference between \Cref{100IR4DTdnp,100IR4DTEdnp} and \Cref{100IR4DTVIdnp,100IR4DTVIEdnp}. While the traditional value iteration continues to become more precise until limited by the precision of the variable (about $10^{-16}$), TVI is constrained in its precision by the accuracy of the tensor approximation (for the given example about $10^{-3}$). Furthermore, TVI can only tighten its precision at the potential expense in increased run time. 
 
-Although traditional value iteration has benefits when it comes to precision, TVI can compute the solution more efficiently. Using the $10^{-2}$ error bounds, TVI runs more than ten times faster than the traditional method as can be seen in \Cref{4DVIrt,4DTTVIrt,BRPRun}. Use of the TVI algorithm also conserves memory. As seen in \Cref{4Dstore}, the state cost representations of TVI are approximately an eighth the size of the four-dimensional arrays used to store the state costs in traditional value iteration. This four-dimensional example shows that TVI provides many benefits for problems already solvable by traditional value iteration.
+Although traditional value iteration has benefits when it comes to precision, TT-VI can compute the solution more efficiently. Using the $10^{-2}$ error bounds, TT-VI runs more than ten times faster than the traditional method as can be seen in \Cref{4DVIrt,4DTTVIrt,BRPRun}. Use of the TT-VI algorithm also conserves memory. As seen in \Cref{4Dstore}, the state cost representations of TT-VI are approximately an eighth the size of the four-dimensional arrays used to store the state costs in VI. This four-dimensional example shows that TT-VI provides many benefits for problems already solvable by VI.
 \begin{table}
 \caption{State Cost Storage}
 \label{4Dstore}
 \begin{center}
-\begin{tabular}{||r|c|c||}\hline
-  & Value Iteration & TTVI \\\hline
+\begin{tabular}{|r|c|c|}\hline
+  & Value Iteration & TT-VI \\\hline
 Pursuit & 8 MB & 883.3 kB \\\hline
 Evasion & 8 MB & 1.1 MB \\\hline
 \end{tabular}
@@ -920,9 +920,9 @@ Evasion & 8 MB & 1.1 MB \\\hline
 \caption{Best Response Program Run Times}
 \label{BRPRun}
 \begin{center}
-\begin{tabular}{||r|c|c|c|c||}\hline
-  & 4D Trad. VI(1E-2) & 4D Trad. VI(1E-5) & 4D TVI (1E-2) & 6D TVI (1E-2)\\\hline
-Time (s) & 1152.3172 & 3123.4174 & 102.0020 & 593.2975 \\\hline
+\begin{tabular}{|r|c|c|c|c|}\hline
+  & 4D VI($10^{-2}$) & 4D VI($10^{-5}$) & 4D BR-TT-VI($10^{-2}$) & 6D BR-TT-VI ($10^{-2}$)\\\hline
+Time(s) & 1152.3172 & 3123.4174 & 102.0020 & 593.2975 \\\hline
 
 \end{tabular}
 \end{center}
@@ -956,7 +956,7 @@ Value iteration can also be used to solve for the optimal cost at each state. Th
 \begin{equation}\label{6cost}
 G(z_i,u_1,u_2)= 10+(x_1-x_2)^2+(y_1-y_2)^2.
 \end{equation}
-The constant of $10$ is added to provided a buffer for the TVI approximation in order to prevent negative values. A discount factor of $\gamma = 0.7$ was chosen. Applying the state cost function and discount factor to \Cref{pbell} results in the update functions for the six-dimensional pursuit-evasion problem:
+The constant of $10$ is added to provided a buffer for the BR-TT-VI approximation in order to prevent negative values. A discount factor of $\gamma = 0.7$ was chosen. Applying the state cost function and discount factor to \Cref{pbell} results in the update functions for the six-dimensional pursuit-evasion problem:
 \begin{equation}\label{6pbell}
 J_p^{(k+1,K)}(z_i)= \underset{u_1 }{\operatorname{min }}[10+(x_1-x_2)^2+(y_1-y_2)^2+0.7 J_p^{(k,K)}(z_j|z_i,u_1,u_2^K)],
 \end{equation}
@@ -977,9 +977,9 @@ These optimal value functions \ref{6pbropt} \ref{6ebropt} can be used to solve t
 \end{eqnarray}
 
 \subsection{Solving the Six-Dimensional Pursuit-Evasion Problem}
-The excessive size of the six-dimensional pursuit-evasion game makes this problem hard to solve with traditional value iteration. One iteration of traditional VI on the pursuit problem takes over thirteen hours to complete. However, TVI may be used to solve the problem within some accuracy $\varepsilon$ in relatively short periods of time. Just as with the four-dimensional problem, before applying the best response TVI algorithm a hundred iterations of the pursuer and evader TVI were conducted on the six-dimensional problem. 
+The excessive size of the six-dimensional pursuit-evasion game makes this problem hard to solve with traditional value iteration. One iteration of VI on the pursuit problem takes over thirteen hours to complete. However, BR-TT-VI may be used to solve the problem within some accuracy $\varepsilon$ in relatively short periods of time. Just as with the four-dimensional problem, before applying the BR-TT-VI algorithm a hundred iterations of the pursuer and evader TT-VI were conducted on the six-dimensional problem. 
 
-Once again both the pursuer and evader state cost were set to initialized such that $J^{(0,0)}_p(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$ and $J^{(0,0)}_e(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$. The pursuer TVI is run first for one hundred iterations. These hundred iterations only took about fifty minutes which is less than half the time it took traditional value iteration to run a hundred iterations of the four-dimensional pursuit problem, \Cref{6DTTVIrt}. The evolution of the pursuer state cost in relation to the x and y position of the pursuer can be seen  in \Cref{100IR6DTVIPCP}. Once again there is very little difference between the state cost at ten iterations and a hundred iterations. The average norm converges to a little over 180 as seen in \Cref{100IR6DTVInp}. The difference between the average norm logarithmically decreases until a difference of just over $10^{-3}$ at which point the plot fluctuates about this point \Cref{100IR6DTVIdnp}. Average tensor rank starts at 3.85 but quickly jumps up to just below 4.3, \Cref{100IR6DTVIrkp}. Fluctuating at about 0.0001 of the original $21^6$ states, the fraction of states used is even smaller than in the four-dimensional problem, \Cref{100IR6DTVIsp}.
+Once again both the pursuer and evader state cost were set to initialized such that $J^{(0,0)}_p(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$ and $J^{(0,0)}_e(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$. The pursuer TT-VI is run first for one hundred iterations. These hundred iterations only took about fifty minutes which is less than half the time it took VI to run a hundred iterations of the four-dimensional pursuit problem, \Cref{6DTTVIrt}. The evolution of the pursuer state cost in relation to the x and y position of the pursuer can be seen  in \Cref{100IR6DTVIPCP}. Once again there is very little difference between the state cost at ten iterations and a hundred iterations. The average norm converges to a little over 180 as seen in \Cref{100IR6DTVInp}. The difference between the average norm logarithmically decreases until a difference of just over $10^{-3}$ at which point the plot fluctuates about this point, \Cref{100IR6DTVIdnp}. Average tensor rank starts at 3.85 but quickly jumps up to just below 4.3, \Cref{100IR6DTVIrkp}. Fluctuating at about 0.0001 of the original $21^6$ states, the fraction of states used is even smaller than in the four-dimensional problem, \Cref{100IR6DTVIsp}.
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.475\textwidth}
@@ -1009,7 +1009,7 @@ Once again both the pursuer and evader state cost were set to initialized such t
 	\caption{Fraction of states used for the pursuer state cost tensor}
 	\label{100IR6DTVIsp}
 \end{subfigure}
-\caption{Diagnostic results of running 100 Iterations of Pursuit TVI}
+\caption{Diagnostic results of running 100 Iterations of Pursuit TT-VI}
 \label{100IR6DTVIdiag}
 \end{figure} 
 \begin{figure}
@@ -1045,7 +1045,7 @@ Once again both the pursuer and evader state cost were set to initialized such t
 \label{100IR6DTVIPCP}
 \end{figure} 
 
-After the pursuer TVI is run for a hundred iterations, the evader TVI is also run for a hundred iterations with the updated pursuer cost, $J^{(100,1)}_p$. Once again the evader TVI only takes about fifty minutes to complete a hundred iterations, \Cref{6DTTVIrt}. The evolution of the evader state cost in relation to the x and y position of the evader can be seen  in \Cref{100IR6DTVIECP}. Also of note is the evolution of the evader state cost in relation to the heading of both the pursuer and the evader as seen in \Cref{100IR6DTVITCP}. Notice how the state cost evolves from uniform in iteration one to having distinct minimum and maximum points in iteration 10. This pattern is especially impressive as the $\theta$-values do not have an inherent cost in \Cref{6cost}. The average norm of the evader, much like the pursuer, converges to just over 180 \Cref{100IR6DTVIEnp}. Just as with the pursuer, the difference between the average norm logarithmically decreases until a difference of just above $10^{-3}$ at which point the plot fluctuates about this point \Cref{100IR6DTVIEdnp}. Average tensor rank behaves the same as in the pursuer case by starting at about 3.85 and jumping to a point just below 4.3, \Cref{100IR6DTVIErkp}. The fraction of states used fluctuates again at about 0.0001 of the original $21^6$ states, \Cref{100IR6DTVIEsp}. Just as with the four-dimensional problem, the average norm converges to approximately the same value as in \Cref{100IR6DTVInp}.
+After the pursuer TT-VI is run for a hundred iterations, the evader TT-VI is also run for a hundred iterations with the updated pursuer cost, $J^{(100,1)}_p$. Once again the evader TT-VI only takes about fifty minutes to complete a hundred iterations, \Cref{6DTTVIrt}. The evolution of the evader state cost in relation to the x and y position of the evader can be seen  in \Cref{100IR6DTVIECP}. Also of note is the evolution of the evader state cost in relation to the heading of both the pursuer and the evader as seen in \Cref{100IR6DTVITCP}. Notice how the state cost evolves from uniform in iteration one to having distinct minimum and maximum points in iteration 10. This pattern is especially impressive as the $\theta$-values do not have an inherent cost in \Cref{6cost}. The average norm of the evader, much like the pursuer, converges to just over 180, \Cref{100IR6DTVIEnp}. Just as with the pursuer, the difference between the average norm logarithmically decreases until a difference of just above $10^{-3}$ at which point the plot fluctuates about this point \Cref{100IR6DTVIEdnp}. Average tensor rank behaves the same as in the pursuer case by starting at about 3.85 and jumping to a point just below 4.3, \Cref{100IR6DTVIErkp}. The fraction of states used fluctuates again at about 0.0001 of the original $21^6$ states, \Cref{100IR6DTVIEsp}. Just as with the four-dimensional problem, the average norm converges to approximately the same value as in \Cref{100IR6DTVInp}.
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.475\textwidth}
@@ -1143,7 +1143,7 @@ After the pursuer TVI is run for a hundred iterations, the evader TVI is also ru
 \label{100IR6DTVITCP}
 \end{figure}
 \begin{table}
-\caption{6D TVI Program Run Times(sec)}
+\caption{6D BR-TT-VI Program Run Times(sec)}
 \label{6DTTVIrt}
 \begin{center}
 \begin{tabular}{||r|c|c||}\hline
@@ -1154,7 +1154,7 @@ Evasion & 22.6637 & 2838.0722 \\\hline
 \end{center}
 \end{table}
 
-Using \Cref{BRTVIalg}, the six-dimensional pursuit-evasion problem was solved. Just as with the four-dimensional problem, $\Delta_{max} = 1E-2$ and $\delta_{max} = 1E-2$ were used as the best response and the value iteration accuracy respectively. On the first best response run both the pursuer and evader state costs converge to an average norm of about 180 in about ten iterations as can be seen by the blue line in \Cref{BR6DTVIPnp,BR6DTVIEnp}. For both the pursuer and the evader, the average rank starts at 3.85 and quickly climbs to just below 4.30 before leveling off, \Cref{BR6DTVIPrkp,BR6DTVIErkp}. Generally only about $1/10000$ of the total states are used for each iteration of TVI, \Cref{BR6DTVIPrkp,BR6DTVIErkp}. On the second run of best response, the changes remain minor resulting in virtually no change to the norm, rank, or states used for both the pursuer and the evader as can be seen by the red line in \Cref{BR6DTVIPdiag,BR6DTVIEdiag}. The entire algorithm takes just under ten minutes to complete, \Cref{BRPRun}. This is about half the time that the traditional value iteration took for the four-dimensional problem and a much shorter time than the thirteen plus hours that a single iteration of traditional value iteration takes for the six-dimensional problem.
+Using \Cref{BRTVIalg}, the six-dimensional pursuit-evasion problem was solved. Just as with the four-dimensional problem, $\Delta_{max} = 1E-2$ and $\delta_{max} = 1E-2$ were used as the best response and the value iteration accuracy respectively. On the first best response run both the pursuer and evader state costs converge to an average norm of about 180 in about ten iterations as can be seen by the blue line in \Cref{BR6DTVIPnp,BR6DTVIEnp}. For both the pursuer and the evader, the average rank starts at 3.85 and quickly climbs to just below 4.30 before leveling off, \Cref{BR6DTVIPrkp,BR6DTVIErkp}. Generally only about $1/10000$ of the total states are used for each iteration of TT-VI, \Cref{BR6DTVIPrkp,BR6DTVIErkp}. On the second run of best response, the changes remain minor resulting in virtually no change to the norm, rank, or states used for both the pursuer and the evader as can be seen by the red line in \Cref{BR6DTVIPdiag,BR6DTVIEdiag}. The entire algorithm takes just under ten minutes to complete, \Cref{BRPRun}. This is about half the time that the VI took for the four-dimensional problem and a much shorter time than the thirteen plus hours that a single iteration of VI takes for the six-dimensional problem.
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.475\textwidth}
@@ -1184,7 +1184,7 @@ Using \Cref{BRTVIalg}, the six-dimensional pursuit-evasion problem was solved. J
 	\caption{Fraction of states used for the pursuer state cost tensor}
 	\label{BR6DTVIPsp}
 \end{subfigure}
-\caption{Pursuer diagnostic results of running Best Response TVI Algorithm with $(\Delta_{max} = 1E-2,\delta_{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run}
+\caption{Pursuer diagnostic results of running BR-TT-VI Algorithm with $(\Delta_{max} = 10^{-2},\delta_{max} = 10{-2})$. Blue solid line is the first run, while the red solid line is the second run}
 \label{BR6DTVIPdiag}
 \end{figure}
 \begin{figure}[h!]
@@ -1216,7 +1216,7 @@ Using \Cref{BRTVIalg}, the six-dimensional pursuit-evasion problem was solved. J
 	\caption{Fraction of states used for the evader state cost tensor}
 	\label{BR6DTVIEsp}
 \end{subfigure}
-\caption{Evader diagnostic results of running Best Response TVI Algorithm with $(\Delta_{max} = 1E-2,\delta_{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run}
+\caption{Evader diagnostic results of running BR-TT-VI Algorithm with $(\Delta_{max} = 10^{-2},\delta_{max} = 10^{-2})$. Blue solid line is the first run, while the red solid line is the second run}
 \label{BR6DTVIEdiag}
 \end{figure}
 
@@ -1355,7 +1355,7 @@ Using the optimal state costs $J_p^{(*,*)}$ and $J_e^{(*,*)}$ , two different pr
 \label{6DS}
 \end{figure}
 
-The second problem involves the pursuer starting at (7,5) with a heading of $\theta_1 = 0$ and the evader behind the pursuer at (5,5) and a heading of $\theta_2 = 0$. In this game the pursuer has to make a wide sweep around in order to get on the tail of the evader while the evader dodges below the pursuer,\Cref{6DAG,6DAGp}. In this case the pursuer actually has to increase the distance between itself and the evader before it can close the distance as seen in \Cref{6DAGr}. This is a counter intuitive movement for the pursuer when examining the value function \Cref{6pbell}. This shows that best response TVI can solve non-intuitive problems.
+The second problem involves the pursuer starting at (7,5) with a heading of $\theta_1 = 0$ and the evader behind the pursuer at (5,5) and a heading of $\theta_2 = 0$. In this game the pursuer has to make a wide sweep around in order to get on the tail of the evader while the evader dodges below the pursuer,\Cref{6DAG,6DAGp}. In this case the pursuer actually has to increase the distance between itself and the evader before it can close the distance as seen in \Cref{6DAGr}. This is a counter intuitive movement for the pursuer when examining the value function \Cref{6pbell}. This shows that BR-TT-VI can solve non-intuitive problems.
 \begin{figure}
 \centering
 \begin{subfigure}[b]{0.3\textwidth}

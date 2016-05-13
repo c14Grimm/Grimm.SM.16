@@ -9,7 +9,7 @@
 The advantages of tensor-train decomposition have already been applied to solving optimal control problems with dynamic programming. Gorodetsky, Karaman, and Marzouk have come up with a version of value iteration that takes advantage of tensor-train decomposition in "Efficient High-Dimensional stochastic Optimal Motion Control using Tensor-Train Decomposition" \cite{Gorod}. They call this new version of value iteration Tensor-based value iteration(TVI). This chapter will begin by providing a quick background into stochastic optimal motion control for which Gorodetsky et.al designed TVI. Next, the TVI algorithm will be provided in detail. The chapter will end with an example problem Gorodetsky et. al. solved in \cite{Gorod} along with their results. 
 
 \section{Stochastic Optimal Motion Control}
-Gorodetsky, Karaman, and Marzouk focus on problems of stochastic optimal motion control. While deterministic pursuit-evasion games have many similarities to problems of this type, a brief explanation will be given for problems of these types in order to fully appreciate the results of TVI when applied to these problems. In the problem of stochastic optimal motion control some system has the differential form:
+Gorodetsky, Karaman, and Marzouk focus on problems of stochastic optimal motion control. While deterministic pursuit-evasion games have many similarities to problems of this type, a brief explanation will be given for problems of stochastic optimal motion control in order to fully appreciate the results of TVI when applied to these problems. In problems of stochastic optimal motion control some system has the differential form:
 \begin{equation}\label{eqn7}
 dx(t) = b(x(t),u(t))dt + F(x(t),u(t))dw(t),
 \end{equation}
@@ -42,17 +42,17 @@ Given that the states are discretized to a resolution $h$, where the discrete st
 J_h^{k+1}(z_i)= \underset{u }{\operatorname{min }}[G(z_i,u) + \gamma_h \sum_{j}P(z_j|z_i, u)J_h^{(k)}(z_j)],
 \end{equation}
 in which $\gamma_h$ is the discount rate that ranges from $(0,1)$. $J_h^{(k)}$ will converge to the optimal cost-to-go function as $k \rightarrow \infty$ giving the Bellman equation:
-\begin{equation*}
+\begin{equation}
 J_h^*(z_i) = \underset{u }{\operatorname{min }}[G(z_i,u) + \gamma_h \sum_{j}P(z_j|z_i,u)J_h^*(z_j)].\cite{Gorod}
-\end{equation*} 
+\end{equation} 
   
 
 \section{Tensor-based Value Iteration Algorithm}
 
 The curse of dimensionality that is inherent in this problem can be solved by applying tensor-train decomposition. Instead of using normal tensor-train decomposition, a further reduction in size can be made by applying tensor-train decomposition on the skeleton of the unfolding matrices, called tensor-train cross. The skeleton unfolding matrix $A_k$ can be written as:
-\begin{equation*}
+\begin{equation}
 A_k = A_k[:,C]A_k[I,C]^{-1}A_k[C,:],
-\end{equation*}
+\end{equation}
 where $I$ is the set of rows where $|I| \geq r$ and $C$ is the set of columns where $|C| \geq r$. Tensor-train cross can be used to solve the tensor-based value iteration algorithm as given in \Cref{TVIalg}.
 \begin{algorithm}
 \caption{Tensor-based Value Iteration \cite{Gorod}}\label{TVIalg}
@@ -64,15 +64,15 @@ where $I$ is the set of rows where $|I| \geq r$ and $C$ is the set of columns wh
 	\While{ $\delta > \delta_{max}$} \do{}
 		\State $\hat{J}_h^{(k+1)} = \textnormal{ TT-cross }((\ref{eqn8}),\epsilon)$
 		\State $k = k+1$
-		\State $\delta = \|hat{J}_h^{(k)}-\hat{J}_h^{(k-1)}\|^2$
+		\State $\delta = \|\hat{J}_h^{(k)}-\hat{J}_h^{(k-1)}\|^2$
 	\EndWhile
 \end{algorithmic}
 \end{algorithm}
 
-In this algorithm, a max residual and accuracy setting are given along with an initialized guess of the cost function $\hat{J}_h^{(0)}$ in tensor-train form. The initial residual is set such that the algorithm enters the loop that continues while $\delta > \delta_{max}$. The TT-cross algorithm takes as input the update function as in \ref{eqn8} and the accuracy setting, and returns an updated cost function that maintains the accuracy setting. Finally the iteration value and residual value are updated. This continues until the residual value is less than the specified max residual value. 
+In this algorithm, a max residual and accuracy setting are given along with an initialized guess of the cost function $\hat{J}_h^{(0)}$ in tensor-train form. The initial residual is set such that the algorithm enters the loop that continues while $\delta > \delta_{max}$. Taking as input the update function, \Cref{eqn8}, and the accuracy setting $\epsilon$, the TT-cross function returns an updated cost function that maintains the accuracy setting. Finally the iteration and residual value are updated. This algorithm continues until $\delta < \delta_{max}$. 
 
-It is further shown in \cite{Gorod} that the error of tensor-based value iteration can be bounded.
-\begin{theorem}[TVI Approximation Error \cite{Gorod}]
+It is further shown in \Cref{tviae} that the error of tensor-based value iteration can be bounded.
+\begin{theorem}[TVI Approximation Error \cite{Gorod}]\label{tviae}
 When the proposed interpolation method are run for k iterations on a grid with resolution h, and TT-cross accuracy $\epsilon$, the number of computational operations performed by the algorithm is $O(\dfrac{kdr^3}{h})$ and the resulting approximation error satisfies:
 \begin{equation*}
 \| \hat{J}_j^{(k)}-J_{u_h^*}\| \leq \epsilon(\dfrac{R_{max}+\gamma}{1-\gamma})+\gamma^{k+1}\epsilon \|\tilde{J}_h^{(0)}\|+\gamma^k \|\tilde{J}_h^{(0)}-J_{u_h^*}\|.
@@ -83,7 +83,7 @@ Where $R_{max} = \underset{u(x), x }{\operatorname{max }} r(x,u(x))$ and $\tilde
 
 \section{Test and Results}
 
-Gorodetsky, Karaman, and Marzouk perform this tensor-based value iteration on a seven dimensional perching glider problem. In this problem a glider navigates a two dimensional plane under the influence of the seven following state variables: $(x,y,\theta,\phi,v_x,v_y,\dot{\theta})$. The variables in order are the $x$ position, $y$ position, angle of attack, elevator angle, horizontal speed, vertical speed, and the angle of attacks rate of change. Elevator angle rate of change $\dot{\phi}$ is the only control variable present in this problem. The optimization problem for this perching glider problem is represented in \cite{Gorod} as:
+Gorodetsky, Karaman, and Marzouk perform this tensor-based value iteration on a seven dimensional perching glider problem. In this problem, a glider navigates a two dimensional plane under the influence of the seven following state variables: $(x,y,\theta,\phi,v_x,v_y,\dot{\theta})$. The variables in order are the $x$ position, $y$ position, angle of attack, elevator angle, horizontal speed, vertical speed, and the angle of attacks rate of change. Elevator angle rate of change $\dot{\phi}$ is the only control variable present in this problem. The optimization problem for this perching glider problem is represented in \cite{Gorod} as:
 \begin{equation}\label{eqn9}
 J^*(z)= \underset{u(t) }{\operatorname{min }}E[\int_{0}^{T}\bar{x}'Q\bar{x}+ 0.1u^2dt + \bar{x}(T)'Q_f\bar{x}(T) ],
 \end{equation}
@@ -101,18 +101,18 @@ m\ddot{x} &=& -f_w s_\theta - f_e s_{\theta_{+\phi}}+ Fdw, \\
 m\ddot{y} &=& f_w c_\theta - f_e c_{\theta_{+\phi}}-mg+ Fdw, \\
 I\ddot{\theta} &=& -f_w l_w - f_e(lc_\phi +l_e) + Fdw.
 \end{eqnarray*}
-In the above dynamics $\rho$ represents the air density, $m$ is the glider mass, and $I$ is the glider's moment of inertia. $S_w$ and $S_e$ are the wing and tail control surface areas respectively. The length from the center of gravity to the elevator is $l$. $l_w$ is the wing half cord and $l_e$ is the elevator half cord. Finally, $c_\gamma$ represents the cos($\gamma$) and $s_\gamma$ represents the sin($\gamma$). By uniformly discretizing each variable into 32 states, tensor-based value iteration is capable of performing value iteration on a problem with a discretized state space of $ 3.4 \times 10^10$ states with a maximal error of $ \epsilon = 0.1$. The resulting glide path and vertical and horizontal velocity of the optimal solution can be seen in \Cref{gorodglide}.
+In the above dynamics $\rho$ represents the air density, $m$ is the glider mass, and $I$ is the glider's moment of inertia. $S_w$ and $S_e$ are the wing and tail control surface areas respectively. The length from the center of gravity to the elevator is $l$. $l_w$ is the wing half cord and $l_e$ is the elevator half cord. Finally, $c_\gamma$ represents the cos($\gamma$) and $s_\gamma$ represents the sin($\gamma$). By uniformly discretizing each variable into 32 states, tensor-based value iteration is capable of performing value iteration on a problem with a discretized state space of $ 3.4 \times 10^{10}$ states with a maximal error of $ \epsilon = 0.1$. The resulting glide path and vertical and horizontal velocity of the optimal solution can be seen in \Cref{gorodglide}.
 \begin{figure}
 \centering
 \includegraphics[scale=1]{gorodglide}
-\caption{Optimal glide path with vertical and horizontal velocities \cite{gorod}}
+\caption{Optimal glide path with vertical and horizontal velocities \cite{Gorod}}
 \label{gorodglide}
 \end{figure}
 
-The key to tensor-train value iterations success is the reduction in the number of states examined. Of the $3.4 \times 10^10$ states making up the initial discretized state space, only approximately $10^6$ of these states are used as can be seen in \Cref{gorodstates}.\cite{Gorod}
+The key to tensor-train value iterations success is the reduction in the number of states used. Of the $3.4 \times 10^{10}$ states making up the initial discretized state space, only about $10^6$ of these states are used as can be seen in \Cref{gorodstates}.\cite{Gorod}
 \begin{figure}
 \centering
 \includegraphics[scale=1]{gorodstates}
-\caption{Fraction of states evaluated by TTVI in optimal glide problem \cite{gorod}}
+\caption{Fraction of states evaluated by TTVI in optimal glide problem \cite{Gorod}}
 \label{gorodstates}
 \end{figure}

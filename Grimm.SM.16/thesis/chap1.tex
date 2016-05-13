@@ -5,39 +5,42 @@
 %% \files=
 %% prompt when you run the file main.tex through LaTeX.
 \chapter{Introduction}\label{chp:intro} 
-Continuous time control problems involving more than one vehicle often require the vehicles to either follow or avoid each other. When the target has worst-case or adversarial behavior, the vehicle can be described as pursuing or evading the target. These sorts of problems are called pursuit-evasion games and provide quiet the challenge to solve because they involve two or more players attempting to meet their objectives while working against each other. This paper will discuss a new method for solving pursuit-evasion games called Best Response Tensor-Based Value Iteration. In order to discuss this method, this paper will provide information on the techniques that build into Best Response Tensor-Based Value Iteration. In \Cref{chp:intro}, a basic understanding of pursuit-evasion games and dynamic programming will be provided. \Cref{chp:app} will explain two different methods that have been used to solve pursuit-evasion games. Tensors and tensor-train decomposition are pivotal to the success of Best Response Tensor-Based Value Iteration. These things will be described in \Cref{chp:TT}. In \Cref{chp:tvi}, it will be shown how tensor-based value iteration was used to solve stochastic optimal control problems. Tensor-based value iteration will finally be applied to pursuit-evasion games in \Cref{chp:tvipe}. This chapter will provide a basic format for modeling pursuit-evasion games as dynamic programming problems as well as presenting the Best Response Tensor-Based Value Iteration algorithm. Best Response Tensor-Based Value Iteration will be implemented on two different pursuit-evasion problems in \Cref{chp:examples}. Finally, a summary of results, ideas for future research, and remarks on the importance of the work presented in this paper will be in \Cref{chp:con}.    
+Control problems involving more than one vehicle often require the vehicles to either follow or avoid each other. When the target has worst-case or adversarial behavior, the vehicle can be described as pursuing or evading the target. These sorts of problems are called pursuit-evasion games and provide quiet the challenge to solve. The difficulty in solving these problems is inherent in how they involve two or more players attempting to meet their objectives while working against each other. This paper will discuss a new method for solving pursuit-evasion games called Best-Response Tensor-Train-decomposition-based Value Iteration(BR-TT-VI). 
 
+In order to discuss this method, this paper will provide information on the techniques that build into BR-TT-VI. In \Cref{chp:intro}, a basic understanding of pursuit-evasion games and dynamic programming will be explored. \Cref{chp:app} will explain two different methods that have been used to solve pursuit-evasion games. Tensors and tensor-train(TT) decomposition are pivotal to the success of BR-TT-VI. These things will be described in \Cref{chp:TT}. In \Cref{chp:tvi}, it will be shown how tensor-based value iteration(TVI) was used to solve stochastic optimal control problems. TVI will finally be applied to pursuit-evasion games in \Cref{chp:tvipe}. In this chapter, a basic format for modeling pursuit-evasion games as dynamic programming problems will be provided. The BR-TT-VI algorithm will also be presented in this chapter. In \Cref{chp:examples}, the BR-TT-VI algorithm will be implemented on two different pursuit-evasion problems, a simple four-dimensional problem and a more advanced six-dimensional problem. Finally, a summary of results, ideas for future research, and remarks on the importance of the work presented in this paper will be in \Cref{chp:con}.
+    
 \section{Motivation for Solving Pursuit-Evasion Games}
-Pursuit-evasion games contain any number of problems in which one player, a pursuer, attempts to capture another player, an evader. These problems have many variations including the number of pursuers, the amount of evaders, the dimensions in which the game is played in, or the manner in which a capture occurs. Pursuit-evasion games can even be used to model worst case scenarios of problems that typically are not pursuit-evasion games. For example given an autonomous car navigating on a busy street, pursuit-evasion games can potentially model a safe path given the absolute worse case scenario that all the other cars are actively trying to run into the autonomous car. Due to this flexibility pursuit-evasion games can be used to solve a variety of problems from an autonomous robot navigating a busy sidewalk full of pedestrians to smart munitions attempting to collide with an enemy unit. Much like the subsequent example, pursuit-evasion games are especially prevalent in military problems due to the adversarial nature of the pursuer and evader. In his book on applications of differential games to warfare, Rufus Isaacs notes that the "various guises pursuit games may assume in warfare are legion" \cite{isaacs}. As these pursuit-evasion games become more efficiently solvable it may come that computers are able to out-think even the most cunning military generals.          
+Pursuit-evasion games contain any number of problems in which one player, called the pursuer, attempts to capture some other player, called the evader. These problems have many variations including the number of pursuers or evaders, the dimensions in which the game is played in, or the manner in which a capture occurs. Pursuit-evasion games can even be used to model worst case scenarios of problems that typically are not pursuit-evasion games. For example given an autonomous car navigating a busy street, pursuit-evasion games can potentially model a safe path under the assumption that all the other cars are actively trying to run into the autonomous car. Due to this flexibility, pursuit-evasion games can be used to solve a variety of problems from an autonomous robot navigating a busy sidewalk full of pedestrians to smart munitions attempting to collide with an enemy unit.
 
-
+Much like the subsequent example, pursuit-evasion games are especially prevalent in military problems due to the adversarial nature of the pursuer and evader. In his book on applications of differential games to warfare, Rufus Isaacs notes that the "various guises pursuit games may assume in warfare are legion" \cite{isaacs}. Surface-to-air missiles attempting to collide with aircraft, autonomous jets in a dogfight, and smart torpedoes tracking target ships are just a few of the warfare applications of pursuit-evasion games. As computers become better equipped to solve many of these pursuit-evasion games, autonomous weapons may provide the decisive edge in the future of warfare.  
+        
 \section{Description of Pursuit-Evasion Games}\label{pegames}
-
-
 Pursuit-evasion problems involve two players controlling a dynamic system of the form: 
-\begin{equation*}
-x^{k+1}=f(x^k, u_1, u_2)
-\end{equation*}
-Where $x^k$ is the current state, $u_1$ is the control of the first player (called the pursuer), $u_2$ is the control of the second player (called the evader), and $x^{k+1}$ is the new state based on the previous state and the control of both players. Furthermore, each of the players have competing interests where they wish to move the state $x$ into mutually exclusive target regions $\mathscr{T}_1$ and $\mathscr{T}_2$ respectively. Because of this the pursuer and evader choose their strategies with accordance to some value function $V(x,u_1,u_2)$: 
+\begin{equation}
+x^{k+1}=f(x^k, u_1, u_2).
+\end{equation}
+In these types of problems, $x^k$ is the current state, $u_1$ is the control of the first player (the pursuer), $u_2$ is the control of the second player (the evader), and $x^{k+1}$ is the new state based on the current state and the control of both players. Furthermore, each of the players have competing interests where they wish to move the state $x$ into mutually exclusive target regions $\mathscr{T}_1$ and $\mathscr{T}_2$ respectively. Because of this the pursuer and evader choose their strategies with accordance to some value function $V(x,u_1,u_2)$: 
 \begin{eqnarray}\label{gameqn}
 u_1^* & = & \underset{u_1}{\operatorname{argmin}}V(x,u_1,u_2)\\
 u_2^* & = & \underset{u_2}{\operatorname{argmax}}V(x,u_1,u_2).
 \end{eqnarray}
 
 
-Often in pursuit-evasion games it is common to either set the state as the distance between the two players or to place some cost on the distance between the players. The pursuer then tries to reach the origin or point of lowest cost in the shortest amount of time, while the evader either prolongs the state reaching this point for the longest amount of time or escapes the pursuer by increasing the distance to some specified value or reaching an escape region. Due to the nature that each player improves their cost by making an equal detriment to the cost of the other player, pursuit-evasion games are often modeled as zero-sum games. In games of this type, there exists a single cost function $G(x)$ where one player tries to maximize this function while the other player attempts to minimize it. This problem can also be modeled where each player tries to maximize or minimize their own cost function which is the negative of the opposing player's cost function $(G_1(x) = -G_2(x))$.
+Often in pursuit-evasion games it is common to either set the state as the distance between the two players or to place some cost on the distance between the players. The pursuer then tries to reach the origin or point of lowest cost in the shortest amount of time. Meanwhile the evader either prolongs the state reaching this point for the longest amount of time or escapes the pursuer by increasing the distance to some specified value or reaching an escape region. Due to the nature that each player improves their cost by making an equal detriment to the cost of the other player, pursuit-evasion games are often modeled as zero-sum games. In games of this type, there exists a single cost function $G(x)$ where one player tries to maximize this function while the other one attempts to minimize it. This problem can also be modeled where each player tries to maximize or minimize their own cost function which is the negative of the opposing player's: $(G_1(x) = -G_2(x))$.
 
-The ultimate outcome of the game can also be measured in a variety of ways. In some games, the only outcome that matters is whether or not the pursuer or evade achieve either capture or escape. These pursuit-evasion games are called games of kind. For other games it is more important when or how the objective is met. These games of degree include games that want to minimize the time in which capture or escape occurs. \cite{isaacs}
+The ultimate outcome of the game can also be measured in a variety of ways. In some games, the only outcome that matters is whether the pursuer or evader achieves either capture or escape. These pursuit-evasion games are called games of kind. For other games it is more important when or how the objective is met. These games of degree include games that want to minimize the time in which capture or escape occurs. \cite{isaacs}
 
 Throughout this paper there will be a focus on zero-sum games of degree in which a single pursuer attempts to capture a single evader in the shortest time possible. The majority of this paper will detail how to solve these pursuit-evasion games.
 
 \section{Dynamic Programming}
 
-One method of solving pursuit-evasion games is to use dynamic programming. This method attempts to solve control problems by providing a value for each state in a discretized state space. Each state in a dynamic programming problem evolves according to:
-\begin{equation*}
+One method of solving pursuit-evasion games is to use dynamic programming(DP). This method attempts to solve control problems by providing a value for each state in a discretized state space. In a dynamic programming problem each state evolves according to:
+\begin{equation}
 x^{k+1}=f(x^k,u^k,w^k),
-\end{equation*} 
-where $k$ is the discrete time at which the control occurs, $x^k$ is the current state of the system, $u^k$ is the control, and $w^k$ is a randomization parameter (this could be uncertainty in control or any other uncontrolled parameter). A problem in which $w^k$ is some random value is called stochastic while a problem in which $w^k = 0 \textnormal{ } \forall k$ is called deterministic. This paper focuses on problems that are deterministic and will often omit $w^k$. At each state some cost $g^k(x^k,u^k)$ is incurred.Given that $k$ takes a discrete number of time steps $N$, dynamic programming problems can be solved with:
+\end{equation} 
+where $k$ is the discrete time at which the control occurs, $x^k$ is the current state of the system, $u^k$ is the control, and $w^k$ is a randomization parameter (this could be uncertainty in control or any other uncontrolled parameter). A problem in which $w^k$ is some random value is called stochastic while a problem in which $w^k = 0 \textnormal{ } \forall k$ is called deterministic. This paper focuses on problems that are deterministic and will often omit $w^k$.
+
+In DP problems, at each state some cost $g^k(x^k,u^k)$ is incurred. Given that $k$ takes a discrete number of time steps $N$, dynamic programming problems can be solved with:
 \begin{equation}\label{dyprog}
 g^{N}(x^N)+\sum_{k=0}^{N-1}g^k(x^k,u^k).
 \end{equation}
@@ -50,19 +53,20 @@ J^k(x^k)= g^k(x^k,u^k)+J^{k+1}(f^k(x^k,u^k)).
 \end{equation}
 This algorithm serves as the basis to solving problems with dynamic programming.\cite{bert}
 
-Given a problem that ends after an undetermined number of time steps, there are multiple ways dynamic programming problems can still be solved. Two manners in which these problems can be solved include having a termination state with zero cost and using discounted problems. For problems with termination states, a series of states are given a fixed and unchanging cost. Upon reaching any one of these states the problem arrives at completion and a final cost equal to the cost of the termination state is incurred. These termination states act in such a manner that some subsets of states $x_T$ exist such that for all $x_T \in \mathscr{T}$:
-\begin{equation*}
+Given a problem that ends after an undetermined number of time steps, there are multiple ways dynamic programming problems can still be solved. Two manners in which these types of problems can be solved include having a termination state with zero cost and using discounted problems. For problems with termination states, a series of these states are given a fixed and unchanging cost. Upon reaching any one of these states the problem arrives at completion and a final cost equal to the cost of the termination state is incurred. These termination states act in such a manner that some subsets of states $x_T$ exist such that for all $x_T \in \mathscr{T}$:
+\begin{equation}
 g(x_T) = C,
-\end{equation*}
+\end{equation}
 where $C$ is some constant value.
+
 Progression to each successive state can also be given a discounting factor $\gamma$. For each state cost, as opposed to adding the entirety of the state cost of the following state,only a percentage of the subsequent state costs are incorporated into the current state cost.This transforms the DP algorithm from the one show in \ref{dyalg1} and \ref{dyalg2} to:
 \begin{equation}\label{dyalgdis}
 J^k(x^k)= g^k(x^k,u^k)+\gamma J^{k+1}(f^k(x^k,u^k)).
 \end{equation}        
-The logic behind using a discounted DP algorithm is that at each time step a percentage of the subsequent states have a cost of zero. As long as there is a bound on the value of anyone state, the discounted DP algorithm will converge. In order to solve problems of these types, also called infinite horizon problems, two different methods are generally used: value iteration and policy iteration.\cite{bert}  
+The logic behind using a discounted DP algorithm is that at each time step a percentage of the subsequent states have a cost of zero. As long as there is an upper bound on the value of anyone state, the discounted DP algorithm will converge. In order to solve problems of these types, also called infinite horizon problems, two different methods are generally used: value iteration and policy iteration.\cite{bert}  
 
 \subsection{Value Iteration}
-Value iteration is a method of solving infinite horizon dynamic programming problems by determining the optimal state cost for every state. Given that the states are discretized to a resolution $h$, where the discrete states are ${z_i:z_i \in l}$ and $l$ is the continuous state space, a stochastic optimal control problem can be solved using value iteration and the update function:
+Value iteration(VI) is a method of solving infinite horizon DP problems by determining the optimal state cost for every state. Given that the states are discretized to a resolution $h$, where the discrete states are ${z_i:z_i \in X}$ and $X$ is the continuous state space, a stochastic optimal control problem can be solved using value iteration. For VI an update function takes the form:
 \begin{equation}\label{dpvi}
 J^{k+1}(z_i)= \underset{u }{\operatorname{min }}[G(z_i,u) + \gamma \sum_{j}P(z_j|z_i, u)J^{(k)}(z_j)],
 \end{equation}
@@ -76,7 +80,7 @@ u^*(z_i) = \underset{u }{\operatorname{arg min }}[G(z_i,u) + \gamma \sum_{j}P(z_
 \end{equation}      
 
 \subsection{Policy Iteration}
-Another method for solving infinite horizon dynamic programming problems is policy iteration. Policy iteration has the benefit of always terminating after a finite number of iterations. Where value iteration solves for the optimal cost at each state in order to determine the best control, policy iteration directly solves for the optimal control. Once again the states are discretized to a resolution $h$, where the discrete states are ${z_i:z_i \in l}$ and $l$ is the continuous state space. After discretization a stochastic optimal control problem can be solved using policy iteration and an initial policy $u^0$ by first evaluating the policy, called the policy evaluation step:
+Another method for solving infinite horizon DP problems is policy iteration. Policy iteration has the benefit of always terminating after a finite number of iterations. Where value iteration solves for the optimal cost at each state in order to determine the best control, policy iteration directly solves for the optimal control. Once again the states are discretized to a resolution $h$, where the discrete states are ${z_i:z_i \in X}$ and $X$ is the continuous state space. After discretization, a stochastic optimal control problem can be solved using policy iteration and an initial policy $u^0$. First $u^0$ is evaluated in the policy evaluation step:
 \begin{equation}\label{dppi}
 J_{u^k}(z_i)= G(z_i,u^k(z_i)) + \gamma \sum_{j}P(z_j|z_i, u^k(z_i))J_{u^k}(z_j).
 \end{equation}
@@ -84,5 +88,4 @@ Next the policy is improved using the costs from the policy evaluation step. Thi
 \begin{equation}\label{udppi}
 u^{k+1}(z_i) = \underset{u }{\operatorname{arg min }}[G(z_i,u) + \gamma \sum_{j}P(z_j|z_i,u)J_{u^k}(z_j)].
 \end{equation} 
-$u^{k+1}$ will converge to the optimal policy $u^*$ after a finite number of iterations.
-Once again these equations can be modified for the deterministic case by setting $P(z_j|z_i, u)=1$ where $z_j = f(z_i,u)$. 
+$u^{k+1}$ will converge to the optimal policy $u^*$ after a finite number of iterations. Once again these equations can be modified for the deterministic case by setting $P(z_j|z_i, u)=1$ where $z_j = f(z_i,u)$.\cite{bert} 

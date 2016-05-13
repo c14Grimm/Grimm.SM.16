@@ -1,46 +1,46 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2-1}{\ignorespaces A state space divided into capture,escape, and regions of play \cite {bardi2}\relax }}{24}
+\contentsline {figure}{\numberline {2-1}{\ignorespaces A state space divided into capture($w=0$),escape($w=1$), and regions of play($Q=Q_1$) \cite {bardi2}\relax }}{24}
 \contentsline {figure}{\numberline {2-2}{\ignorespaces Results for one-dimensional pursuit-evasion games \cite {bardi2}\relax }}{26}
-\contentsline {figure}{\numberline {2-3}{\ignorespaces Pursuit-Evasion $\textnormal {RRT}^*$ \cite {karaman}\relax }}{33}
-\contentsline {figure}{\numberline {2-4}{\ignorespaces Pursuit-Evasion $\textnormal {RRT}^*$ in a field with obstacles\cite {karaman}\relax }}{34}
+\contentsline {figure}{\numberline {2-3}{\ignorespaces Pursuit-Evasion $\textnormal {RRT}^*$ at various iterations \cite {karaman}\relax }}{33}
+\contentsline {figure}{\numberline {2-4}{\ignorespaces Pursuit-Evasion $\textnormal {RRT}^*$ in a field with obstacles at various iterations\cite {karaman}\relax }}{34}
 \contentsline {figure}{\numberline {2-5}{\ignorespaces Pursuit-Evasion $\textnormal {RRT}^*$ on a problem with Dubins dynamics \cite {karaman}\relax }}{35}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4-1}{\ignorespaces Optimal glide path with vertical and horizontal velocities \cite {gorod}\relax }}{48}
-\contentsline {figure}{\numberline {4-2}{\ignorespaces Fraction of states evaluated by TTVI in optimal glide problem \cite {gorod}\relax }}{48}
+\contentsline {figure}{\numberline {4-1}{\ignorespaces Optimal glide path with vertical and horizontal velocities \cite {Gorod}\relax }}{48}
+\contentsline {figure}{\numberline {4-2}{\ignorespaces Fraction of states evaluated by TTVI in optimal glide problem \cite {Gorod}\relax }}{48}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6-1}{\ignorespaces Diagnostic results of running 100 Iterations of Pursuit Value Iteration\relax }}{59}
 \contentsline {figure}{\numberline {6-2}{\ignorespaces State cost evolution when evader is at (5,5)\relax }}{60}
 \contentsline {figure}{\numberline {6-3}{\ignorespaces Diagnostic results of running 100 Iterations of Evader Value Iteration\relax }}{61}
 \contentsline {figure}{\numberline {6-4}{\ignorespaces State cost evolution when pursuer is at (1,1)\relax }}{62}
-\contentsline {figure}{\numberline {6-5}{\ignorespaces Pursuer diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta _{max} = 1E-2,\delta _{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run\relax }}{63}
-\contentsline {figure}{\numberline {6-6}{\ignorespaces Evader diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta _{max} = 1E-2,\delta _{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run\relax }}{63}
-\contentsline {figure}{\numberline {6-7}{\ignorespaces State Costs after running Best Response Value Iteration Algorithm with $(\Delta _{max} = 1E-2,\delta _{max} = 1E-2)$\relax }}{64}
+\contentsline {figure}{\numberline {6-5}{\ignorespaces Pursuer diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta _{max} = 10^{-2},\delta _{max} = 10^{-2})$. Blue solid line is the first run, while the red solid line is the second run\relax }}{63}
+\contentsline {figure}{\numberline {6-6}{\ignorespaces Evader diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta _{max} = 10^{-2},\delta _{max} = 10^{-2})$. Blue solid line is the first run, while the red solid line is the second run\relax }}{63}
+\contentsline {figure}{\numberline {6-7}{\ignorespaces State Costs after running Best Response Value Iteration Algorithm with $(\Delta _{max} = 10^{-2},\delta _{max} = 10^{-2})$\relax }}{64}
 \contentsline {figure}{\numberline {6-8}{\ignorespaces Pursuit-Evasion game with evader at (5,5) and pursuer at varying positions. 1 second intervals are used between each marker\relax }}{65}
 \contentsline {figure}{\numberline {6-9}{\ignorespaces Relative position of pursuer and evader in pursuit-Evasion game with evader at (5,5) and pursuer at varying positions\relax }}{66}
-\contentsline {figure}{\numberline {6-10}{\ignorespaces Pursuer diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta _{max} = 1E-5,\delta _{max} = 1E-5)$. Blue solid line is the first run, while the red solid line is the second run\relax }}{67}
-\contentsline {figure}{\numberline {6-11}{\ignorespaces Evader diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta _{max} = 1E-5,\delta _{max} = 1E-5)$. Blue solid line is the first run, while the red solid line is the second run\relax }}{67}
-\contentsline {figure}{\numberline {6-12}{\ignorespaces State Costs after running Best Response Value Iteration Algorithm with $(\Delta _{max} = 1E-5,\delta _{max} = 1E-5)$\relax }}{68}
+\contentsline {figure}{\numberline {6-10}{\ignorespaces Pursuer diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta _{max} = 10^{-5},\delta _{max} = 10^{-5})$. Blue solid line is the first run, while the red solid line is the second run\relax }}{67}
+\contentsline {figure}{\numberline {6-11}{\ignorespaces Evader diagnostic results of running Best Response Value Iteration Algorithm with $(\Delta _{max} = 10^{-5},\delta _{max} = 10^{-5})$. Blue solid line is the first run, while the red solid line is the second run\relax }}{67}
+\contentsline {figure}{\numberline {6-12}{\ignorespaces State Costs after running Best Response Value Iteration Algorithm with $(\Delta _{max} = 10^{-5},\delta _{max} = 10^{-5})$\relax }}{68}
 \contentsline {figure}{\numberline {6-13}{\ignorespaces Pursuit-Evasion game with evader at (5,5) and pursuer at varying positions. 1 second intervals are used between each marker\relax }}{69}
 \contentsline {figure}{\numberline {6-14}{\ignorespaces Relative position of pursuer and evader in pursuit-Evasion game with evader at (5,5) and pursuer at varying positions\relax }}{70}
-\contentsline {figure}{\numberline {6-15}{\ignorespaces Diagnostic results of running 100 Iterations of Pursuit TVI\relax }}{71}
+\contentsline {figure}{\numberline {6-15}{\ignorespaces Diagnostic results of running 100 Iterations of Pursuit TT-VI\relax }}{71}
 \contentsline {figure}{\numberline {6-16}{\ignorespaces State cost evolution when evader is at (5,5)\relax }}{72}
 \contentsline {figure}{\numberline {6-17}{\ignorespaces Diagnostic results of running 100 Iterations of Evade TVI\relax }}{73}
 \contentsline {figure}{\numberline {6-18}{\ignorespaces State cost evolution when pursuer is at (1,1)\relax }}{74}
-\contentsline {figure}{\numberline {6-19}{\ignorespaces Pursuer diagnostic results of running Best Response TVI Algorithm with $(\Delta _{max} = 1E-2,\delta _{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run\relax }}{75}
-\contentsline {figure}{\numberline {6-20}{\ignorespaces Evader diagnostic results of running Best Response TVI Algorithm with $(\Delta _{max} = 1E-2,\delta _{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run\relax }}{76}
-\contentsline {figure}{\numberline {6-21}{\ignorespaces State Costs after running Best Response TVI Algorithm with $(\Delta _{max} = 1E-2,\delta _{max} = 1E-2)$\relax }}{76}
+\contentsline {figure}{\numberline {6-19}{\ignorespaces Pursuer diagnostic results of running BR-TT-VI Algorithm with $(\Delta _{max} = 10^{-2},\delta _{max} = 10^{-2})$. Blue solid line is the first run, while the red solid line is the second run\relax }}{75}
+\contentsline {figure}{\numberline {6-20}{\ignorespaces Evader diagnostic results of running Best Response TVI Algorithm with $(\Delta _{max} = 10^{-2},\delta _{max} = 10^{-2})$. Blue solid line is the first run, while the red solid line is the second run\relax }}{76}
+\contentsline {figure}{\numberline {6-21}{\ignorespaces State Costs after running BR-TT-VI Algorithm with $(\Delta _{max} = 10^{-2},\delta _{max} = 10^{-2})$\relax }}{76}
 \contentsline {figure}{\numberline {6-22}{\ignorespaces Pursuit-Evasion game with evader at (5,5) and pursuer at varying positions. 1 second intervals are used between each marker\relax }}{77}
 \contentsline {figure}{\numberline {6-23}{\ignorespaces Relative position of pursuer and evader in pursuit-Evasion game with evader at (5,5) and pursuer at varying positions\relax }}{78}
-\contentsline {figure}{\numberline {6-24}{\ignorespaces Diagnostic results of running 100 Iterations of Pursuit TVI\relax }}{83}
+\contentsline {figure}{\numberline {6-24}{\ignorespaces Diagnostic results of running 100 Iterations of Pursuit TT-VI\relax }}{83}
 \contentsline {figure}{\numberline {6-25}{\ignorespaces State cost evolution with respect to pursuer x and y position when evader is at (5,5) and ($\theta _1 = 0,\theta _2=0$)\relax }}{84}
 \contentsline {figure}{\numberline {6-26}{\ignorespaces Diagnostic results of running 100 Iterations of Evade TVI\relax }}{85}
 \contentsline {figure}{\numberline {6-27}{\ignorespaces State cost evolution with respect to evader x and y position when pursuer is at (1,1) and ($\theta _1 = 0,\theta _2=0$)\relax }}{86}
 \contentsline {figure}{\numberline {6-28}{\ignorespaces State cost evolution with respect to heading when pursuer is at (1,1) and the evader is at (9,9)\relax }}{87}
-\contentsline {figure}{\numberline {6-29}{\ignorespaces Pursuer diagnostic results of running Best Response TVI Algorithm with $(\Delta _{max} = 1E-2,\delta _{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run\relax }}{88}
-\contentsline {figure}{\numberline {6-30}{\ignorespaces Evader diagnostic results of running Best Response TVI Algorithm with $(\Delta _{max} = 1E-2,\delta _{max} = 1E-2)$. Blue solid line is the first run, while the red solid line is the second run\relax }}{89}
+\contentsline {figure}{\numberline {6-29}{\ignorespaces Pursuer diagnostic results of running BR-TT-VI Algorithm with $(\Delta _{max} = 10^{-2},\delta _{max} = 10{-2})$. Blue solid line is the first run, while the red solid line is the second run\relax }}{88}
+\contentsline {figure}{\numberline {6-30}{\ignorespaces Evader diagnostic results of running BR-TT-VI Algorithm with $(\Delta _{max} = 10^{-2},\delta _{max} = 10^{-2})$. Blue solid line is the first run, while the red solid line is the second run\relax }}{89}
 \contentsline {figure}{\numberline {6-31}{\ignorespaces State Costs after running Best Response TVI Algorithm with $(\Delta _{max} = 1E-2,\delta _{max} = 1E-2)$\relax }}{89}
 \contentsline {figure}{\numberline {6-32}{\ignorespaces Pursuit-Evasion Game with Pursuer starting at (1,1) with $\theta _1 =0$ heading and Evader starting at (5,5) with $\theta _2 =0$ heading\relax }}{91}
 \contentsline {figure}{\numberline {6-33}{\ignorespaces Pursuit-Evasion Game with Pursuer starting at (1,1) with $\theta _1 =0$ heading and Evader starting at (5,5) with $\theta _2 =0$ heading\relax }}{92}

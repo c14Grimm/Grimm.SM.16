@@ -6,17 +6,15 @@
 %% prompt when you run the file main.tex through LaTeX.
 \chapter{Tensor-Train Decomposition}\label{chp:TT}
 
-One method of handling the curse of dimensionality is to reduce the number of states that must be examined. If a problem has a low-rank representation, tensor-train decomposition may be used to reduce the number of states employed to compute the solution to a problem. Tensor-train decomposition, as outlined in Oseledets's "Tensor-train decomposition" and "TT-cross approximation for multidimensional arrays," takes advantage of the structure of tensors \cite{Osel1,Osel2}. This decomposition takes advantage of single value decomposition (SVD) to create compact tensors. This chapter will start by providing a description of tensors in general. Next, the chapter will explain how tensor-train decomposition works and under what circumstances this decomposition works best. Finally, a series of methods for maintain low-rank will be provided along with the TT-SVD algorithm.
+One method of handling the curse of dimensionality is to reduce the number of states that must be examined. If a problem has a low-rank representation, tensor-train decomposition may be used to reduce the number of states employed to compute the solution to a problem. Tensor-train decomposition, as outlined in Oseledets's "Tensor-train decomposition" and "TT-cross approximation for multidimensional arrays," takes advantage of the structure of tensors to reduce the state space \cite{Osel1,Osel2}. This method takes advantage of single value decomposition (SVD) to create compact tensors. The start of this chapter will provide a description of tensors in general. Next, the chapter will explain how tensor-train decomposition works and under what circumstances this method works best. Finally, a series of methods for maintaining low-rank will be provided along with the TT-SVD algorithm.
 
-\section{Description of Tensors}
-Tensors are another way of representing a multidimensional array. Given a multidimensional array or tensor \textbf{A}, the element at $A(i_1,i_2,...,i_d)$, where $d$ is the dimensionality of the tensor and $i_j$ is the $i^{th}$ entry of the $j^{th}$ dimension of the tensor, can be given by:
-
+\section{Tensor-Train Decomposition}
+Tensors are another way of representing a multidimensional array. Given such an array or tensor \textbf{A}, the element at $A(i_1,i_2,...,i_d)$, where $d$ is the dimensionality of the tensor and $i_j$ is the $i^{th}$ entry of the $j^{th}$ dimension of the tensor, can be given by:
 \begin{equation}\label{eqn4}
 A(i_1,...,i_d) = \sum_{\alpha=1}^{r}U_1(i_1,\alpha)U_2(i_2,\alpha)...U_d(i_d,\alpha).
 \end{equation}
-The $d$ matrices $U_k = [U_k(i_k,\alpha)]$ are called canonical factors while the value $r$ is called the tensor rank and is the minimal number of summands required to represent the entire tensor \textbf{A} in the form of \ref{eqn4}. \cite{Osel1}
+The $d$ matrices $U_k = [U_k(i_k,\alpha)]$ are called canonical factors and the value $r$ is the tensor rank. The tensor rank represents the minimal number of summands required to represent the entire tensor \textbf{A} in the form of \Cref{eqn4}.
 
-\section{Tensor-Train Decomposition}
 A tensor \textbf{B} can be approximated with a tensor-train \textbf{A} created from the product of a series of matrices:
 \begin{equation}\label{tensaprox}
 A(i_1,i_2,...,i_d) = G_1(i_1)G_2(i_2)...G_d(i_d).
@@ -25,7 +23,7 @@ $G_k(i_k)$, also called a tensor core, is an $r_{k-1} \times r_k$ matrix where $
 \begin{equation}\label{eqn5}
 A(i_1,...,i_d) = \sum_{\alpha_0,...,\alpha_{d-1},\alpha_d}G_1(\alpha_0,i_1,\alpha_1)G_2(\alpha_1,i_2,\alpha_2)...G_d(\alpha_{d-1},i_d,\alpha_d)
 \end{equation}
-As can be seen in \Cref{eqn5}, in order to compute the individual elements of the tensor all the tensor cores are multiplied and then summed over the auxiliary indices $a_k$. It is from this process that the decomposition gets the name tensor-train. This decomposition makes it possible to represent all elements in the tensor \textbf{A} with $d$ three-dimensional arrays.
+As can be seen in \Cref{eqn5}, in order to compute the individual elements of the tensor all the tensor cores are multiplied and then summed over the auxiliary indices $a_k$. It is from this process that the decomposition gets the name tensor-train. Tensor-train decomposition makes it possible to represent all elements in the tensor \textbf{A} with $d$ three-dimensional arrays.\cite{Osel1}
  
 Since the size of the tensor cores are determined by ranks $r_k$, determining these ranks are pivotal to the compressibility of tensor-train decomposition. The rank $r_k$ is dependent on the rank of the $k^{th}$ unfolding matrix $A_k$ which has the form:
 \begin{equation}\label{unfold}
@@ -82,10 +80,10 @@ The results of \Cref{ttaprox} can be used to create a tensor in TT-format as det
 \end{algorithm}
 
 The largest benefit of tensor-trains is that they greatly reduce the complexity of high-dimensional calculations. Generally these computations have complexity that is linear with dimension but polynomially with rank. However, many of these tensor-train computations have the unfortunate effect of increasing the rank of the final tensor-train. For example, adding two tensor-trains with the same rank takes next to no computations but doubles the number of ranks in the resulting tensor-train. Taking the scalar product of two tensor-trains takes $O(dnr^4)$ computations but results in $O(r^2)$ ranks. In order to keep the tensor-train low-rank, TT-rounding can be used to create a new tensor $\textbf{B}$ with $\delta$-ranks such that $\delta = \dfrac{\varepsilon}{\sqrt{d-1}}\| A\|$. This new approximation maintains an $\varepsilon$-level accuracy and only requires $O(dnr^2+dr^4)$ computations:
-\begin{equation*}
+\begin{equation}
 \| \textbf{A}-\textbf{B}\| \leq \varepsilon \| \textbf{A} \|.
-\end{equation*}
-A detailed explanation for TT-rounding can be found in 
+\end{equation}
+A detailed explanation for TT-rounding can be found in \Cref{ttround}. \cite{Osel1}
 \begin{algorithm}
 \caption{TT-Rounding \cite{Osel1}}\label{ttround}
 \begin{algorithmic}[1]

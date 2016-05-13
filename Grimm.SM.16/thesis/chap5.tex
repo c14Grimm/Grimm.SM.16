@@ -5,10 +5,10 @@
 %% \files=
 %% prompt when you run the file main.tex through LaTeX.
 \chapter{Tensor-Based Value Iteration for Pursuit-Evasion Games}\label{chp:tvipe}
-Building on the work presented in \Cref{chp:tvi}, this chapter will present an algorithm that uses TVI to solve pursuit-evasion games. This chapter will begin by describing the general dynamic programming problem used to model a pursuit-evasion game. Next, the chapter will detail how best response can be used along with dynamic programming to solve for the optimal control of both the pursuer and the evader. The Best Response Dynamic Programming algorithm will then be presented in detail. Finally, the chapter will culminate in the presentation of the Best Response Tensor-Based Value Iteration algorithm.  
+Building on the work presented in \Cref{chp:tvi}, this chapter will present an algorithm that uses TVI to solve pursuit-evasion games. This chapter will begin by describing the general dynamic programming problem used to model a pursuit-evasion game. Next, the chapter will detail how best response can be used along with dynamic programming to solve for the optimal control of both the pursuer and the evader. The Best Response Dynamic Programming algorithm will then be presented in detail. Finally, the chapter will culminate in the presentation of the Best-Response Tensor-Train-decomposition-based Value Iteration algorithm.  
 
 \section{Description of Problem}\label{peprobdes}
-As demonstrated in \Cref{gameqn} of \Cref{pegames}, solving pursuit-evasion games requires determining optimal control values for two or more players with opposing outcomes. In order to keep the problem as simple as possible, there will be a focus on zero-sum games in which the cost function of the pursuer is the negative of the evaders cost function or $(G_1(x) = -G_2(x))$. Despite this constraint, it is possible to apply TVI to nonzero-sum games or even simply use predetermined controls as either the pursuer or evaders control values. Before exploring the modifications brought about by adjusting TVI for pursuit-evasion games, a description of how dynamic programming may be used with best response will be provided.
+As demonstrated in \Cref{pegames}, solving pursuit-evasion games requires determining optimal control values for two or more players with opposing outcomes. In order to keep the problem as simple as possible, there will be a focus on zero-sum games in which the cost function of the pursuer is the negative of the evaders cost function or $(G_1(x) = -G_2(x))$. Despite this constraint, it is possible to apply TVI to nonzero-sum games or even simply use predetermined controls as either the pursuer or evaders control values. Before exploring the modifications brought about by adjusting TVI for pursuit-evasion games, a description of how dynamic programming may be used with best response will be provided.
 
 Value iteration can be modified to solve pursuit-evasion games using a best response dynamic by solving for the optimal cost at each state. The problem is modeled as a discounted, deterministic, shortest path problem where $\gamma$ is the discount factor. First, the state space $Z$ is discretized into evenly spaced states $z_i \in Z$ where the space between states are $h$ just as in \cite{bardi2}. Given that $z_i$ is the current state, $u_1$ is the pursuer control, and $u_2$ is the evader control, $P(z_j|z_i,u_1,u_2) = 1$ where $z_j$ is the deterministic result of $f(z_i,u_1,u_2)$. Even if $z_j \notin z_i$, the state cost at $z_j$ can be determined by:
 \begin{equation}\label{concomb}
@@ -24,7 +24,7 @@ where:
 \end{equation} 
 Each run of best response $K$ results in a control policy $u^K$ which is used as a constant control policy for the opponent. 
 
-Instead of using a single update function as in \ref{eqn8}, I model the problem as solving two separate update functions over the same state-space:
+Instead of using a single update function as in \Cref{eqn8}, I model the problem as solving two separate update functions over the same state-space:
 \begin{equation}\label{pbell}
 J_p^{(k+1,K)}(z_i)= \underset{u_1 }{\operatorname{min }}[G(z_i,u_1,u_2^K)+\gamma J_p^{(k,K)}(z_j|z_i,u_1,u_2^K)],
 \end{equation}
@@ -107,9 +107,9 @@ These equations result in a dynamic programming best response algorithm \ref{DPB
 
 \subsection{Modifications to Tensor-based Value Iteration}
 
-Tensor-based value iteration can be modified to solve pursuit-evasion games using a best response dynamic. As in \cite{gorod}, tensor-train cross can be used to provide an approximation of value iteration within an error bound $\epsilon$. By applying tensor-train cross to \ref{DPBRalg}, a best response TVI algorithm results \ref{BRTVIalg}.
+Tensor-based value iteration can be modified to solve pursuit-evasion games using a best response dynamic. As in \cite{Gorod}, tensor-train cross can be used to provide an approximation of value iteration within an error bound $\epsilon$. By applying tensor-train cross to \Cref{DPBRalg}, a best response TVI algorithm results as in \Cref{BRTVIalg}.
 \begin{algorithm}
-\caption{Best Response TVI }\label{BRTVIalg}
+\caption{Best-Response Tensor-Train-decomposition-based Value Iteration }\label{BRTVIalg}
 \begin{algorithmic}[1]
 	\Require Algorithm termination criterion $\Delta_{max}$;Value Iteration termination criterion $\delta_{max}$; Initial cost functions $J_p^{(0,0)},J_e^{(0,0)}$;TT-cross accuracy $\epsilon$;
 	\Ensure Residual $\delta=\|J_p^{(k,K)}-J_p^{(k-1),K}\|^2<\delta_{max}$;Residual $\delta=\|J_e^{(k,K)}-J_e^{(k-1),K}\|^2<\delta_{max}$;Residual $\Delta_p=\|J_p^{(*,K)}-J_p^{*,(K-1)}\|^2<\Delta_{max}$;Residual $\Delta_e=\|J_e^{(*,K)}-J_e^{*,(K-1)}\|^2<\Delta_{max}$

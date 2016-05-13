@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.10.17)  12 MAY 2016 00:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.10.17)  13 MAY 2016 11:12
 entering extended mode
 **main.tex
 (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\main.tex
@@ -316,16 +316,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\abstract.tex<<ot1.cmap>><<
-oml.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 15.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 15.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [3
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\abstract.tex) [3
 
 ] [4
 
@@ -335,61 +326,85 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\main.toc [7]
-Overfull \hbox (5.62537pt too wide) in paragraph at lines 22--22
- [] []\T1/cmr/bx/n/12 Application of Tensor-Based Value It-er-a-tion to Pursuit
--Evasion Prob- 
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\main.toc<<ot1.cmap>><<oml.
+cmap>><<omx.cmap>>
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [7]
+Overfull \hbox (19.73022pt too wide) in paragraph at lines 21--21
+ [] []\T1/cmr/bx/n/12 Application of Best-Response Tensor-Train-Decomposition-B
+ased Value 
  []
 
 )
 \tf@toc=\write3
- [8] (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\main.lof
+ [8] (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\main.lof [9
 
-LaTeX Warning: Citation `gorod' on page 9 undefined on input line 10.
+]
+Overfull \hbox (10.53372pt too wide) in paragraph at lines 32--32
+ [][] []\T1/cmr/m/n/12 Pursuer di-ag-nos-tic re-sults of run-ning BR-TT-VI Al-g
+o-rithm with $\OT1/cmr/m/n/12 ([] =$ 
+ []
 
 
-LaTeX Warning: Citation `gorod' on page 9 undefined on input line 11.
+Overfull \hbox (18.86185pt too wide) in paragraph at lines 34--34
+ [][] []\T1/cmr/m/n/12 State Costs af-ter run-ning BR-TT-VI Al-go-rithm with $\
+OT1/cmr/m/n/12 ([] = 10[]\OML/cmm/m/it/12 ; [] \OT1/cmr/m/n/12 =$ 
+ []
 
-[9
+[10]
+Overfull \hbox (10.53372pt too wide) in paragraph at lines 42--42
+ [][] []\T1/cmr/m/n/12 Pursuer di-ag-nos-tic re-sults of run-ning BR-TT-VI Al-g
+o-rithm with $\OT1/cmr/m/n/12 ([] =$ 
+ []
 
-] [10])
+
+Overfull \hbox (6.22643pt too wide) in paragraph at lines 43--43
+ [][] []\T1/cmr/m/n/12 Evader di-ag-nos-tic re-sults of run-ning BR-TT-VI Al-go
+-rithm with $\OT1/cmr/m/n/12 ([] =$ 
+ []
+
+)
 \tf@lof=\write4
  [11] [12
 
-]
-(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\main.lot)
+] (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\main.lot)
 \tf@lot=\write5
-) [13]
-(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap1.tex [14
+)
+[13] (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap1.tex [14
 
 
 
 ]
 Chapter 1.
 [15]
-LaTeX Font Info:    Try loading font information for U+eus on input line 21.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\ueus.fd"
-File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+LaTeX Font Info:    Try loading font information for U+eus on input line 22.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\ueus.fd"
+File: ueus.fd 2013/01/14 v3.01 Euler Script
+)
+Underfull \vbox (badness 2828) has occurred while \output is active []
 
  [17]
-Underfull \vbox (badness 1189) has occurred while \output is active []
-
- [18]
+[18] [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19])
-Overfull \hbox (3.50891pt too wide) in paragraph at lines 86--68
+ [20])
+Overfull \hbox (3.50891pt too wide) in paragraph at lines 90--68
 \T1/cmr/m/n/12 again these equa-tions can be mod-i-fied for the de-ter-min-is-t
 ic case by set-ting $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z[]\OM
 S/cmsy/m/n/12 j\OML/cmm/m/it/12 z[]; u\OT1/cmr/m/n/12 ) =$
  []
 
-
-Underfull \vbox (badness 3386) has occurred while \output is active []
-
- [20]
 [21] (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap2.tex [22
 
 
@@ -400,36 +415,39 @@ Chapter 2.
 File: figures/bvpregions.png Graphic file (type png)
 
 <use figures/bvpregions.png>
-Package pdftex.def Info: figures/bvpregions.png used on input line 18.
+Package pdftex.def Info: figures/bvpregions.png used on input line 20.
 (pdftex.def)             Requested size: 300.37144pt x 223.58475pt.
+
+Underfull \vbox (badness 1708) has occurred while \output is active []
+
  [24 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/bvpregions.pn
 g>]
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 29.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 31.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 29.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 31.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 29.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 31.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 29.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 31.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 29.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 31.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 29.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 31.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 34.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 36.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-Overfull \hbox (27.59323pt too wide) in paragraph at lines 50--51
+Overfull \hbox (27.59323pt too wide) in paragraph at lines 52--53
 []\T1/cmr/m/it/12 Assume $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (
 \OML/cmm/m/it/12 x; a; b\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  $
  []
@@ -438,35 +456,35 @@ Overfull \hbox (27.59323pt too wide) in paragraph at lines 50--51
 File: figures/bvpresult1.png Graphic file (type png)
 
 <use figures/bvpresult1.png>
-Package pdftex.def Info: figures/bvpresult1.png used on input line 57.
+Package pdftex.def Info: figures/bvpresult1.png used on input line 59.
 (pdftex.def)             Requested size: 205.97214pt x 216.44345pt.
 
 <figures/bvpresult2.png, id=108, 241.65282pt x 241.65282pt>
 File: figures/bvpresult2.png Graphic file (type png)
 
 <use figures/bvpresult2.png>
-Package pdftex.def Info: figures/bvpresult2.png used on input line 64.
+Package pdftex.def Info: figures/bvpresult2.png used on input line 66.
 (pdftex.def)             Requested size: 205.97214pt x 205.98108pt.
  [26 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/bvpresult1.pn
 g> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/bvpresult2.png>
 ]
-Overfull \hbox (5.20744pt too wide) in paragraph at lines 75--76
+Overfull \hbox (5.20744pt too wide) in paragraph at lines 79--80
 \T1/cmr/m/n/12 Ran-dom Tree (RRT) al-go-rithm called $[][]$ and Stack-el-berg s
 trate-gies to solve pursuit-
  []
 
 [27]
-Overfull \hbox (5.99095pt too wide) in paragraph at lines 83--84
+Underfull \vbox (badness 1675) has occurred while \output is active []
+
+ [28]
+Overfull \hbox (5.99095pt too wide) in paragraph at lines 87--88
 []\T1/cmr/m/it/12 If $\OML/cmm/m/it/12  > \OT1/cmr/m/n/12 2[](1 + 1\OML/cmm/m/
 it/12 =d\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X\
 OMS/cmsy/m/n/12 n\OML/cmm/m/it/12 Xi[]\OT1/cmr/m/n/12 )$\T1/cmr/m/it/12 ,
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
-Underfull \hbox (badness 4872) in paragraph at lines 114--115
+Underfull \hbox (badness 4872) in paragraph at lines 118--119
 [] \T1/cmr/bx/n/12 if \T1/cmr/m/n/12 ObstacleFree$\OT1/cmr/m/n/12 (\OML/cmm/m/i
 t/12 x[]\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 and $\OML/cmm/m/it/12 x[]\OT1/cmr/m/n
 /12 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 z[]$ \T1/cmr/m/n/
@@ -474,106 +492,111 @@ t/12 x[]\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 and $\OML/cmm/m/it/12 x[]\OT1/cmr/m/n
 ) +$
  []
 
-[29] [30] [31] <figures/rrt500.png, id=136, 306.39468pt x 283.0575pt>
+[29] [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+<figures/rrt500.png, id=136, 306.39468pt x 283.0575pt>
 File: figures/rrt500.png Graphic file (type png)
 
 <use figures/rrt500.png>
-Package pdftex.def Info: figures/rrt500.png used on input line 222.
+Package pdftex.def Info: figures/rrt500.png used on input line 226.
 (pdftex.def)             Requested size: 205.97214pt x 190.28244pt.
 
 <figures/rrt3000.png, id=137, 313.9228pt x 284.56313pt>
 File: figures/rrt3000.png Graphic file (type png)
 
 <use figures/rrt3000.png>
-Package pdftex.def Info: figures/rrt3000.png used on input line 229.
+Package pdftex.def Info: figures/rrt3000.png used on input line 233.
 (pdftex.def)             Requested size: 205.97214pt x 186.705pt.
 
 <figures/rrt5000.png, id=138, 316.18124pt x 289.08pt>
 File: figures/rrt5000.png Graphic file (type png)
 
 <use figures/rrt5000.png>
-Package pdftex.def Info: figures/rrt5000.png used on input line 236.
+Package pdftex.def Info: figures/rrt5000.png used on input line 240.
 (pdftex.def)             Requested size: 205.97214pt x 188.3188pt.
 
 <figures/rrt10000.png, id=139, 308.65312pt x 289.83281pt>
 File: figures/rrt10000.png Graphic file (type png)
 
 <use figures/rrt10000.png>
-Package pdftex.def Info: figures/rrt10000.png used on input line 243.
+Package pdftex.def Info: figures/rrt10000.png used on input line 247.
 (pdftex.def)             Requested size: 205.97214pt x 193.41745pt.
 
 <figures/rrtobs500.png, id=140, 306.39468pt x 283.81032pt>
 File: figures/rrtobs500.png Graphic file (type png)
 
 <use figures/rrtobs500.png>
-Package pdftex.def Info: figures/rrtobs500.png used on input line 255.
+Package pdftex.def Info: figures/rrtobs500.png used on input line 259.
 (pdftex.def)             Requested size: 205.97214pt x 190.78851pt.
 
 <figures/rrtobs3000.png, id=141, 301.125pt x 289.83281pt>
 File: figures/rrtobs3000.png Graphic file (type png)
 
 <use figures/rrtobs3000.png>
-Package pdftex.def Info: figures/rrtobs3000.png used on input line 262.
+Package pdftex.def Info: figures/rrtobs3000.png used on input line 266.
 (pdftex.def)             Requested size: 205.97214pt x 198.25565pt.
 
 <figures/rrtobs5000.png, id=142, 312.41719pt x 292.09125pt>
 File: figures/rrtobs5000.png Graphic file (type png)
 
 <use figures/rrtobs5000.png>
-Package pdftex.def Info: figures/rrtobs5000.png used on input line 269.
+Package pdftex.def Info: figures/rrtobs5000.png used on input line 273.
 (pdftex.def)             Requested size: 205.97214pt x 192.57578pt.
 
 <figures/rrtobs10000.png, id=143, 310.91156pt x 292.09125pt>
 File: figures/rrtobs10000.png Graphic file (type png)
 
 <use figures/rrtobs10000.png>
-Package pdftex.def Info: figures/rrtobs10000.png used on input line 276.
+Package pdftex.def Info: figures/rrtobs10000.png used on input line 280.
 (pdftex.def)             Requested size: 205.97214pt x 193.50282pt.
 
 <figures/rrtdubins.png, id=144, 332.74312pt x 234.8775pt>
 File: figures/rrtdubins.png Graphic file (type png)
 
 <use figures/rrtdubins.png>
-Package pdftex.def Info: figures/rrtdubins.png used on input line 288.
+Package pdftex.def Info: figures/rrtdubins.png used on input line 292.
 (pdftex.def)             Requested size: 205.97214pt x 145.39316pt.
 
 <figures/rrtobsdubins.png, id=145, 321.45094pt x 243.15843pt>
 File: figures/rrtobsdubins.png Graphic file (type png)
 
 <use figures/rrtobsdubins.png>
-Package pdftex.def Info: figures/rrtobsdubins.png used on input line 295.
+Package pdftex.def Info: figures/rrtobsdubins.png used on input line 299.
 (pdftex.def)             Requested size: 205.97214pt x 155.81009pt.
-) [32] [33 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/rrt500.
-png> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/rrt3000.png> 
-<C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/rrt5000.png> <C:/U
-sers/cgrim_000/Documents/Research/Thesis/thesis/figures/rrt10000.png>] [34 <C:/
-Users/cgrim_000/Documents/Research/Thesis/thesis/figures/rrtobs500.png> <C:/Use
-rs/cgrim_000/Documents/Research/Thesis/thesis/figures/rrtobs3000.png> <C:/Users
-/cgrim_000/Documents/Research/Thesis/thesis/figures/rrtobs5000.png> <C:/Users/c
-grim_000/Documents/Research/Thesis/thesis/figures/rrtobs10000.png>] [35 <C:/Use
-rs/cgrim_000/Documents/Research/Thesis/thesis/figures/rrtdubins.png> <C:/Users/
-cgrim_000/Documents/Research/Thesis/thesis/figures/rrtobsdubins.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+[33 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/rrt500.png> <C
+:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/rrt3000.png> <C:/Use
+rs/cgrim_000/Documents/Research/Thesis/thesis/figures/rrt5000.png> <C:/Users/cg
+rim_000/Documents/Research/Thesis/thesis/figures/rrt10000.png>] [34 <C:/Users/c
+grim_000/Documents/Research/Thesis/thesis/figures/rrtobs500.png> <C:/Users/cgri
+m_000/Documents/Research/Thesis/thesis/figures/rrtobs3000.png> <C:/Users/cgrim_
+000/Documents/Research/Thesis/thesis/figures/rrtobs5000.png> <C:/Users/cgrim_00
+0/Documents/Research/Thesis/thesis/figures/rrtobs10000.png>]) [35 <C:/Users/cgr
+im_000/Documents/Research/Thesis/thesis/figures/rrtdubins.png> <C:/Users/cgrim_
+000/Documents/Research/Thesis/thesis/figures/rrtobsdubins.png>]
 (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap3.tex [36
 
 
 
 ]
 Chapter 3.
-
+[37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
-[38] [39]) [40] [41]
-(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap4.tex [42
+ [38]
+[39]) [40] [41] (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap4.tex
+[42
 
 
 
 ]
 Chapter 4.
-
-Underfull \vbox (badness 2165) has occurred while \output is active []
-
- [43]
+[43]
 Overfull \hbox (6.515pt too wide) in paragraph at lines 20--22
 []\T1/cmr/m/it/12 Suppose the se-quence $[]$
  []
@@ -602,12 +625,6 @@ File: figures/gorodglide.png Graphic file (type png)
 Package pdftex.def Info: figures/gorodglide.png used on input line 107.
 (pdftex.def)             Requested size: 351.56256pt x 261.22528pt.
 
-
-LaTeX Warning: Citation `gorod' on page 47 undefined on input line 108.
-
-
-LaTeX Warning: Citation `gorod' on page 47 undefined on input line 108.
-
 <figures/gorodstates.png, id=206, 444.15938pt x 156.585pt>
 File: figures/gorodstates.png Graphic file (type png)
 
@@ -618,12 +635,6 @@ Package pdftex.def Info: figures/gorodstates.png used on input line 115.
 Overfull \hbox (10.53828pt too wide) in paragraph at lines 115--116
  [][] 
  []
-
-
-LaTeX Warning: Citation `gorod' on page 47 undefined on input line 116.
-
-
-LaTeX Warning: Citation `gorod' on page 47 undefined on input line 116.
 
 ) [47] [48 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/gorodgl
 ide.png> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/gorodstat
@@ -639,11 +650,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [50]
 Missing character: There is no l in font eusm10!
 
-[51]
-
-LaTeX Warning: Citation `gorod' on page 52 undefined on input line 110.
-
-) [52] [53] (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap6.tex
+[51]) [52] [53] (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap6.tex
 [54
 
 
@@ -1945,12 +1952,12 @@ pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/BR4DTVIrelplot8.pdf): PDF inclusion: multiple pdfs with page gr
 oup included in a single page
 >]
-Overfull \hbox (27.124pt too wide) in paragraph at lines 923--928
+Overfull \hbox (12.96014pt too wide) in paragraph at lines 923--928
  [] 
  []
 
 
-Underfull \vbox (badness 2762) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [79]
 Overfull \hbox (32.81706pt too wide) in alignment at lines 951--954
@@ -2758,49 +2765,46 @@ Chapter 7.
 (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap5.aux)
 (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap6.aux)
 (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap7.aux)
-(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\biblio.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(C:\Users\cgrim_000\Documents\Research\Thesis\thesis\biblio.aux)) ) 
 Here is how much of TeX's memory you used:
- 7688 strings out of 493921
- 140975 string characters out of 3147269
- 196121 words of memory out of 3000000
- 10574 multiletter control sequences out of 15000+200000
+ 7699 strings out of 493921
+ 141084 string characters out of 3147269
+ 195351 words of memory out of 3000000
+ 10585 multiletter control sequences out of 15000+200000
  29525 words of font info for 75 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,11n,41p,2034b,540s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
-600\ecbi1200.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
-knappen\ec\dpi600\ecrm1000.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fon
+ 36i,14n,41p,1534b,540s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\c
+grim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.p
+k> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
+600\ecrm1000.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
+knappen\ec\dpi600\ecrm1095.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fon
 ts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\cgrim_000\AppData\Local\
-MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\cgrim_000\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Us
-ers\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1
-200.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
-c\dpi600\ecbx2488.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.
-9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\cgrim_000\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk> <C:\Users\cgrim
-_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <
-C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecbx1728.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (99 pages, 2432649 bytes).
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\cgrim_000\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Us
+ers\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2
+488.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecbx1440.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\cgrim_000\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk> <C:\Users\cgrim_000\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\cgrim
+_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (99 pages, 2432506 bytes).
 PDF statistics:
- 4124 PDF objects out of 4296 (max. 8388607)
+ 4125 PDF objects out of 4296 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  881 words of extra memory for PDF output out of 10000 (max. 10000000)
 
