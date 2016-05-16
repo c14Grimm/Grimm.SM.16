@@ -6,14 +6,8 @@ A level-1 auxiliary file: chap2.aux
 A level-1 auxiliary file: chap3.aux
 A level-1 auxiliary file: chap4.aux
 A level-1 auxiliary file: chap5.aux
-Case mismatch error between cite keys gorod and Gorod
----line 35 of file chap5.aux
- : \citation{gorod
- :                }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: chap6.aux
 A level-1 auxiliary file: chap7.aux
 A level-1 auxiliary file: biblio.aux
 The style file: plain.bst
 Database file #1: main.bib
-(There was 1 error message)

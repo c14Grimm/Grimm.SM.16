@@ -1,12 +1,12 @@
 \contentsline {chapter}{\numberline {1}Introduction}{15}
 \contentsline {section}{\numberline {1.1}Motivation for Solving Pursuit-Evasion Games}{16}
-\contentsline {section}{\numberline {1.2}Description of Pursuit-Evasion Games}{17}
+\contentsline {section}{\numberline {1.2}Description of Pursuit-Evasion Games}{16}
 \contentsline {section}{\numberline {1.3}Dynamic Programming}{18}
 \contentsline {subsection}{\numberline {1.3.1}Value Iteration}{19}
 \contentsline {subsection}{\numberline {1.3.2}Policy Iteration}{20}
-\contentsline {chapter}{\numberline {2}Applications of Dynamic Programming and other methods for Solving Pursuit-Evasion Games}{23}
+\contentsline {chapter}{\numberline {2}Direct Methods for Pursuit-Evasion Games}{23}
 \contentsline {section}{\numberline {2.1}One-Dimensional Boundary Value Problems}{23}
-\contentsline {section}{\numberline {2.2}RRT*}{27}
+\contentsline {section}{\numberline {2.2}RRT*}{28}
 \contentsline {chapter}{\numberline {3}Tensor-Train Decomposition}{37}
 \contentsline {section}{\numberline {3.1}Tensor-Train Decomposition}{37}
 \contentsline {section}{\numberline {3.2}Methods of Maintaining Low Order}{39}
@@ -21,7 +21,7 @@
 \contentsline {chapter}{\numberline {6}Application of Best-Response Tensor-Train-Decomposition-Based Value Iteration}{55}
 \contentsline {section}{\numberline {6.1}Four-Dimensional Problem}{55}
 \contentsline {subsection}{\numberline {6.1.1}Problem Definition}{56}
-\contentsline {subsection}{\numberline {6.1.2}Analytic Solution}{58}
+\contentsline {subsection}{\numberline {6.1.2}Analytical Solution}{58}
 \contentsline {subsection}{\numberline {6.1.3}Traditional Value Iteration}{59}
 \contentsline {subsection}{\numberline {6.1.4}Tensor-Train-Decomposition-Based Value Iteration}{67}
 \contentsline {subsection}{\numberline {6.1.5}Comparison of Traditional Value Iteration and TT-VI}{73}

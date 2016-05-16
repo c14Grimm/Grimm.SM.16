@@ -5,12 +5,12 @@
 %% \files=
 %% prompt when you run the file main.tex through LaTeX.
 \chapter{Application of Best-Response Tensor-Train-Decomposition-Based Value Iteration}\label{chp:examples}
-Using the algorithms and problem definitions presented in the previous chapter, this chapter will detail how two example problems were solved. The first problem, a four-dimensional pursuit-evasion problem will be solved with both a traditional value iteration algorithm(VI), \Cref{DPBRalg}, and the BR-TT-VI algorithm, \Cref{BRTVIalg}. This will allow for comparisons between the two algorithms to demonstrate the benefits of using BR-TT-VI. Next a six-dimensional pursuit-evasion problem will be solved that demonstrates BR-TT-VI's ability to efficiently compute a solution for a problem that would take VI days if not weeks to solve. The end of this chapter will also begin to detail a number of shortcomings with the BR-TT-VI algorithm.  
+In this chapter, we apply the BR-TT-VI algorithm to two problem instances. The first problem, a four-dimensional pursuit-evasion game will be solved with both a traditional value iteration algorithm (VI), \Cref{DPBRalg}, and the BR-TT-VI algorithm, \Cref{BRTVIalg}. This will allow for comparisons between the two algorithms to demonstrate the benefits of using BR-TT-VI. Next, a six-dimensional pursuit-evasion problem will be solved that demonstrates BR-TT-VI's ability to efficiently compute a solution for a problem that would take VI days if not weeks to solve. In total, this chapter will demonstrate the contributions that the BR-TT-VI algorithm provides to solving pursuit-evasion games.  
 
 \section{Four-Dimensional Problem}
-The four-dimensional pursuit-evasion problem used here is simple enough to be solved analytically, with VI, and with BR-TT-VI. This problem is used to show the accuracy of the BR-TT-VI approximation and demonstrate the advantages of using BR-TT-VI over VI. This section will start with a definition of the four-dimensional pursuit-evasion problem as well as a brief explanation for the optimal analytic solution to the problem. Next, it will be explained how VI was accomplished and the results of this algorithm. Afterwards it will be detailed how the BR-TT-VI was used and the results of this algorithm. Finally, a comparison will be made between the results of VI and BR-TT-VI.   
+The four-dimensional pursuit-evasion problem used here is simple enough to be solved analytically, with VI, and with BR-TT-VI. This problem is used as a benchmark to show the accuracy of the BR-TT-VI approximation and demonstrate the advantages of using BR-TT-VI over VI. This section will start with a definition of the four-dimensional pursuit-evasion problem as well as a brief explanation of the optimal analytic solution to the problem. Next, it will be explained how both VI and BR-TT-VI were accomplished and the results of these algorithms. Finally, a comparison will be made between the results of VI and BR-TT-VI.   
 \subsection{Problem Definition}
-The four-dimensional pursuit-evasion problem used here has the pursuer attempting to reduce the distance to or capture the evader, while the evader attempts to maximize the distance between itself and the pursuer. A pursuer and evader are modeled in a $10 \times 10$ two-dimensional  state space with simple Euclidean dynamics. The four dimensions are the $x$ position of the pursuer $x_1$, the $y$ position of the pursuer $y_1$, the $x$ position of the evader $x_2$, and the $y$ position of the evader $y_2$. This results in a state space such that $z_i = (x_1,y_1,x_2,y_2)$. Each of the dimensions are bounded as follows:
+The four-dimensional pursuit-evasion problem used here has the pursuer attempting to reduce the distance to or capture the evader, while the evader attempts to maximize the distance between itself and the pursuer. To do this, a pursuer and an evader are modeled in a $10 \times 10$ two-dimensional field with simple Euclidean dynamics. This results in the four-dimensional state space where the states are the x position of the pursuer $x_1$, the y position of the pursuer $y_1$, the x position of the evader $x_2$, and the y position of the evader $y_2$. This results in a state space such that $z_i = (x_1,y_1,x_2,y_2)$. Each of the dimensions are bounded as follows:
 \begin{eqnarray*}
 x_1 & \in & [0,10]\\
 y_1 & \in & [0,10]\\
@@ -25,11 +25,11 @@ Vx_2 & \in & [-0.5,0.5]\\
 Vy_2 & \in & [-0.5,0.5].
 \end{eqnarray*} 
 Furthermore, the following system dynamics are used:
-\begin{eqnarray}\label{eqns1}
-x_1^{k+1} & = & x_1^k +Vx_1dt,\\
-y_1^{k+1} & = & y_1^k +Vy_1dt,\\
-x_2^{k+1} & = & x_2^k +Vx_2dt,\\
-y^{k+1}_2 & = & y_2^k +Vy_2dt.
+\begin{eqnarray}
+x_1^{k+1} & = & x_1^k +Vx_1dt,\label{eqns1.1} \\
+y_1^{k+1} & = & y_1^k +Vy_1dt,\label{eqns1.2}\\
+x_2^{k+1} & = & x_2^k +Vx_2dt,\label{eqns1.3}\\
+y^{k+1}_2 & = & y_2^k +Vy_2dt.\label{eqns1.4}
 \end{eqnarray}
 Each dimension is discretized into 21 equally spaced states for a total of $21^4 \approx 2\cdot10^5$ discrete states. This discretization was chosen as it creates a state for every $0.5$ units:
 \begin{eqnarray*}
@@ -43,28 +43,28 @@ Value iteration can be used to solve for the optimal cost at each state. The pro
 \begin{equation}\label{4cost}
 G(z_i,u_1,u_2)= 10+(x_1-x_2)^2+(y_1-y_2)^2.
 \end{equation}
-The constant of $10$ is added to provided a buffer for the BR-TT-VI approximation in order to prevent negative values. A discount factor of $\gamma = 0.7$ was chosen. Applying the state cost function and discount factor to \Cref{pbell} results in the update functions for the four-dimensional pursuit-evasion problem:
+The constant of $10$ is added to provided a buffer for the BR-TT-VI approximation in order to prevent negative values. A discount factor of $\gamma = 0.7$ was chosen because it provided just enough look-ahead to predict the opponent's next state without allowing predictions of moves made multiple seconds later to influence the state cost. Applying the state cost function and discount factor to \Cref{pbell} results in the update functions for the four-dimensional pursuit-evasion problem:
 \begin{equation}\label{4pbell}
 J_p^{(k+1,K)}(z_i)= \underset{u_1 }{\operatorname{min }}[10+(x_1-x_2)^2+(y_1-y_2)^2+0.7 J_p^{(k,K)}(z_j|z_i,u_1,u_2^K)],
 \end{equation}
 \begin{equation}\label{4ebell}
 J_e^{(k+1,K)}(z_i)= \underset{u_2 }{\operatorname{max }}[10+(x_1-x_2)^2+(y_1-y_2)^2+0.7 J_e^{(k,K)}(z_j|z_i,u_1^K,u_2)].
 \end{equation} 
-By running \Cref{DPBRalg} with \Cref{4pbell,4ebell} results in the given optimal value functions:
+Running \Cref{DPBRalg} with \Cref{4pbell,4ebell} results in the given optimal value functions:
 \begin{equation}\label{4pbropt}
 J_p^{(*,*)}(z_i)= \underset{u_1 }{\operatorname{min }}[10+(x_1-x_2)^2+(y_1-y_2)^2+0.7 J_p^{(*,*)}(z_j|z_i,u_1,u_2^*)],
 \end{equation}
 \begin{equation}\label{4ebropt}
 J_e^{(*,*)}(z_i)= \underset{u_2 }{\operatorname{max }}[10+(x_1-x_2)^2+(y_1-y_2)^2+0.7 J_e^{(*,*)}(z_j|z_i,u_1^*,u_2)].
 \end{equation}    
-These optimal value functions \ref{4pbropt} \ref{4ebropt} can be used to solve the following pursuit-evasion optimization problem:
+These optimal value functions, \Cref{4pbropt,4ebropt}, can be used to solve the following pursuit-evasion optimization problem:
 \begin{eqnarray}\label{4opt}
-&&\underset{u_1 }{\operatorname{min }}\underset{u_2 }{\operatorname{max }}[\int_{0}^{T}e^{-0.7t}(10+(x_1(t)-x_2(t))^2+(y_1(t)-y_2(t))^2)dt]\\
-&\textnormal{s.t.}&\ref{eqns1}.
+&&\underset{u_1 }{\operatorname{min \textnormal{ } }}\underset{u_2 }{\operatorname{max }}[\int_{0}^{T}e^{-0.7t}(10+(x_1(t)-x_2(t))^2+(y_1(t)-y_2(t))^2)dt]\\
+&\textnormal{s.t.}&(\ref{eqns1.1}-\ref{eqns1.4}).
 \end{eqnarray}
 
-\subsection{Analytic Solution}
-The problem also has a simple analytic solution since the dimensions are separable. This problem has separable dimensions because any change in one dimension does not affect a change in the other dimension. Furthermore, the controls are completely separate in regard to dimension, choosing a certain control in the $x$ dimension does not prevent choosing a control in the $y$ dimension. Because of this the problem can be viewed as simultaneously solving two one-dimensional problems where the pursuer is trying to minimize $|x_1-x_2|$ and $|y_1-y_2|$ while the evader attempts to maximize these functions. Because of this the optimal solution can be analytically found. For the pursuer, the optimal solution is:
+\subsection{Analytical Solution}
+The four-dimensional problem has a simple analytic solution because the dimensions are separable. This problem has separable dimensions in that any change in one dimension does not affect a change in the other dimension. Furthermore, the controls are completely separate in regard to dimension. For example, choosing a certain control in the $x$ dimension does not prevent choosing a control in the $y$ dimension. Because of this the problem can be viewed as simultaneously solving two one-dimensional problems where the pursuer is trying to minimize $|x_1-x_2|$ and $|y_1-y_2|$ while the evader attempts to maximize these functions. For the pursuer, the optimal solution is:
 \begin{equation}\label{puroptx}
 Vx_1^*= \underset{Vx_1 }{\operatorname{arg min }}[((x_1 + Vx_1dt)-(x_2+Vx_2dt))^2],
 \end{equation}
@@ -81,7 +81,7 @@ Vy_2^*= \underset{Vy_2 }{\operatorname{arg max }}[((y_1 + Vy_1dt)-(y_2+Vy_2dt))^
 These analytically solutions can be used to check the validity of the results of both VI and BR-TT-VI. 
 
 \subsection{Traditional Value Iteration}
-Before running the traditional value iteration algorithm, \Cref{DPBRalg}, both the pursuer and evader algorithm were run for 100 iterations to better characterize the algorithm when run past completion. First, both the pursuer and evader state cost were set to initialized such that $J^{(0,0)}_p(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$ and $J^{(0,0)}_e(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$. Next, the pursuer value iteration is run for one hundred iterations. It took approximately an hour and a half to run these one hundred iterations of pursuer value iteration, \Cref{4DVIrt}. The evolution of the pursuer state cost can be seen  in \Cref{100IR4DTPCP}. Take note of the minimal difference in the state cost between ten and a hundred iterations. Notice that the average norm converges to the optimal average norm, \Cref{100IR4DTnp}, and the difference between the average norm logarithmically decreases, \Cref{100IR4DTdnp}. The breakdown of the logarithmic decrease around the $95^{th}$ iteration is due to rounding error caused by the precision of float values.  
+Before running the best response algorithm based on traditional value iteration (\Cref{DPBRalg}) both the pursuer and evader VI algorithms were run for 100 iterations to better characterize the algorithm when run past completion. First, both the pursuer and evader state cost were set to initialized such that $J^{(0,0)}_p(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$ and $J^{(0,0)}_e(z_i) = (x_1-x_2)^2+(y_1-y_2)^2$. Next, the pursuer value iteration is run for one hundred iterations. It took approximately 90 minutes to run these one hundred iterations of pursuer value iteration, \Cref{4DVIrt}. The evolution of the pursuer state cost can be seen  in \Cref{100IR4DTPCP}. Take note of the minimal difference in the state cost between ten and a hundred iterations. Notice that the average norm converges to the optimal average norm, \Cref{100IR4DTnp}, and the difference between the average norm decreases exponentially fast, \Cref{100IR4DTdnp}. The breakdown of the decrease around the $95^{th}$ iteration is due to rounding error caused by the precision of float values.  
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.475\textwidth}
@@ -133,7 +133,7 @@ Before running the traditional value iteration algorithm, \Cref{DPBRalg}, both t
 \label{100IR4DTPCP}
 \end{figure}
 
-After the pursuer value iteration is run for a hundred iterations, the evader value iteration is also run for a hundred iterations with the updated pursuer cost, $J^{(100,1)}_p$. Just like with the pursuer value iteration, it took approximately an hour and a half to run one hundred iterations of evader value iteration, \Cref{4DVIrt}. The evolution of the evader state cost can be seen  in \Cref{100IR4DTECP}. Take note of the minimal difference in the state cost between ten and a hundred iterations. Notice that the average norm converges to the optimal average norm, \Cref{100IR4DTEnp}, and the difference between the average norm logarithmically decreases, \Cref{100IR4DTEdnp}. Notice that despite maximizing over the same cost function, the average norm converges to approximately the same value as in \Cref{100IR4DTnp}.
+After the pursuer value iteration is run for a hundred iterations, the evader value iteration is also run for a hundred iterations with the updated pursuer cost, $J^{(100,1)}_p$. Just like with the pursuer value iteration, it took approximately 90 minutes to run one hundred iterations of evader value iteration, \Cref{4DVIrt}. The evolution of the evader state cost can be seen  in \Cref{100IR4DTECP}. Take note of the minimal difference in the state cost between ten and a hundred iterations. Notice that the average norm converges to the optimal average norm, \Cref{100IR4DTEnp}, and the difference between the average norm decreases exponentially fast, \Cref{100IR4DTEdnp}. Notice that despite maximizing over the same cost function, the average norm converges to approximately the same value as in \Cref{100IR4DTnp}.
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.475\textwidth}
@@ -760,7 +760,7 @@ The four-dimensional problem was also solved using \Cref{BRTVIalg}. $\Delta_{max
 \label{BR4DTVIEdiag}
 \end{figure}
 
-The pursuer state costs monotonically decrease toward the evaders position, \Cref{BR4DTVIPcp}, while the evader's state costs monotonically decrease toward the pursuers position,\Cref{BR4DTVIEcp}. The pursuer heads directly towards the evader, while the evader heads in the opposite direction of the pursuer as can be seen in \Cref{BR4DTVIp}. Due to the pursuer's greater speed, the game has the pursuer constantly decreasing the distance between itself and the evader until capture as can be seen in \Cref{BR4DTVIr}.
+The pursuer state costs monotonically decrease toward the evaders position, \Cref{BR4DTVIPcp}, while the evader's state costs monotonically decrease toward the pursuers position, \Cref{BR4DTVIEcp}. The pursuer heads directly towards the evader, while the evader heads in the opposite direction of the pursuer as can be seen in \Cref{BR4DTVIp}. Due to the pursuer's greater speed, the game has the pursuer constantly decreasing the distance between itself and the evader until capture as can be seen in \Cref{BR4DTVIr}.
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[t]{0.475\textwidth}
@@ -1355,7 +1355,7 @@ Using the optimal state costs $J_p^{(*,*)}$ and $J_e^{(*,*)}$ , two different pr
 \label{6DS}
 \end{figure}
 
-The second problem involves the pursuer starting at (7,5) with a heading of $\theta_1 = 0$ and the evader behind the pursuer at (5,5) and a heading of $\theta_2 = 0$. In this game the pursuer has to make a wide sweep around in order to get on the tail of the evader while the evader dodges below the pursuer,\Cref{6DAG,6DAGp}. In this case the pursuer actually has to increase the distance between itself and the evader before it can close the distance as seen in \Cref{6DAGr}. This is a counter intuitive movement for the pursuer when examining the value function \Cref{6pbell}. This shows that BR-TT-VI can solve non-intuitive problems.
+The second problem involves the pursuer starting at (7,5) with a heading of $\theta_1 = 0$ and the evader behind the pursuer at (5,5) and a heading of $\theta_2 = 0$. In this game the pursuer has to make a wide sweep around in order to get on the tail of the evader while the evader dodges below the pursuer,\Cref{6DAG,6DAGp}. In this case the pursuer actually has to increase the distance between itself and the evader before it can close the distance as seen in \Cref{6DAGr}.
 \begin{figure}
 \centering
 \begin{subfigure}[b]{0.3\textwidth}

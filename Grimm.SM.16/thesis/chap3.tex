@@ -6,7 +6,7 @@
 %% prompt when you run the file main.tex through LaTeX.
 \chapter{Tensor-Train Decomposition}\label{chp:TT}
 
-One method of handling the curse of dimensionality is to reduce the number of states that must be examined. If a problem has a low-rank representation, tensor-train decomposition may be used to reduce the number of states employed to compute the solution to a problem. Tensor-train decomposition, as outlined in Oseledets's "Tensor-train decomposition" and "TT-cross approximation for multidimensional arrays," takes advantage of the structure of tensors to reduce the state space \cite{Osel1,Osel2}. This method takes advantage of single value decomposition (SVD) to create compact tensors. The start of this chapter will provide a description of tensors in general. Next, the chapter will explain how tensor-train decomposition works and under what circumstances this method works best. Finally, a series of methods for maintaining low-rank will be provided along with the TT-SVD algorithm.
+One method of handling the curse of dimensionality is to reduce the number of states that must be examined. If a problem has a low-rank representation, tensor-train decomposition may be used to reduce the number of states employed to compute the solution to a problem \cite{Osel3}. Tensor-train decomposition, as outlined in Oseledets's "Tensor-train decomposition" and "TT-cross approximation for multidimensional arrays," takes advantage of the structure of tensors to reduce the state space \cite{Osel1,Osel2}. This method takes advantage of single value decomposition (SVD) to create compact tensors. This chapter provides a description of tensors in general. In particular, the chapter explains how tensor-train decomposition works, and under what circumstances this method works best. Finally, a series of methods for maintaining low-rank will be provided along with the TT-SVD algorithm.
 
 \section{Tensor-Train Decomposition}
 Tensors are another way of representing a multidimensional array. Given such an array or tensor \textbf{A}, the element at $A(i_1,i_2,...,i_d)$, where $d$ is the dimensionality of the tensor and $i_j$ is the $i^{th}$ entry of the $j^{th}$ dimension of the tensor, can be given by:
@@ -23,7 +23,7 @@ $G_k(i_k)$, also called a tensor core, is an $r_{k-1} \times r_k$ matrix where $
 \begin{equation}\label{eqn5}
 A(i_1,...,i_d) = \sum_{\alpha_0,...,\alpha_{d-1},\alpha_d}G_1(\alpha_0,i_1,\alpha_1)G_2(\alpha_1,i_2,\alpha_2)...G_d(\alpha_{d-1},i_d,\alpha_d)
 \end{equation}
-As can be seen in \Cref{eqn5}, in order to compute the individual elements of the tensor all the tensor cores are multiplied and then summed over the auxiliary indices $a_k$. It is from this process that the decomposition gets the name tensor-train. Tensor-train decomposition makes it possible to represent all elements in the tensor \textbf{A} with $d$ three-dimensional arrays.\cite{Osel1}
+As can be seen in \Cref{eqn5}, in order to compute the individual elements of the tensor all the tensor cores are multiplied and then summed over the auxiliary indices $a_k$. It is from this process that the decomposition gets the name tensor-train. Tensor-train decomposition makes it possible to represent all elements in the tensor \textbf{A} with $d$ three-dimensional arrays \cite{Osel1}.
  
 Since the size of the tensor cores are determined by ranks $r_k$, determining these ranks are pivotal to the compressibility of tensor-train decomposition. The rank $r_k$ is dependent on the rank of the $k^{th}$ unfolding matrix $A_k$ which has the form:
 \begin{equation}\label{unfold}
@@ -33,7 +33,7 @@ These unfolding matrices can be determined by the MATLAB reshape function as suc
 \begin{equation*}
 A_k = \textnormal{reshape} (\textbf{A},\prod_{s=1}^{k}n_s,\prod_{s=k+1}^{d}n_s).
 \end{equation*}
-By determining the rank of these unfolding matrices, a bound on the tensor-train ranks can be determined with respect to \Cref{ttranks}. \cite{Osel1}
+By determining the rank of these unfolding matrices, a bound on the tensor-train ranks can be determined with respect to \Cref{ttranks} \cite{Osel1}.
 \begin{theorem}[Bound on TT-Ranks \cite{Osel1}]\label{ttranks}
 If for each unfolding matrix $A_k$ of form \ref{unfold} of a d-dimensional tensor \textbf{A}
 \begin{equation*}
@@ -79,11 +79,11 @@ The results of \Cref{ttaprox} can be used to create a tensor in TT-format as det
 \end{algorithmic}
 \end{algorithm}
 
-The largest benefit of tensor-trains is that they greatly reduce the complexity of high-dimensional calculations. Generally these computations have complexity that is linear with dimension but polynomially with rank. However, many of these tensor-train computations have the unfortunate effect of increasing the rank of the final tensor-train. For example, adding two tensor-trains with the same rank takes next to no computations but doubles the number of ranks in the resulting tensor-train. Taking the scalar product of two tensor-trains takes $O(dnr^4)$ computations but results in $O(r^2)$ ranks. In order to keep the tensor-train low-rank, TT-rounding can be used to create a new tensor $\textbf{B}$ with $\delta$-ranks such that $\delta = \dfrac{\varepsilon}{\sqrt{d-1}}\| A\|$. This new approximation maintains an $\varepsilon$-level accuracy and only requires $O(dnr^2+dr^4)$ computations:
+The largest benefit of tensor-trains is that they greatly reduce the complexity of high-dimensional calculations. Generally these computations have complexity that is linear with dimension and polynomially with rank. However, many of these tensor-train computations have the unfortunate effect of increasing the rank of the final tensor-train. For example, adding two tensor-trains with the same rank takes next to no computations but doubles the number of ranks in the resulting tensor-train. Taking the scalar product of two tensor-trains takes $O(dnr^4)$ computations but results in $O(r^2)$ ranks. In order to keep the tensor-train low-rank, TT-rounding can be used to create a new tensor $\textbf{B}$ with $\delta$-ranks such that $\delta = \dfrac{\varepsilon}{\sqrt{d-1}}\| A\|$. This new approximation maintains an $\varepsilon$-level accuracy and only requires $O(dnr^2+dr^4)$ computations:
 \begin{equation}
 \| \textbf{A}-\textbf{B}\| \leq \varepsilon \| \textbf{A} \|.
 \end{equation}
-A detailed explanation for TT-rounding can be found in \Cref{ttround}. \cite{Osel1}
+A detailed explanation for TT-rounding can be found in \Cref{ttround} \cite{Osel1}.
 \begin{algorithm}
 \caption{TT-Rounding \cite{Osel1}}\label{ttround}
 \begin{algorithmic}[1]
@@ -110,4 +110,4 @@ A detailed explanation for TT-rounding can be found in \Cref{ttround}. \cite{Ose
 \end{algorithmic}
 \end{algorithm}
 
-\cite{Osel1,Osel2} can be referenced for detailed algorithms and further proofs.
+Oseledets provides more detailed algorithms and further proofs in \cite{Osel1,Osel2}.

@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{basar}
-T.~Başar and G.~Olsder.
-\newblock {\em Dynamic Noncooperative Game Theory, 2nd Edition}.
-\newblock Society for Industrial and Applied Mathematics, New York, 1998.
-
 \bibitem{bardi1}
 M.~Bardi and P.~Soravia.
 \newblock Hamilton-jacobi equations with singular boundary conditions on a free
@@ -18,6 +13,11 @@ M.~Bardi, P.~Soravia, and M.~Falcone.
   games.
 \newblock In T.~Basar and A.~Haurie, editors, {\em Advances in Dynamic Games
   and Applications, part II}, pages 89--105. Birkh{\"a}user Boston, 1994.
+
+\bibitem{basar}
+T.~Basar and G.~Olsder.
+\newblock {\em Dynamic Noncooperative Game Theory, 2nd Edition}.
+\newblock Society for Industrial and Applied Mathematics, New York, 1998.
 
 \bibitem{bert}
 D.~Bertsekas.
@@ -36,6 +36,19 @@ A.~Gorodetsky, S.~Karaman, and Y.~Marzouk.
   tensor-train decomposition.
 \newblock {\em Robotics: Science and Systems}, 2015.
 
+\bibitem{tomlin1}
+H.~Huang, J.~Ding, W.~Zhang, and C.~J. Tomlin.
+\newblock A differential game approach to planning in adversarial scenarios: A
+  case study on capture-the-flag.
+\newblock In {\em Robotics and Automation (ICRA), 2011 IEEE International
+  Conference}, pages 1451--1456, 2011.
+
+\bibitem{tomlin2}
+H.~Huang, J.~Ding, W.~Zhang, and C.~J. Tomlin.
+\newblock Automation-assisted capture-the-flag: A differential game approach.
+\newblock {\em IEEE Transactions on Control Systems Technology},
+  23(3):1014--1028, 2015.
+
 \bibitem{isaacs}
 R.~Isaacs.
 \newblock {\em Differential Games}.
@@ -50,6 +63,11 @@ S.~Karaman and E.~Frazzoli.
   of the Ninth International Workshop on the Algorithmic Foundations of
   Robotics}, pages 71--87. Springer Berlin Heidelberg, Berlin, Heidelberg,
   2011.
+
+\bibitem{Osel3}
+I.~V. Oseledets and S.~V. Dolgov.
+\newblock Solution of linear systems and matrix inversion in the tt-format.
+\newblock {\em SIAM Journal on Scientific Computing}, 34(5):A2718--A2739, 2012.
 
 \bibitem{Osel1}
 I.V. Oseledets.

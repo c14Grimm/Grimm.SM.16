@@ -1,7 +1,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2-1}{\ignorespaces A state space divided into capture($w=0$),escape($w=1$), and regions of play($Q=Q_1$) \cite {bardi2}\relax }}{24}
-\contentsline {figure}{\numberline {2-2}{\ignorespaces Results for one-dimensional pursuit-evasion games \cite {bardi2}\relax }}{26}
+\contentsline {figure}{\numberline {2-2}{\ignorespaces Results for one-dimensional pursuit-evasion games \cite {bardi2}\relax }}{27}
 \contentsline {figure}{\numberline {2-3}{\ignorespaces Pursuit-Evasion $\textnormal {RRT}^*$ at various iterations \cite {karaman}\relax }}{33}
 \contentsline {figure}{\numberline {2-4}{\ignorespaces Pursuit-Evasion $\textnormal {RRT}^*$ in a field with obstacles at various iterations\cite {karaman}\relax }}{34}
 \contentsline {figure}{\numberline {2-5}{\ignorespaces Pursuit-Evasion $\textnormal {RRT}^*$ on a problem with Dubins dynamics \cite {karaman}\relax }}{35}

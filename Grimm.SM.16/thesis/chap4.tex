@@ -6,14 +6,14 @@
 %% prompt when you run the file main.tex through LaTeX.
 \chapter{Tensor-based Value Iteration}\label{chp:tvi}
 
-The advantages of tensor-train decomposition have already been applied to solving optimal control problems with dynamic programming. Gorodetsky, Karaman, and Marzouk have come up with a version of value iteration that takes advantage of tensor-train decomposition in "Efficient High-Dimensional stochastic Optimal Motion Control using Tensor-Train Decomposition" \cite{Gorod}. They call this new version of value iteration Tensor-based value iteration(TVI). This chapter will begin by providing a quick background into stochastic optimal motion control for which Gorodetsky et.al designed TVI. Next, the TVI algorithm will be provided in detail. The chapter will end with an example problem Gorodetsky et. al. solved in \cite{Gorod} along with their results. 
+Tensor-train decomposition has already been applied to solving optimal control problems with dynamic programming. Gorodetsky, Karaman, and Marzouk have come up with a version of value iteration that takes advantage of tensor-train decomposition \cite{Gorod}. They call this new version of value iteration Tensor-based value iteration(TVI). This chapter will begin by providing a quick background into stochastic optimal motion control for which Gorodetsky et.al designed TVI. Next, the TVI algorithm will be provided in detail. The chapter will end with an example problem Gorodetsky et. al. solved in \cite{Gorod} along with their results. 
 
 \section{Stochastic Optimal Motion Control}
-Gorodetsky, Karaman, and Marzouk focus on problems of stochastic optimal motion control. While deterministic pursuit-evasion games have many similarities to problems of this type, a brief explanation will be given for problems of stochastic optimal motion control in order to fully appreciate the results of TVI when applied to these problems. In problems of stochastic optimal motion control some system has the differential form:
+Gorodetsky, Karaman, and Marzouk focus on problems of stochastic optimal motion control. While deterministic pursuit-evasion games have many similarities to problems of this type, a brief explanation will be given for problems of stochastic optimal motion control in order to fully appreciate the results of TVI when applied to these problems. In problems of continuous-time stochastic optimal motion control, system has the following differential form:
 \begin{equation}\label{eqn7}
 dx(t) = b(x(t),u(t))dt + F(x(t),u(t))dw(t),
 \end{equation}
-in which $d,d_u,d_w \in Z_+, X \subset R^d$ and $U \subset R^{d_u}$ are compact sets with smooth  boundaries and non-empty interiors. ${w(t):t \geq 0}$ is a $d_w$-dimensional Brownian motion defined on some probability space $(\omega, \mathscr{F},P)$, where $\omega$ is a sample space. $\mathscr{F}$ is $\sigma$-algebra, and $P$ is a probability measure while $b:X \times U \rightarrow R^d$ and $F: X \times U \rightarrow R^{d \times d_w}$ are measurable, continuous, and bounded functions as detailed in \cite{Gorod}. 
+where $d,d_u,d_w \in Z_+, X \subset R^d$ and $U \subset R^{d_u}$ are compact sets with smooth  boundaries and non-empty interiors. The process ${w(t):t \geq 0}$ is a $d_w$-dimensional Brownian motion defined on some probability space $(\Omega, \mathscr{F},P)$, where $\Omega$ is a sample space, $\mathscr{F}$ is $\sigma$-algebra, and $P$ is a probability measure, while $b:X \times U \rightarrow R^d$ and $F: X \times U \rightarrow R^{d \times d_w}$ are measurable, continuous, and bounded functions \cite{Gorod}. 
 
 Just as with the discrete boundary value problem in \cite{bardi2}, the first step is to discretize the state space. The state space is discretized using discrete Markov Decision Processes (MDPs) that follow the local consistency conditions as given by:
 \begin{theorem}[Local Consistency Conditions \cite{Gorod}]
@@ -109,7 +109,7 @@ In the above dynamics $\rho$ represents the air density, $m$ is the glider mass,
 \label{gorodglide}
 \end{figure}
 
-The key to tensor-train value iterations success is the reduction in the number of states used. Of the $3.4 \times 10^{10}$ states making up the initial discretized state space, only about $10^6$ of these states are used as can be seen in \Cref{gorodstates}.\cite{Gorod}
+The key to tensor-train value iterations success is the reduction in the number of states used. Of the $3.4 \times 10^{10}$ states making up the initial discretized state space, only about $10^6$ of these states are used as can be seen in \Cref{gorodstates} \cite{Gorod}.
 \begin{figure}
 \centering
 \includegraphics[scale=1]{gorodstates}
