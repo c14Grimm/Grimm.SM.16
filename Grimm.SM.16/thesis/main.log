@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.10.17)  15 MAY 2016 23:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.10.17)  17 MAY 2016 10:35
 entering extended mode
 **main.tex
 (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\main.tex
@@ -694,7 +694,7 @@ File: figures/100IR4DTradPurspurscolorplot0.pdf Graphic file (type pdf)
 <use figures/100IR4DTradPurspurscolorplot0.pdf>
 Package pdftex.def Info: figures/100IR4DTradPurspurscolorplot0.pdf used on inpu
 t line 107.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
 <figures/100IR4DTradPurspurscolorplot1.pdf, id=250, 144.54pt x 89.33063pt>
 File: figures/100IR4DTradPurspurscolorplot1.pdf Graphic file (type pdf)
@@ -702,71 +702,135 @@ File: figures/100IR4DTradPurspurscolorplot1.pdf Graphic file (type pdf)
 <use figures/100IR4DTradPurspurscolorplot1.pdf>
 Package pdftex.def Info: figures/100IR4DTradPurspurscolorplot1.pdf used on inpu
 t line 114.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTradPurspurscolorplot9.pdf, id=251, 144.54pt x 89.33063pt>
+<figures/100IR4DTradPurspurscolorplot2.pdf, id=251, 144.54pt x 89.33063pt>
+File: figures/100IR4DTradPurspurscolorplot2.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTradPurspurscolorplot2.pdf>
+Package pdftex.def Info: figures/100IR4DTradPurspurscolorplot2.pdf used on inpu
+t line 121.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTradPurspurscolorplot3.pdf, id=252, 144.54pt x 89.33063pt>
+File: figures/100IR4DTradPurspurscolorplot3.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTradPurspurscolorplot3.pdf>
+Package pdftex.def Info: figures/100IR4DTradPurspurscolorplot3.pdf used on inpu
+t line 128.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTradPurspurscolorplot5.pdf, id=253, 144.54pt x 89.33063pt>
+File: figures/100IR4DTradPurspurscolorplot5.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTradPurspurscolorplot5.pdf>
+Package pdftex.def Info: figures/100IR4DTradPurspurscolorplot5.pdf used on inpu
+t line 135.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTradPurspurscolorplot7.pdf, id=254, 144.54pt x 89.33063pt>
+File: figures/100IR4DTradPurspurscolorplot7.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTradPurspurscolorplot7.pdf>
+Package pdftex.def Info: figures/100IR4DTradPurspurscolorplot7.pdf used on inpu
+t line 142.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTradPurspurscolorplot9.pdf, id=255, 144.54pt x 89.33063pt>
 File: figures/100IR4DTradPurspurscolorplot9.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTradPurspurscolorplot9.pdf>
 Package pdftex.def Info: figures/100IR4DTradPurspurscolorplot9.pdf used on inpu
-t line 121.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+t line 149.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTradPurspurscolorplot99.pdf, id=252, 144.54pt x 89.33063pt>
+<figures/100IR4DTradPurspurscolorplot99.pdf, id=256, 144.54pt x 89.33063pt>
 File: figures/100IR4DTradPurspurscolorplot99.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTradPurspurscolorplot99.pdf>
 Package pdftex.def Info: figures/100IR4DTradPurspurscolorplot99.pdf used on inp
-ut line 128.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ut line 156.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTradEvadnormplot.pdf, id=253, 144.54pt x 89.33063pt>
+<figures/100IR4DTradEvadnormplot.pdf, id=257, 144.54pt x 89.33063pt>
 File: figures/100IR4DTradEvadnormplot.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTradEvadnormplot.pdf>
 Package pdftex.def Info: figures/100IR4DTradEvadnormplot.pdf used on input line
- 141.
+ 169.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR4DTradEvaddiffNormplot.pdf, id=254, 144.54pt x 89.33063pt>
+<figures/100IR4DTradEvaddiffNormplot.pdf, id=258, 144.54pt x 89.33063pt>
 File: figures/100IR4DTradEvaddiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTradEvaddiffNormplot.pdf>
 Package pdftex.def Info: figures/100IR4DTradEvaddiffNormplot.pdf used on input 
-line 148.
+line 176.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR4DTradEvadevadcolorplot0.pdf, id=255, 144.54pt x 89.33063pt>
+<figures/100IR4DTradEvadevadcolorplot0.pdf, id=259, 144.54pt x 89.33063pt>
 File: figures/100IR4DTradEvadevadcolorplot0.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTradEvadevadcolorplot0.pdf>
 Package pdftex.def Info: figures/100IR4DTradEvadevadcolorplot0.pdf used on inpu
-t line 159.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+t line 187.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTradEvadevadcolorplot1.pdf, id=256, 144.54pt x 89.33063pt>
+<figures/100IR4DTradEvadevadcolorplot1.pdf, id=260, 144.54pt x 89.33063pt>
 File: figures/100IR4DTradEvadevadcolorplot1.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTradEvadevadcolorplot1.pdf>
 Package pdftex.def Info: figures/100IR4DTradEvadevadcolorplot1.pdf used on inpu
-t line 166.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+t line 194.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTradEvadevadcolorplot9.pdf, id=257, 144.54pt x 89.33063pt>
+<figures/100IR4DTradEvadevadcolorplot2.pdf, id=261, 144.54pt x 89.33063pt>
+File: figures/100IR4DTradEvadevadcolorplot2.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTradEvadevadcolorplot2.pdf>
+Package pdftex.def Info: figures/100IR4DTradEvadevadcolorplot2.pdf used on inpu
+t line 201.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTradEvadevadcolorplot3.pdf, id=262, 144.54pt x 89.33063pt>
+File: figures/100IR4DTradEvadevadcolorplot3.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTradEvadevadcolorplot3.pdf>
+Package pdftex.def Info: figures/100IR4DTradEvadevadcolorplot3.pdf used on inpu
+t line 208.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTradEvadevadcolorplot5.pdf, id=263, 144.54pt x 89.33063pt>
+File: figures/100IR4DTradEvadevadcolorplot5.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTradEvadevadcolorplot5.pdf>
+Package pdftex.def Info: figures/100IR4DTradEvadevadcolorplot5.pdf used on inpu
+t line 215.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTradEvadevadcolorplot7.pdf, id=264, 144.54pt x 89.33063pt>
+File: figures/100IR4DTradEvadevadcolorplot7.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTradEvadevadcolorplot7.pdf>
+Package pdftex.def Info: figures/100IR4DTradEvadevadcolorplot7.pdf used on inpu
+t line 222.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTradEvadevadcolorplot9.pdf, id=265, 144.54pt x 89.33063pt>
 File: figures/100IR4DTradEvadevadcolorplot9.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTradEvadevadcolorplot9.pdf>
 Package pdftex.def Info: figures/100IR4DTradEvadevadcolorplot9.pdf used on inpu
-t line 173.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+t line 229.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTradEvadevadcolorplot99.pdf, id=258, 144.54pt x 89.33063pt>
+<figures/100IR4DTradEvadevadcolorplot99.pdf, id=266, 144.54pt x 89.33063pt>
 File: figures/100IR4DTradEvadevadcolorplot99.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTradEvadevadcolorplot99.pdf>
 Package pdftex.def Info: figures/100IR4DTradEvadevadcolorplot99.pdf used on inp
-ut line 180.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ut line 236.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
  [59 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradPu
 rsnormplot.pdf> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/10
 0IR4DTradPursdiffNormplot.pdf
@@ -782,6 +846,30 @@ pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/100IR4DTradPurspurscolorplot1.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 > <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradPursp
+urscolorplot2.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTradPurspurscolorplot2.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradPursp
+urscolorplot3.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTradPurspurscolorplot3.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradPursp
+urscolorplot5.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTradPurspurscolorplot5.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradPursp
+urscolorplot7.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTradPurspurscolorplot7.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradPursp
 urscolorplot9.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
@@ -793,36 +881,36 @@ urscolorplot99.pdf
 pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/100IR4DTradPurspurscolorplot99.pdf): PDF inclusion: multiple pd
 fs with page group included in a single page
->] <figures/BR4DTSPursnormplot.pdf, id=406, 144.54pt x 89.33063pt>
+>] <figures/BR4DTSPursnormplot.pdf, id=506, 144.54pt x 89.33063pt>
 File: figures/BR4DTSPursnormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSPursnormplot.pdf>
-Package pdftex.def Info: figures/BR4DTSPursnormplot.pdf used on input line 204.
+Package pdftex.def Info: figures/BR4DTSPursnormplot.pdf used on input line 260.
 
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTSPursdiffNormplot.pdf, id=407, 144.54pt x 89.33063pt>
+<figures/BR4DTSPursdiffNormplot.pdf, id=507, 144.54pt x 89.33063pt>
 File: figures/BR4DTSPursdiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSPursdiffNormplot.pdf>
 Package pdftex.def Info: figures/BR4DTSPursdiffNormplot.pdf used on input line 
-211.
+267.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTSEvadnormplot.pdf, id=408, 144.54pt x 89.33063pt>
+<figures/BR4DTSEvadnormplot.pdf, id=508, 144.54pt x 89.33063pt>
 File: figures/BR4DTSEvadnormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSEvadnormplot.pdf>
-Package pdftex.def Info: figures/BR4DTSEvadnormplot.pdf used on input line 222.
+Package pdftex.def Info: figures/BR4DTSEvadnormplot.pdf used on input line 278.
 
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTSEvaddiffNormplot.pdf, id=409, 144.54pt x 89.33063pt>
+<figures/BR4DTSEvaddiffNormplot.pdf, id=509, 144.54pt x 89.33063pt>
 File: figures/BR4DTSEvaddiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSEvaddiffNormplot.pdf>
 Package pdftex.def Info: figures/BR4DTSEvaddiffNormplot.pdf used on input line 
-229.
+285.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
  [61 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradEv
 adnormplot.pdf> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/10
@@ -839,6 +927,30 @@ pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/100IR4DTradEvadevadcolorplot1.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 > <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradEvade
+vadcolorplot2.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTradEvadevadcolorplot2.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradEvade
+vadcolorplot3.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTradEvadevadcolorplot3.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradEvade
+vadcolorplot5.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTradEvadevadcolorplot5.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradEvade
+vadcolorplot7.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTradEvadevadcolorplot7.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTradEvade
 vadcolorplot9.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
@@ -850,147 +962,147 @@ vadcolorplot99.pdf
 pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/100IR4DTradEvadevadcolorplot99.pdf): PDF inclusion: multiple pd
 fs with page group included in a single page
->] <figures/BR4DTSPurspurscolorplot.pdf, id=550, 144.54pt x 89.33063pt>
+>] <figures/BR4DTSPurspurscolorplot.pdf, id=734, 144.54pt x 89.33063pt>
 File: figures/BR4DTSPurspurscolorplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSPurspurscolorplot.pdf>
 Package pdftex.def Info: figures/BR4DTSPurspurscolorplot.pdf used on input line
- 242.
+ 298.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTSEvadevadcolorplot.pdf, id=551, 144.54pt x 89.33063pt>
+<figures/BR4DTSEvadevadcolorplot.pdf, id=735, 144.54pt x 89.33063pt>
 File: figures/BR4DTSEvadevadcolorplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSEvadevadcolorplot.pdf>
 Package pdftex.def Info: figures/BR4DTSEvadevadcolorplot.pdf used on input line
- 249.
+ 305.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTSGamephaseplot1.pdf, id=552, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamephaseplot1.pdf, id=736, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamephaseplot1.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamephaseplot1.pdf>
-Package pdftex.def Info: figures/BR4DTSGamephaseplot1.pdf used on input line 26
-0.
+Package pdftex.def Info: figures/BR4DTSGamephaseplot1.pdf used on input line 31
+6.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamephaseplot2.pdf, id=553, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamephaseplot2.pdf, id=737, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamephaseplot2.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamephaseplot2.pdf>
-Package pdftex.def Info: figures/BR4DTSGamephaseplot2.pdf used on input line 26
-7.
+Package pdftex.def Info: figures/BR4DTSGamephaseplot2.pdf used on input line 32
+3.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamephaseplot3.pdf, id=554, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamephaseplot3.pdf, id=738, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamephaseplot3.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamephaseplot3.pdf>
-Package pdftex.def Info: figures/BR4DTSGamephaseplot3.pdf used on input line 27
-4.
+Package pdftex.def Info: figures/BR4DTSGamephaseplot3.pdf used on input line 33
+0.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamephaseplot4.pdf, id=555, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamephaseplot4.pdf, id=739, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamephaseplot4.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamephaseplot4.pdf>
-Package pdftex.def Info: figures/BR4DTSGamephaseplot4.pdf used on input line 28
-1.
+Package pdftex.def Info: figures/BR4DTSGamephaseplot4.pdf used on input line 33
+7.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamephaseplot5.pdf, id=556, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamephaseplot5.pdf, id=740, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamephaseplot5.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamephaseplot5.pdf>
-Package pdftex.def Info: figures/BR4DTSGamephaseplot5.pdf used on input line 28
-8.
+Package pdftex.def Info: figures/BR4DTSGamephaseplot5.pdf used on input line 34
+4.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamephaseplot6.pdf, id=557, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamephaseplot6.pdf, id=741, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamephaseplot6.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamephaseplot6.pdf>
-Package pdftex.def Info: figures/BR4DTSGamephaseplot6.pdf used on input line 29
-5.
+Package pdftex.def Info: figures/BR4DTSGamephaseplot6.pdf used on input line 35
+1.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamephaseplot7.pdf, id=558, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamephaseplot7.pdf, id=742, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamephaseplot7.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamephaseplot7.pdf>
-Package pdftex.def Info: figures/BR4DTSGamephaseplot7.pdf used on input line 30
-2.
+Package pdftex.def Info: figures/BR4DTSGamephaseplot7.pdf used on input line 35
+8.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamephaseplot8.pdf, id=559, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamephaseplot8.pdf, id=743, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamephaseplot8.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamephaseplot8.pdf>
-Package pdftex.def Info: figures/BR4DTSGamephaseplot8.pdf used on input line 30
-9.
+Package pdftex.def Info: figures/BR4DTSGamephaseplot8.pdf used on input line 36
+5.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamerelplot1.pdf, id=560, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamerelplot1.pdf, id=744, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamerelplot1.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamerelplot1.pdf>
-Package pdftex.def Info: figures/BR4DTSGamerelplot1.pdf used on input line 320.
+Package pdftex.def Info: figures/BR4DTSGamerelplot1.pdf used on input line 376.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamerelplot2.pdf, id=561, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamerelplot2.pdf, id=745, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamerelplot2.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamerelplot2.pdf>
-Package pdftex.def Info: figures/BR4DTSGamerelplot2.pdf used on input line 327.
+Package pdftex.def Info: figures/BR4DTSGamerelplot2.pdf used on input line 383.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamerelplot3.pdf, id=562, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamerelplot3.pdf, id=746, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamerelplot3.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamerelplot3.pdf>
-Package pdftex.def Info: figures/BR4DTSGamerelplot3.pdf used on input line 334.
+Package pdftex.def Info: figures/BR4DTSGamerelplot3.pdf used on input line 390.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamerelplot4.pdf, id=563, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamerelplot4.pdf, id=747, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamerelplot4.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamerelplot4.pdf>
-Package pdftex.def Info: figures/BR4DTSGamerelplot4.pdf used on input line 341.
+Package pdftex.def Info: figures/BR4DTSGamerelplot4.pdf used on input line 397.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamerelplot5.pdf, id=564, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamerelplot5.pdf, id=748, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamerelplot5.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamerelplot5.pdf>
-Package pdftex.def Info: figures/BR4DTSGamerelplot5.pdf used on input line 348.
+Package pdftex.def Info: figures/BR4DTSGamerelplot5.pdf used on input line 404.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamerelplot6.pdf, id=565, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamerelplot6.pdf, id=749, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamerelplot6.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamerelplot6.pdf>
-Package pdftex.def Info: figures/BR4DTSGamerelplot6.pdf used on input line 355.
+Package pdftex.def Info: figures/BR4DTSGamerelplot6.pdf used on input line 411.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamerelplot7.pdf, id=566, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamerelplot7.pdf, id=750, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamerelplot7.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamerelplot7.pdf>
-Package pdftex.def Info: figures/BR4DTSGamerelplot7.pdf used on input line 362.
+Package pdftex.def Info: figures/BR4DTSGamerelplot7.pdf used on input line 418.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTSGamerelplot8.pdf, id=567, 144.54pt x 89.33063pt>
+<figures/BR4DTSGamerelplot8.pdf, id=751, 144.54pt x 89.33063pt>
 File: figures/BR4DTSGamerelplot8.pdf Graphic file (type pdf)
 
 <use figures/BR4DTSGamerelplot8.pdf>
-Package pdftex.def Info: figures/BR4DTSGamerelplot8.pdf used on input line 369.
+Package pdftex.def Info: figures/BR4DTSGamerelplot8.pdf used on input line 425.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
  [63 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/BR4DTSPursnor
@@ -1012,179 +1124,179 @@ rmplot.pdf
 pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/BR4DTSEvaddiffNormplot.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
->] <figures/BR4DTCPursnormplot.pdf, id=674, 144.54pt x 89.33063pt>
+>] <figures/BR4DTCPursnormplot.pdf, id=858, 144.54pt x 89.33063pt>
 File: figures/BR4DTCPursnormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCPursnormplot.pdf>
-Package pdftex.def Info: figures/BR4DTCPursnormplot.pdf used on input line 382.
+Package pdftex.def Info: figures/BR4DTCPursnormplot.pdf used on input line 438.
 
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTCPursdiffNormplot.pdf, id=675, 144.54pt x 89.33063pt>
+<figures/BR4DTCPursdiffNormplot.pdf, id=859, 144.54pt x 89.33063pt>
 File: figures/BR4DTCPursdiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCPursdiffNormplot.pdf>
 Package pdftex.def Info: figures/BR4DTCPursdiffNormplot.pdf used on input line 
-389.
+445.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTCEvadnormplot.pdf, id=676, 144.54pt x 89.33063pt>
+<figures/BR4DTCEvadnormplot.pdf, id=860, 144.54pt x 89.33063pt>
 File: figures/BR4DTCEvadnormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCEvadnormplot.pdf>
-Package pdftex.def Info: figures/BR4DTCEvadnormplot.pdf used on input line 400.
+Package pdftex.def Info: figures/BR4DTCEvadnormplot.pdf used on input line 456.
 
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTCEvaddiffNormplot.pdf, id=677, 144.54pt x 89.33063pt>
+<figures/BR4DTCEvaddiffNormplot.pdf, id=861, 144.54pt x 89.33063pt>
 File: figures/BR4DTCEvaddiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCEvaddiffNormplot.pdf>
 Package pdftex.def Info: figures/BR4DTCEvaddiffNormplot.pdf used on input line 
-407.
+463.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTCPurspurscolorplot.pdf, id=678, 144.54pt x 89.33063pt>
+<figures/BR4DTCPurspurscolorplot.pdf, id=862, 144.54pt x 89.33063pt>
 File: figures/BR4DTCPurspurscolorplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCPurspurscolorplot.pdf>
 Package pdftex.def Info: figures/BR4DTCPurspurscolorplot.pdf used on input line
- 418.
+ 474.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTCEvadevadcolorplot.pdf, id=679, 144.54pt x 89.33063pt>
+<figures/BR4DTCEvadevadcolorplot.pdf, id=863, 144.54pt x 89.33063pt>
 File: figures/BR4DTCEvadevadcolorplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCEvadevadcolorplot.pdf>
 Package pdftex.def Info: figures/BR4DTCEvadevadcolorplot.pdf used on input line
- 425.
+ 481.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTCGamephaseplot1.pdf, id=680, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamephaseplot1.pdf, id=864, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamephaseplot1.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamephaseplot1.pdf>
-Package pdftex.def Info: figures/BR4DTCGamephaseplot1.pdf used on input line 43
-6.
+Package pdftex.def Info: figures/BR4DTCGamephaseplot1.pdf used on input line 49
+2.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamephaseplot2.pdf, id=681, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamephaseplot2.pdf, id=865, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamephaseplot2.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamephaseplot2.pdf>
-Package pdftex.def Info: figures/BR4DTCGamephaseplot2.pdf used on input line 44
-3.
+Package pdftex.def Info: figures/BR4DTCGamephaseplot2.pdf used on input line 49
+9.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamephaseplot3.pdf, id=682, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamephaseplot3.pdf, id=866, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamephaseplot3.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamephaseplot3.pdf>
-Package pdftex.def Info: figures/BR4DTCGamephaseplot3.pdf used on input line 45
-0.
+Package pdftex.def Info: figures/BR4DTCGamephaseplot3.pdf used on input line 50
+6.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamephaseplot4.pdf, id=683, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamephaseplot4.pdf, id=867, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamephaseplot4.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamephaseplot4.pdf>
-Package pdftex.def Info: figures/BR4DTCGamephaseplot4.pdf used on input line 45
-7.
+Package pdftex.def Info: figures/BR4DTCGamephaseplot4.pdf used on input line 51
+3.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamephaseplot5.pdf, id=684, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamephaseplot5.pdf, id=868, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamephaseplot5.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamephaseplot5.pdf>
-Package pdftex.def Info: figures/BR4DTCGamephaseplot5.pdf used on input line 46
-4.
+Package pdftex.def Info: figures/BR4DTCGamephaseplot5.pdf used on input line 52
+0.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamephaseplot6.pdf, id=685, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamephaseplot6.pdf, id=869, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamephaseplot6.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamephaseplot6.pdf>
-Package pdftex.def Info: figures/BR4DTCGamephaseplot6.pdf used on input line 47
-1.
+Package pdftex.def Info: figures/BR4DTCGamephaseplot6.pdf used on input line 52
+7.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamephaseplot7.pdf, id=686, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamephaseplot7.pdf, id=870, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamephaseplot7.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamephaseplot7.pdf>
-Package pdftex.def Info: figures/BR4DTCGamephaseplot7.pdf used on input line 47
-8.
+Package pdftex.def Info: figures/BR4DTCGamephaseplot7.pdf used on input line 53
+4.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamephaseplot8.pdf, id=687, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamephaseplot8.pdf, id=871, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamephaseplot8.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamephaseplot8.pdf>
-Package pdftex.def Info: figures/BR4DTCGamephaseplot8.pdf used on input line 48
-5.
+Package pdftex.def Info: figures/BR4DTCGamephaseplot8.pdf used on input line 54
+1.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamerelplot1.pdf, id=688, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamerelplot1.pdf, id=872, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamerelplot1.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamerelplot1.pdf>
-Package pdftex.def Info: figures/BR4DTCGamerelplot1.pdf used on input line 496.
+Package pdftex.def Info: figures/BR4DTCGamerelplot1.pdf used on input line 552.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamerelplot2.pdf, id=689, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamerelplot2.pdf, id=873, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamerelplot2.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamerelplot2.pdf>
-Package pdftex.def Info: figures/BR4DTCGamerelplot2.pdf used on input line 503.
+Package pdftex.def Info: figures/BR4DTCGamerelplot2.pdf used on input line 559.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamerelplot3.pdf, id=690, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamerelplot3.pdf, id=874, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamerelplot3.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamerelplot3.pdf>
-Package pdftex.def Info: figures/BR4DTCGamerelplot3.pdf used on input line 510.
+Package pdftex.def Info: figures/BR4DTCGamerelplot3.pdf used on input line 566.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamerelplot4.pdf, id=691, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamerelplot4.pdf, id=875, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamerelplot4.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamerelplot4.pdf>
-Package pdftex.def Info: figures/BR4DTCGamerelplot4.pdf used on input line 517.
+Package pdftex.def Info: figures/BR4DTCGamerelplot4.pdf used on input line 573.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamerelplot5.pdf, id=692, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamerelplot5.pdf, id=876, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamerelplot5.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamerelplot5.pdf>
-Package pdftex.def Info: figures/BR4DTCGamerelplot5.pdf used on input line 524.
+Package pdftex.def Info: figures/BR4DTCGamerelplot5.pdf used on input line 580.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamerelplot6.pdf, id=693, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamerelplot6.pdf, id=877, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamerelplot6.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamerelplot6.pdf>
-Package pdftex.def Info: figures/BR4DTCGamerelplot6.pdf used on input line 531.
+Package pdftex.def Info: figures/BR4DTCGamerelplot6.pdf used on input line 587.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamerelplot7.pdf, id=694, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamerelplot7.pdf, id=878, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamerelplot7.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamerelplot7.pdf>
-Package pdftex.def Info: figures/BR4DTCGamerelplot7.pdf used on input line 538.
+Package pdftex.def Info: figures/BR4DTCGamerelplot7.pdf used on input line 594.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTCGamerelplot8.pdf, id=695, 144.54pt x 89.33063pt>
+<figures/BR4DTCGamerelplot8.pdf, id=879, 144.54pt x 89.33063pt>
 File: figures/BR4DTCGamerelplot8.pdf Graphic file (type pdf)
 
 <use figures/BR4DTCGamerelplot8.pdf>
-Package pdftex.def Info: figures/BR4DTCGamerelplot8.pdf used on input line 545.
+Package pdftex.def Info: figures/BR4DTCGamerelplot8.pdf used on input line 601.
 
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
@@ -1197,69 +1309,101 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/100IR4DTVIPursnormplot.pdf, id=696, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIPursnormplot.pdf, id=880, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIPursnormplot.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIPursnormplot.pdf>
 Package pdftex.def Info: figures/100IR4DTVIPursnormplot.pdf used on input line 
-559.
+615.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR4DTVIPursdiffNormplot.pdf, id=697, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIPursdiffNormplot.pdf, id=881, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIPursdiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIPursdiffNormplot.pdf>
 Package pdftex.def Info: figures/100IR4DTVIPursdiffNormplot.pdf used on input l
-ine 566.
+ine 622.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR4DTVIPursRankplot.pdf, id=698, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIPursRankplot.pdf, id=882, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIPursRankplot.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIPursRankplot.pdf>
 Package pdftex.def Info: figures/100IR4DTVIPursRankplot.pdf used on input line 
-573.
+629.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR4DTVIPurssizeplot.pdf, id=699, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIPurssizeplot.pdf, id=883, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIPurssizeplot.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIPurssizeplot.pdf>
 Package pdftex.def Info: figures/100IR4DTVIPurssizeplot.pdf used on input line 
-580.
+636.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR4DTVIPurspurscolorplot0.pdf, id=700, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIPurspurscolorplot0.pdf, id=884, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIPurspurscolorplot0.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIPurspurscolorplot0.pdf>
 Package pdftex.def Info: figures/100IR4DTVIPurspurscolorplot0.pdf used on input
- line 591.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 647.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTVIPurspurscolorplot1.pdf, id=701, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIPurspurscolorplot1.pdf, id=885, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIPurspurscolorplot1.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIPurspurscolorplot1.pdf>
 Package pdftex.def Info: figures/100IR4DTVIPurspurscolorplot1.pdf used on input
- line 598.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 654.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTVIPurspurscolorplot9.pdf, id=702, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIPurspurscolorplot2.pdf, id=886, 144.54pt x 89.33063pt>
+File: figures/100IR4DTVIPurspurscolorplot2.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTVIPurspurscolorplot2.pdf>
+Package pdftex.def Info: figures/100IR4DTVIPurspurscolorplot2.pdf used on input
+ line 661.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTVIPurspurscolorplot3.pdf, id=887, 144.54pt x 89.33063pt>
+File: figures/100IR4DTVIPurspurscolorplot3.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTVIPurspurscolorplot3.pdf>
+Package pdftex.def Info: figures/100IR4DTVIPurspurscolorplot3.pdf used on input
+ line 668.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTVIPurspurscolorplot5.pdf, id=888, 144.54pt x 89.33063pt>
+File: figures/100IR4DTVIPurspurscolorplot5.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTVIPurspurscolorplot5.pdf>
+Package pdftex.def Info: figures/100IR4DTVIPurspurscolorplot5.pdf used on input
+ line 675.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTVIPurspurscolorplot7.pdf, id=889, 144.54pt x 89.33063pt>
+File: figures/100IR4DTVIPurspurscolorplot7.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTVIPurspurscolorplot7.pdf>
+Package pdftex.def Info: figures/100IR4DTVIPurspurscolorplot7.pdf used on input
+ line 682.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTVIPurspurscolorplot9.pdf, id=890, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIPurspurscolorplot9.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIPurspurscolorplot9.pdf>
 Package pdftex.def Info: figures/100IR4DTVIPurspurscolorplot9.pdf used on input
- line 605.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 689.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTVIPurspurscolorplot99.pdf, id=703, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIPurspurscolorplot99.pdf, id=891, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIPurspurscolorplot99.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIPurspurscolorplot99.pdf>
 Package pdftex.def Info: figures/100IR4DTVIPurspurscolorplot99.pdf used on inpu
-t line 612.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+t line 696.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
  [64 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/BR4DTSPurspur
 scolorplot.pdf> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/BR
 4DTSEvadevadcolorplot.pdf
@@ -1376,134 +1520,166 @@ page group included in a single page
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/100IR4DTVIEvadnormplot.pdf, id=1093, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIEvadnormplot.pdf, id=1281, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIEvadnormplot.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIEvadnormplot.pdf>
 Package pdftex.def Info: figures/100IR4DTVIEvadnormplot.pdf used on input line 
-625.
+709.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR4DTVIEvaddiffNormplot.pdf, id=1094, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIEvaddiffNormplot.pdf, id=1282, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIEvaddiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIEvaddiffNormplot.pdf>
 Package pdftex.def Info: figures/100IR4DTVIEvaddiffNormplot.pdf used on input l
-ine 632.
+ine 716.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR4DTVIEvadRankplot.pdf, id=1095, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIEvadRankplot.pdf, id=1283, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIEvadRankplot.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIEvadRankplot.pdf>
 Package pdftex.def Info: figures/100IR4DTVIEvadRankplot.pdf used on input line 
-639.
+723.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR4DTVIEvadsizeplot.pdf, id=1096, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIEvadsizeplot.pdf, id=1284, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIEvadsizeplot.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIEvadsizeplot.pdf>
 Package pdftex.def Info: figures/100IR4DTVIEvadsizeplot.pdf used on input line 
-646.
+730.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR4DTVIEvadevadcolorplot0.pdf, id=1097, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIEvadevadcolorplot0.pdf, id=1285, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIEvadevadcolorplot0.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIEvadevadcolorplot0.pdf>
 Package pdftex.def Info: figures/100IR4DTVIEvadevadcolorplot0.pdf used on input
- line 657.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 741.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTVIEvadevadcolorplot1.pdf, id=1098, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIEvadevadcolorplot1.pdf, id=1286, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIEvadevadcolorplot1.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIEvadevadcolorplot1.pdf>
 Package pdftex.def Info: figures/100IR4DTVIEvadevadcolorplot1.pdf used on input
- line 664.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 748.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTVIEvadevadcolorplot9.pdf, id=1099, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIEvadevadcolorplot2.pdf, id=1287, 144.54pt x 89.33063pt>
+File: figures/100IR4DTVIEvadevadcolorplot2.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTVIEvadevadcolorplot2.pdf>
+Package pdftex.def Info: figures/100IR4DTVIEvadevadcolorplot2.pdf used on input
+ line 755.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTVIEvadevadcolorplot3.pdf, id=1288, 144.54pt x 89.33063pt>
+File: figures/100IR4DTVIEvadevadcolorplot3.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTVIEvadevadcolorplot3.pdf>
+Package pdftex.def Info: figures/100IR4DTVIEvadevadcolorplot3.pdf used on input
+ line 762.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTVIEvadevadcolorplot5.pdf, id=1289, 144.54pt x 89.33063pt>
+File: figures/100IR4DTVIEvadevadcolorplot5.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTVIEvadevadcolorplot5.pdf>
+Package pdftex.def Info: figures/100IR4DTVIEvadevadcolorplot5.pdf used on input
+ line 769.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTVIEvadevadcolorplot7.pdf, id=1290, 144.54pt x 89.33063pt>
+File: figures/100IR4DTVIEvadevadcolorplot7.pdf Graphic file (type pdf)
+
+<use figures/100IR4DTVIEvadevadcolorplot7.pdf>
+Package pdftex.def Info: figures/100IR4DTVIEvadevadcolorplot7.pdf used on input
+ line 776.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR4DTVIEvadevadcolorplot9.pdf, id=1291, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIEvadevadcolorplot9.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIEvadevadcolorplot9.pdf>
 Package pdftex.def Info: figures/100IR4DTVIEvadevadcolorplot9.pdf used on input
- line 671.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 783.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR4DTVIEvadevadcolorplot99.pdf, id=1100, 144.54pt x 89.33063pt>
+<figures/100IR4DTVIEvadevadcolorplot99.pdf, id=1292, 144.54pt x 89.33063pt>
 File: figures/100IR4DTVIEvadevadcolorplot99.pdf Graphic file (type pdf)
 
 <use figures/100IR4DTVIEvadevadcolorplot99.pdf>
 Package pdftex.def Info: figures/100IR4DTVIEvadevadcolorplot99.pdf used on inpu
-t line 678.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+t line 790.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/BR4DTVIPursnormplot.pdf, id=1101, 144.54pt x 89.33063pt>
+<figures/BR4DTVIPursnormplot.pdf, id=1293, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIPursnormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIPursnormplot.pdf>
-Package pdftex.def Info: figures/BR4DTVIPursnormplot.pdf used on input line 702
+Package pdftex.def Info: figures/BR4DTVIPursnormplot.pdf used on input line 814
 .
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTVIPursdiffNormplot.pdf, id=1102, 144.54pt x 89.33063pt>
+<figures/BR4DTVIPursdiffNormplot.pdf, id=1294, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIPursdiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIPursdiffNormplot.pdf>
 Package pdftex.def Info: figures/BR4DTVIPursdiffNormplot.pdf used on input line
- 709.
+ 821.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTVIPursRankplot.pdf, id=1103, 144.54pt x 89.33063pt>
+<figures/BR4DTVIPursRankplot.pdf, id=1295, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIPursRankplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIPursRankplot.pdf>
-Package pdftex.def Info: figures/BR4DTVIPursRankplot.pdf used on input line 716
+Package pdftex.def Info: figures/BR4DTVIPursRankplot.pdf used on input line 828
 .
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTVIPurssizeplot.pdf, id=1104, 144.54pt x 89.33063pt>
+<figures/BR4DTVIPurssizeplot.pdf, id=1296, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIPurssizeplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIPurssizeplot.pdf>
-Package pdftex.def Info: figures/BR4DTVIPurssizeplot.pdf used on input line 723
+Package pdftex.def Info: figures/BR4DTVIPurssizeplot.pdf used on input line 835
 .
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTVIEvadnormplot.pdf, id=1105, 144.54pt x 89.33063pt>
+<figures/BR4DTVIEvadnormplot.pdf, id=1297, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIEvadnormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIEvadnormplot.pdf>
-Package pdftex.def Info: figures/BR4DTVIEvadnormplot.pdf used on input line 734
+Package pdftex.def Info: figures/BR4DTVIEvadnormplot.pdf used on input line 846
 .
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTVIEvaddiffNormplot.pdf, id=1106, 144.54pt x 89.33063pt>
+<figures/BR4DTVIEvaddiffNormplot.pdf, id=1298, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIEvaddiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIEvaddiffNormplot.pdf>
 Package pdftex.def Info: figures/BR4DTVIEvaddiffNormplot.pdf used on input line
- 741.
+ 853.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTVIEvadRankplot.pdf, id=1107, 144.54pt x 89.33063pt>
+<figures/BR4DTVIEvadRankplot.pdf, id=1299, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIEvadRankplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIEvadRankplot.pdf>
-Package pdftex.def Info: figures/BR4DTVIEvadRankplot.pdf used on input line 748
+Package pdftex.def Info: figures/BR4DTVIEvadRankplot.pdf used on input line 860
 .
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTVIEvadsizeplot.pdf, id=1108, 144.54pt x 89.33063pt>
+<figures/BR4DTVIEvadsizeplot.pdf, id=1300, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIEvadsizeplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIEvadsizeplot.pdf>
-Package pdftex.def Info: figures/BR4DTVIEvadsizeplot.pdf used on input line 755
+Package pdftex.def Info: figures/BR4DTVIEvadsizeplot.pdf used on input line 867
 .
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
  [68 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/BR4DTCPurspur
@@ -1606,132 +1782,132 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/BR4DTVIPurspurscolorplot.pdf, id=1393, 144.54pt x 89.33063pt>
+<figures/BR4DTVIPurspurscolorplot.pdf, id=1585, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIPurspurscolorplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIPurspurscolorplot.pdf>
 Package pdftex.def Info: figures/BR4DTVIPurspurscolorplot.pdf used on input lin
-e 768.
+e 880.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTVIEvadevadcolorplot.pdf, id=1394, 144.54pt x 89.33063pt>
+<figures/BR4DTVIEvadevadcolorplot.pdf, id=1586, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIEvadevadcolorplot.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIEvadevadcolorplot.pdf>
 Package pdftex.def Info: figures/BR4DTVIEvadevadcolorplot.pdf used on input lin
-e 775.
+e 887.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR4DTVIphaseplot1.pdf, id=1395, 144.54pt x 89.33063pt>
+<figures/BR4DTVIphaseplot1.pdf, id=1587, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIphaseplot1.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIphaseplot1.pdf>
-Package pdftex.def Info: figures/BR4DTVIphaseplot1.pdf used on input line 786.
+Package pdftex.def Info: figures/BR4DTVIphaseplot1.pdf used on input line 898.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIphaseplot2.pdf, id=1396, 144.54pt x 89.33063pt>
+<figures/BR4DTVIphaseplot2.pdf, id=1588, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIphaseplot2.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIphaseplot2.pdf>
-Package pdftex.def Info: figures/BR4DTVIphaseplot2.pdf used on input line 793.
+Package pdftex.def Info: figures/BR4DTVIphaseplot2.pdf used on input line 905.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIphaseplot3.pdf, id=1397, 144.54pt x 89.33063pt>
+<figures/BR4DTVIphaseplot3.pdf, id=1589, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIphaseplot3.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIphaseplot3.pdf>
-Package pdftex.def Info: figures/BR4DTVIphaseplot3.pdf used on input line 800.
+Package pdftex.def Info: figures/BR4DTVIphaseplot3.pdf used on input line 912.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIphaseplot4.pdf, id=1398, 144.54pt x 89.33063pt>
+<figures/BR4DTVIphaseplot4.pdf, id=1590, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIphaseplot4.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIphaseplot4.pdf>
-Package pdftex.def Info: figures/BR4DTVIphaseplot4.pdf used on input line 807.
+Package pdftex.def Info: figures/BR4DTVIphaseplot4.pdf used on input line 919.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIphaseplot5.pdf, id=1399, 144.54pt x 89.33063pt>
+<figures/BR4DTVIphaseplot5.pdf, id=1591, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIphaseplot5.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIphaseplot5.pdf>
-Package pdftex.def Info: figures/BR4DTVIphaseplot5.pdf used on input line 814.
+Package pdftex.def Info: figures/BR4DTVIphaseplot5.pdf used on input line 926.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIphaseplot6.pdf, id=1400, 144.54pt x 89.33063pt>
+<figures/BR4DTVIphaseplot6.pdf, id=1592, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIphaseplot6.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIphaseplot6.pdf>
-Package pdftex.def Info: figures/BR4DTVIphaseplot6.pdf used on input line 821.
+Package pdftex.def Info: figures/BR4DTVIphaseplot6.pdf used on input line 933.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIphaseplot7.pdf, id=1401, 144.54pt x 89.33063pt>
+<figures/BR4DTVIphaseplot7.pdf, id=1593, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIphaseplot7.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIphaseplot7.pdf>
-Package pdftex.def Info: figures/BR4DTVIphaseplot7.pdf used on input line 828.
+Package pdftex.def Info: figures/BR4DTVIphaseplot7.pdf used on input line 940.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIphaseplot8.pdf, id=1402, 144.54pt x 89.33063pt>
+<figures/BR4DTVIphaseplot8.pdf, id=1594, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIphaseplot8.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIphaseplot8.pdf>
-Package pdftex.def Info: figures/BR4DTVIphaseplot8.pdf used on input line 835.
+Package pdftex.def Info: figures/BR4DTVIphaseplot8.pdf used on input line 947.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIrelplot1.pdf, id=1403, 144.54pt x 89.33063pt>
+<figures/BR4DTVIrelplot1.pdf, id=1595, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIrelplot1.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIrelplot1.pdf>
-Package pdftex.def Info: figures/BR4DTVIrelplot1.pdf used on input line 846.
+Package pdftex.def Info: figures/BR4DTVIrelplot1.pdf used on input line 958.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIrelplot2.pdf, id=1404, 144.54pt x 89.33063pt>
+<figures/BR4DTVIrelplot2.pdf, id=1596, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIrelplot2.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIrelplot2.pdf>
-Package pdftex.def Info: figures/BR4DTVIrelplot2.pdf used on input line 853.
+Package pdftex.def Info: figures/BR4DTVIrelplot2.pdf used on input line 965.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIrelplot3.pdf, id=1405, 144.54pt x 89.33063pt>
+<figures/BR4DTVIrelplot3.pdf, id=1597, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIrelplot3.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIrelplot3.pdf>
-Package pdftex.def Info: figures/BR4DTVIrelplot3.pdf used on input line 860.
+Package pdftex.def Info: figures/BR4DTVIrelplot3.pdf used on input line 972.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIrelplot4.pdf, id=1406, 144.54pt x 89.33063pt>
+<figures/BR4DTVIrelplot4.pdf, id=1598, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIrelplot4.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIrelplot4.pdf>
-Package pdftex.def Info: figures/BR4DTVIrelplot4.pdf used on input line 867.
+Package pdftex.def Info: figures/BR4DTVIrelplot4.pdf used on input line 979.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIrelplot5.pdf, id=1407, 144.54pt x 89.33063pt>
+<figures/BR4DTVIrelplot5.pdf, id=1599, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIrelplot5.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIrelplot5.pdf>
-Package pdftex.def Info: figures/BR4DTVIrelplot5.pdf used on input line 874.
+Package pdftex.def Info: figures/BR4DTVIrelplot5.pdf used on input line 986.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIrelplot6.pdf, id=1408, 144.54pt x 89.33063pt>
+<figures/BR4DTVIrelplot6.pdf, id=1600, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIrelplot6.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIrelplot6.pdf>
-Package pdftex.def Info: figures/BR4DTVIrelplot6.pdf used on input line 881.
+Package pdftex.def Info: figures/BR4DTVIrelplot6.pdf used on input line 993.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIrelplot7.pdf, id=1409, 144.54pt x 89.33063pt>
+<figures/BR4DTVIrelplot7.pdf, id=1601, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIrelplot7.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIrelplot7.pdf>
-Package pdftex.def Info: figures/BR4DTVIrelplot7.pdf used on input line 888.
+Package pdftex.def Info: figures/BR4DTVIrelplot7.pdf used on input line 1000.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR4DTVIrelplot8.pdf, id=1410, 144.54pt x 89.33063pt>
+<figures/BR4DTVIrelplot8.pdf, id=1602, 144.54pt x 89.33063pt>
 File: figures/BR4DTVIrelplot8.pdf Graphic file (type pdf)
 
 <use figures/BR4DTVIrelplot8.pdf>
-Package pdftex.def Info: figures/BR4DTVIrelplot8.pdf used on input line 895.
+Package pdftex.def Info: figures/BR4DTVIrelplot8.pdf used on input line 1007.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
  [71 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTVIPur
 snormplot.pdf> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100
@@ -1758,6 +1934,30 @@ ures/100IR4DTVIPurspurscolorplot1.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/100IR4DTVIPurspurscolorplot1.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTVIPurspu
+rscolorplot2.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTVIPurspurscolorplot2.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTVIPurspu
+rscolorplot3.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTVIPurspurscolorplot3.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTVIPurspu
+rscolorplot5.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTVIPurspurscolorplot5.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTVIPurspu
+rscolorplot7.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTVIPurspurscolorplot7.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
 > <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTVIPurspu
 rscolorplot9.pdf
@@ -1800,6 +2000,30 @@ ures/100IR4DTVIEvadevadcolorplot1.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/100IR4DTVIEvadevadcolorplot1.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTVIEvadev
+adcolorplot2.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTVIEvadevadcolorplot2.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTVIEvadev
+adcolorplot3.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTVIEvadevadcolorplot3.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTVIEvadev
+adcolorplot5.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTVIEvadevadcolorplot5.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTVIEvadev
+adcolorplot7.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR4DTVIEvadevadcolorplot7.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
 > <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR4DTVIEvadev
 adcolorplot9.pdf
@@ -1957,7 +2181,7 @@ pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/BR4DTVIrelplot8.pdf): PDF inclusion: multiple pdfs with page gr
 oup included in a single page
 >]
-Overfull \hbox (12.96014pt too wide) in paragraph at lines 923--928
+Overfull \hbox (12.96014pt too wide) in paragraph at lines 1035--1040
  [] 
  []
 
@@ -1965,7 +2189,7 @@ Overfull \hbox (12.96014pt too wide) in paragraph at lines 923--928
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [79]
-Overfull \hbox (32.81706pt too wide) in alignment at lines 951--954
+Overfull \hbox (32.81706pt too wide) in alignment at lines 1063--1066
  [][][] []
  []
 
@@ -1973,168 +2197,264 @@ Overfull \hbox (32.81706pt too wide) in alignment at lines 951--954
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [80]
-[81] <figures/100IR6DTVIPursnormplot.pdf, id=2314, 144.54pt x 89.33063pt>
+[81] <figures/100IR6DTVIPursnormplot.pdf, id=2682, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIPursnormplot.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIPursnormplot.pdf>
 Package pdftex.def Info: figures/100IR6DTVIPursnormplot.pdf used on input line 
-987.
+1099.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR6DTVIPursdiffNormplot.pdf, id=2315, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIPursdiffNormplot.pdf, id=2683, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIPursdiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIPursdiffNormplot.pdf>
 Package pdftex.def Info: figures/100IR6DTVIPursdiffNormplot.pdf used on input l
-ine 994.
+ine 1106.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR6DTVIPursRankplot.pdf, id=2316, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIPursRankplot.pdf, id=2684, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIPursRankplot.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIPursRankplot.pdf>
 Package pdftex.def Info: figures/100IR6DTVIPursRankplot.pdf used on input line 
-1001.
+1113.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR6DTVIPurssizeplot.pdf, id=2317, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIPurssizeplot.pdf, id=2685, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIPurssizeplot.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIPurssizeplot.pdf>
 Package pdftex.def Info: figures/100IR6DTVIPurssizeplot.pdf used on input line 
-1008.
+1120.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR6DTVIPurspurscolorplot0.pdf, id=2318, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIPurspurscolorplot0.pdf, id=2686, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIPurspurscolorplot0.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIPurspurscolorplot0.pdf>
 Package pdftex.def Info: figures/100IR6DTVIPurspurscolorplot0.pdf used on input
- line 1019.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 1131.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR6DTVIPurspurscolorplot1.pdf, id=2319, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIPurspurscolorplot1.pdf, id=2687, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIPurspurscolorplot1.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIPurspurscolorplot1.pdf>
 Package pdftex.def Info: figures/100IR6DTVIPurspurscolorplot1.pdf used on input
- line 1026.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 1138.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR6DTVIPurspurscolorplot9.pdf, id=2320, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIPurspurscolorplot2.pdf, id=2688, 144.54pt x 89.33063pt>
+File: figures/100IR6DTVIPurspurscolorplot2.pdf Graphic file (type pdf)
+
+<use figures/100IR6DTVIPurspurscolorplot2.pdf>
+Package pdftex.def Info: figures/100IR6DTVIPurspurscolorplot2.pdf used on input
+ line 1145.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR6DTVIPurspurscolorplot3.pdf, id=2689, 144.54pt x 89.33063pt>
+File: figures/100IR6DTVIPurspurscolorplot3.pdf Graphic file (type pdf)
+
+<use figures/100IR6DTVIPurspurscolorplot3.pdf>
+Package pdftex.def Info: figures/100IR6DTVIPurspurscolorplot3.pdf used on input
+ line 1152.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR6DTVIPurspurscolorplot5.pdf, id=2690, 144.54pt x 89.33063pt>
+File: figures/100IR6DTVIPurspurscolorplot5.pdf Graphic file (type pdf)
+
+<use figures/100IR6DTVIPurspurscolorplot5.pdf>
+Package pdftex.def Info: figures/100IR6DTVIPurspurscolorplot5.pdf used on input
+ line 1159.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR6DTVIPurspurscolorplot7.pdf, id=2691, 144.54pt x 89.33063pt>
+File: figures/100IR6DTVIPurspurscolorplot7.pdf Graphic file (type pdf)
+
+<use figures/100IR6DTVIPurspurscolorplot7.pdf>
+Package pdftex.def Info: figures/100IR6DTVIPurspurscolorplot7.pdf used on input
+ line 1166.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR6DTVIPurspurscolorplot9.pdf, id=2692, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIPurspurscolorplot9.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIPurspurscolorplot9.pdf>
 Package pdftex.def Info: figures/100IR6DTVIPurspurscolorplot9.pdf used on input
- line 1033.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 1173.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR6DTVIPurspurscolorplot99.pdf, id=2321, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIPurspurscolorplot99.pdf, id=2693, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIPurspurscolorplot99.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIPurspurscolorplot99.pdf>
 Package pdftex.def Info: figures/100IR6DTVIPurspurscolorplot99.pdf used on inpu
-t line 1040.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+t line 1180.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/100IR6DTVIEvadnormplot.pdf, id=2322, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvadnormplot.pdf, id=2694, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvadnormplot.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvadnormplot.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvadnormplot.pdf used on input line 
-1053.
+1193.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR6DTVIEvaddiffNormplot.pdf, id=2323, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvaddiffNormplot.pdf, id=2695, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvaddiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvaddiffNormplot.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvaddiffNormplot.pdf used on input l
-ine 1060.
+ine 1200.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR6DTVIEvadRankplot.pdf, id=2324, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvadRankplot.pdf, id=2696, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvadRankplot.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvadRankplot.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvadRankplot.pdf used on input line 
-1067.
+1207.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR6DTVIEvadsizeplot.pdf, id=2325, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvadsizeplot.pdf, id=2697, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvadsizeplot.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvadsizeplot.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvadsizeplot.pdf used on input line 
-1074.
+1214.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/100IR6DTVIEvadevadcolorplot0.pdf, id=2326, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvadevadcolorplot0.pdf, id=2698, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvadevadcolorplot0.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvadevadcolorplot0.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvadevadcolorplot0.pdf used on input
- line 1085.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 1225.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR6DTVIEvadevadcolorplot1.pdf, id=2327, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvadevadcolorplot1.pdf, id=2699, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvadevadcolorplot1.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvadevadcolorplot1.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvadevadcolorplot1.pdf used on input
- line 1092.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 1232.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR6DTVIEvadevadcolorplot9.pdf, id=2328, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvadevadcolorplot2.pdf, id=2700, 144.54pt x 89.33063pt>
+File: figures/100IR6DTVIEvadevadcolorplot2.pdf Graphic file (type pdf)
+
+<use figures/100IR6DTVIEvadevadcolorplot2.pdf>
+Package pdftex.def Info: figures/100IR6DTVIEvadevadcolorplot2.pdf used on input
+ line 1239.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR6DTVIEvadevadcolorplot3.pdf, id=2701, 144.54pt x 89.33063pt>
+File: figures/100IR6DTVIEvadevadcolorplot3.pdf Graphic file (type pdf)
+
+<use figures/100IR6DTVIEvadevadcolorplot3.pdf>
+Package pdftex.def Info: figures/100IR6DTVIEvadevadcolorplot3.pdf used on input
+ line 1246.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR6DTVIEvadevadcolorplot5.pdf, id=2702, 144.54pt x 89.33063pt>
+File: figures/100IR6DTVIEvadevadcolorplot5.pdf Graphic file (type pdf)
+
+<use figures/100IR6DTVIEvadevadcolorplot5.pdf>
+Package pdftex.def Info: figures/100IR6DTVIEvadevadcolorplot5.pdf used on input
+ line 1253.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR6DTVIEvadevadcolorplot7.pdf, id=2703, 144.54pt x 89.33063pt>
+File: figures/100IR6DTVIEvadevadcolorplot7.pdf Graphic file (type pdf)
+
+<use figures/100IR6DTVIEvadevadcolorplot7.pdf>
+Package pdftex.def Info: figures/100IR6DTVIEvadevadcolorplot7.pdf used on input
+ line 1260.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
+
+<figures/100IR6DTVIEvadevadcolorplot9.pdf, id=2704, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvadevadcolorplot9.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvadevadcolorplot9.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvadevadcolorplot9.pdf used on input
- line 1099.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ line 1267.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR6DTVIEvadevadcolorplot99.pdf, id=2329, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvadevadcolorplot99.pdf, id=2705, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvadevadcolorplot99.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvadevadcolorplot99.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvadevadcolorplot99.pdf used on inpu
-t line 1106.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+t line 1274.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR6DTVIEvadthetacolorplot0.pdf, id=2330, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvadthetacolorplot0.pdf, id=2706, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvadthetacolorplot0.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvadthetacolorplot0.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvadthetacolorplot0.pdf used on inpu
-t line 1117.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+t line 1285.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR6DTVIEvadthetacolorplot1.pdf, id=2331, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvadthetacolorplot1.pdf, id=2707, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvadthetacolorplot1.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvadthetacolorplot1.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvadthetacolorplot1.pdf used on inpu
-t line 1124.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+t line 1292.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR6DTVIEvadthetacolorplot9.pdf, id=2332, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvadthetacolorplot2.png, id=2708, 144.54pt x 89.2936pt>
+File: figures/100IR6DTVIEvadthetacolorplot2.png Graphic file (type png)
+
+<use figures/100IR6DTVIEvadthetacolorplot2.png>
+Package pdftex.def Info: figures/100IR6DTVIEvadthetacolorplot2.png used on inpu
+t line 1299.
+(pdftex.def)             Requested size: 130.08731pt x 80.36893pt.
+
+<figures/100IR6DTVIEvadthetacolorplot3.png, id=2709, 144.54pt x 89.2936pt>
+File: figures/100IR6DTVIEvadthetacolorplot3.png Graphic file (type png)
+
+<use figures/100IR6DTVIEvadthetacolorplot3.png>
+Package pdftex.def Info: figures/100IR6DTVIEvadthetacolorplot3.png used on inpu
+t line 1306.
+(pdftex.def)             Requested size: 130.08731pt x 80.36893pt.
+
+<figures/100IR6DTVIEvadthetacolorplot5.png, id=2710, 144.54pt x 89.2936pt>
+File: figures/100IR6DTVIEvadthetacolorplot5.png Graphic file (type png)
+
+<use figures/100IR6DTVIEvadthetacolorplot5.png>
+Package pdftex.def Info: figures/100IR6DTVIEvadthetacolorplot5.png used on inpu
+t line 1313.
+(pdftex.def)             Requested size: 130.08731pt x 80.36893pt.
+
+<figures/100IR6DTVIEvadthetacolorplot7.png, id=2711, 144.54pt x 89.2936pt>
+File: figures/100IR6DTVIEvadthetacolorplot7.png Graphic file (type png)
+
+<use figures/100IR6DTVIEvadthetacolorplot7.png>
+Package pdftex.def Info: figures/100IR6DTVIEvadthetacolorplot7.png used on inpu
+t line 1320.
+(pdftex.def)             Requested size: 130.08731pt x 80.36893pt.
+
+<figures/100IR6DTVIEvadthetacolorplot9.pdf, id=2712, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvadthetacolorplot9.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvadthetacolorplot9.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvadthetacolorplot9.pdf used on inpu
-t line 1131.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+t line 1327.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/100IR6DTVIEvadthetacolorplot99.pdf, id=2333, 144.54pt x 89.33063pt>
+<figures/100IR6DTVIEvadthetacolorplot99.pdf, id=2713, 144.54pt x 89.33063pt>
 File: figures/100IR6DTVIEvadthetacolorplot99.pdf Graphic file (type pdf)
 
 <use figures/100IR6DTVIEvadthetacolorplot99.pdf>
 Package pdftex.def Info: figures/100IR6DTVIEvadthetacolorplot99.pdf used on inp
-ut line 1138.
-(pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
+ut line 1334.
+(pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
 Underfull \vbox (badness 5652) has occurred while \output is active []
 
@@ -2142,68 +2462,68 @@ Underfull \vbox (badness 5652) has occurred while \output is active []
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/BR6DTVIPursnormplot.pdf, id=2337, 144.54pt x 89.33063pt>
+<figures/BR6DTVIPursnormplot.pdf, id=2717, 144.54pt x 89.33063pt>
 File: figures/BR6DTVIPursnormplot.pdf Graphic file (type pdf)
 
 <use figures/BR6DTVIPursnormplot.pdf>
-Package pdftex.def Info: figures/BR6DTVIPursnormplot.pdf used on input line 116
-2.
+Package pdftex.def Info: figures/BR6DTVIPursnormplot.pdf used on input line 135
+8.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR6DTVIPursdiffNormplot.pdf, id=2338, 144.54pt x 89.33063pt>
+<figures/BR6DTVIPursdiffNormplot.pdf, id=2718, 144.54pt x 89.33063pt>
 File: figures/BR6DTVIPursdiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/BR6DTVIPursdiffNormplot.pdf>
 Package pdftex.def Info: figures/BR6DTVIPursdiffNormplot.pdf used on input line
- 1169.
+ 1365.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR6DTVIPursRankplot.pdf, id=2339, 144.54pt x 89.33063pt>
+<figures/BR6DTVIPursRankplot.pdf, id=2719, 144.54pt x 89.33063pt>
 File: figures/BR6DTVIPursRankplot.pdf Graphic file (type pdf)
 
 <use figures/BR6DTVIPursRankplot.pdf>
-Package pdftex.def Info: figures/BR6DTVIPursRankplot.pdf used on input line 117
-6.
+Package pdftex.def Info: figures/BR6DTVIPursRankplot.pdf used on input line 137
+2.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR6DTVIPurssizeplot.pdf, id=2340, 144.54pt x 89.33063pt>
+<figures/BR6DTVIPurssizeplot.pdf, id=2720, 144.54pt x 89.33063pt>
 File: figures/BR6DTVIPurssizeplot.pdf Graphic file (type pdf)
 
 <use figures/BR6DTVIPurssizeplot.pdf>
-Package pdftex.def Info: figures/BR6DTVIPurssizeplot.pdf used on input line 118
-3.
+Package pdftex.def Info: figures/BR6DTVIPurssizeplot.pdf used on input line 137
+9.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR6DTVIEvadnormplot.pdf, id=2341, 144.54pt x 89.33063pt>
+<figures/BR6DTVIEvadnormplot.pdf, id=2721, 144.54pt x 89.33063pt>
 File: figures/BR6DTVIEvadnormplot.pdf Graphic file (type pdf)
 
 <use figures/BR6DTVIEvadnormplot.pdf>
-Package pdftex.def Info: figures/BR6DTVIEvadnormplot.pdf used on input line 119
-4.
+Package pdftex.def Info: figures/BR6DTVIEvadnormplot.pdf used on input line 139
+0.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR6DTVIEvaddiffNormplot.pdf, id=2342, 144.54pt x 89.33063pt>
+<figures/BR6DTVIEvaddiffNormplot.pdf, id=2722, 144.54pt x 89.33063pt>
 File: figures/BR6DTVIEvaddiffNormplot.pdf Graphic file (type pdf)
 
 <use figures/BR6DTVIEvaddiffNormplot.pdf>
 Package pdftex.def Info: figures/BR6DTVIEvaddiffNormplot.pdf used on input line
- 1201.
+ 1397.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR6DTVIEvadRankplot.pdf, id=2343, 144.54pt x 89.33063pt>
+<figures/BR6DTVIEvadRankplot.pdf, id=2723, 144.54pt x 89.33063pt>
 File: figures/BR6DTVIEvadRankplot.pdf Graphic file (type pdf)
 
 <use figures/BR6DTVIEvadRankplot.pdf>
-Package pdftex.def Info: figures/BR6DTVIEvadRankplot.pdf used on input line 120
-8.
+Package pdftex.def Info: figures/BR6DTVIEvadRankplot.pdf used on input line 140
+4.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/BR6DTVIEvadsizeplot.pdf, id=2344, 144.54pt x 89.33063pt>
+<figures/BR6DTVIEvadsizeplot.pdf, id=2724, 144.54pt x 89.33063pt>
 File: figures/BR6DTVIEvadsizeplot.pdf Graphic file (type pdf)
 
 <use figures/BR6DTVIEvadsizeplot.pdf>
-Package pdftex.def Info: figures/BR6DTVIEvadsizeplot.pdf used on input line 121
-5.
+Package pdftex.def Info: figures/BR6DTVIEvadsizeplot.pdf used on input line 141
+1.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
  [83 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIPur
 snormplot.pdf> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100
@@ -2230,6 +2550,30 @@ ures/100IR6DTVIPurspurscolorplot1.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/100IR6DTVIPurspurscolorplot1.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIPurspu
+rscolorplot2.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR6DTVIPurspurscolorplot2.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIPurspu
+rscolorplot3.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR6DTVIPurspurscolorplot3.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIPurspu
+rscolorplot5.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR6DTVIPurspurscolorplot5.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIPurspu
+rscolorplot7.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR6DTVIPurspurscolorplot7.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
 > <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIPurspu
 rscolorplot9.pdf
@@ -2273,6 +2617,30 @@ pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/100IR6DTVIEvadevadcolorplot1.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
 > <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIEvadev
+adcolorplot2.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR6DTVIEvadevadcolorplot2.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIEvadev
+adcolorplot3.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR6DTVIEvadevadcolorplot3.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIEvadev
+adcolorplot5.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR6DTVIEvadevadcolorplot5.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIEvadev
+adcolorplot7.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
+/thesis/figures/100IR6DTVIEvadevadcolorplot7.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIEvadev
 adcolorplot9.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
@@ -2292,7 +2660,12 @@ pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/100IR6DTVIEvadthetacolorplot1.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 > <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIEvadth
-etacolorplot9.pdf
+etacolorplot2.png> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures
+/100IR6DTVIEvadthetacolorplot3.png> <C:/Users/cgrim_000/Documents/Research/Thes
+is/thesis/figures/100IR6DTVIEvadthetacolorplot5.png> <C:/Users/cgrim_000/Docume
+nts/Research/Thesis/thesis/figures/100IR6DTVIEvadthetacolorplot7.png> <C:/Users
+/cgrim_000/Documents/Research/Thesis/thesis/figures/100IR6DTVIEvadthetacolorplo
+t9.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/cgrim_000/Documents/Research/Thesis
 /thesis/figures/100IR6DTVIEvadthetacolorplot9.pdf): PDF inclusion: multiple pdf
@@ -2307,129 +2680,129 @@ fs with page group included in a single page
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/BR6DTVIPurspurscolorplot.pdf, id=2871, 144.54pt x 89.33063pt>
+<figures/BR6DTVIPurspurscolorplot.pdf, id=3431, 144.54pt x 89.33063pt>
 File: figures/BR6DTVIPurspurscolorplot.pdf Graphic file (type pdf)
 
 <use figures/BR6DTVIPurspurscolorplot.pdf>
 Package pdftex.def Info: figures/BR6DTVIPurspurscolorplot.pdf used on input lin
-e 1228.
+e 1424.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR6DTVIEvadevadcolorplot.pdf, id=2872, 144.54pt x 89.33063pt>
+<figures/BR6DTVIEvadevadcolorplot.pdf, id=3432, 144.54pt x 89.33063pt>
 File: figures/BR6DTVIEvadevadcolorplot.pdf Graphic file (type pdf)
 
 <use figures/BR6DTVIEvadevadcolorplot.pdf>
 Package pdftex.def Info: figures/BR6DTVIEvadevadcolorplot.pdf used on input lin
-e 1235.
+e 1431.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/BR6DTVIEvadthetacolorplot1.pdf, id=2873, 144.54pt x 89.33063pt>
+<figures/BR6DTVIEvadthetacolorplot1.pdf, id=3433, 144.54pt x 89.33063pt>
 File: figures/BR6DTVIEvadthetacolorplot1.pdf Graphic file (type pdf)
 
 <use figures/BR6DTVIEvadthetacolorplot1.pdf>
 Package pdftex.def Info: figures/BR6DTVIEvadthetacolorplot1.pdf used on input l
-ine 1242.
+ine 1438.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/6DSGmovieplot0.pdf, id=2874, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot0.pdf, id=3434, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot0.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot0.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot0.pdf used on input line 1255.
+Package pdftex.def Info: figures/6DSGmovieplot0.pdf used on input line 1451.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGmovieplot1.pdf, id=2875, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot1.pdf, id=3435, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot1.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot1.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot1.pdf used on input line 1262.
+Package pdftex.def Info: figures/6DSGmovieplot1.pdf used on input line 1458.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGmovieplot2.pdf, id=2876, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot2.pdf, id=3436, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot2.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot2.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot2.pdf used on input line 1269.
+Package pdftex.def Info: figures/6DSGmovieplot2.pdf used on input line 1465.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGmovieplot3.pdf, id=2877, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot3.pdf, id=3437, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot3.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot3.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot3.pdf used on input line 1276.
+Package pdftex.def Info: figures/6DSGmovieplot3.pdf used on input line 1472.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGmovieplot4.pdf, id=2878, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot4.pdf, id=3438, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot4.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot4.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot4.pdf used on input line 1283.
+Package pdftex.def Info: figures/6DSGmovieplot4.pdf used on input line 1479.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGmovieplot5.pdf, id=2879, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot5.pdf, id=3439, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot5.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot5.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot5.pdf used on input line 1290.
+Package pdftex.def Info: figures/6DSGmovieplot5.pdf used on input line 1486.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGmovieplot6.pdf, id=2880, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot6.pdf, id=3440, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot6.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot6.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot6.pdf used on input line 1297.
+Package pdftex.def Info: figures/6DSGmovieplot6.pdf used on input line 1493.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGmovieplot7.pdf, id=2881, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot7.pdf, id=3441, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot7.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot7.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot7.pdf used on input line 1304.
+Package pdftex.def Info: figures/6DSGmovieplot7.pdf used on input line 1500.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGmovieplot8.pdf, id=2882, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot8.pdf, id=3442, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot8.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot8.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot8.pdf used on input line 1311.
+Package pdftex.def Info: figures/6DSGmovieplot8.pdf used on input line 1507.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGmovieplot9.pdf, id=2883, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot9.pdf, id=3443, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot9.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot9.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot9.pdf used on input line 1318.
+Package pdftex.def Info: figures/6DSGmovieplot9.pdf used on input line 1514.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGmovieplot10.pdf, id=2884, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot10.pdf, id=3444, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot10.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot10.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot10.pdf used on input line 1325.
+Package pdftex.def Info: figures/6DSGmovieplot10.pdf used on input line 1521.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGmovieplot11.pdf, id=2885, 144.54pt x 89.33063pt>
+<figures/6DSGmovieplot11.pdf, id=3445, 144.54pt x 89.33063pt>
 File: figures/6DSGmovieplot11.pdf Graphic file (type pdf)
 
 <use figures/6DSGmovieplot11.pdf>
-Package pdftex.def Info: figures/6DSGmovieplot11.pdf used on input line 1332.
+Package pdftex.def Info: figures/6DSGmovieplot11.pdf used on input line 1528.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DSGphaseplot.pdf, id=2886, 144.54pt x 89.33063pt>
+<figures/6DSGphaseplot.pdf, id=3446, 144.54pt x 89.33063pt>
 File: figures/6DSGphaseplot.pdf Graphic file (type pdf)
 
 <use figures/6DSGphaseplot.pdf>
-Package pdftex.def Info: figures/6DSGphaseplot.pdf used on input line 1343.
+Package pdftex.def Info: figures/6DSGphaseplot.pdf used on input line 1539.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/6DSGrelplot.pdf, id=2887, 144.54pt x 89.33063pt>
+<figures/6DSGrelplot.pdf, id=3447, 144.54pt x 89.33063pt>
 File: figures/6DSGrelplot.pdf Graphic file (type pdf)
 
 <use figures/6DSGrelplot.pdf>
-Package pdftex.def Info: figures/6DSGrelplot.pdf used on input line 1350.
+Package pdftex.def Info: figures/6DSGrelplot.pdf used on input line 1546.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
  [88 <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/BR6DTVIPursno
 rmplot.pdf> <C:/Users/cgrim_000/Documents/Research/Thesis/thesis/figures/BR6DTV
@@ -2498,102 +2871,102 @@ ith page group included in a single page
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/6DAGmovieplot0.pdf, id=3168, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot0.pdf, id=3728, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot0.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot0.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot0.pdf used on input line 1363.
+Package pdftex.def Info: figures/6DAGmovieplot0.pdf used on input line 1559.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGmovieplot1.pdf, id=3169, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot1.pdf, id=3729, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot1.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot1.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot1.pdf used on input line 1370.
+Package pdftex.def Info: figures/6DAGmovieplot1.pdf used on input line 1566.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGmovieplot2.pdf, id=3170, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot2.pdf, id=3730, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot2.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot2.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot2.pdf used on input line 1377.
+Package pdftex.def Info: figures/6DAGmovieplot2.pdf used on input line 1573.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGmovieplot3.pdf, id=3171, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot3.pdf, id=3731, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot3.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot3.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot3.pdf used on input line 1384.
+Package pdftex.def Info: figures/6DAGmovieplot3.pdf used on input line 1580.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGmovieplot4.pdf, id=3172, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot4.pdf, id=3732, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot4.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot4.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot4.pdf used on input line 1391.
+Package pdftex.def Info: figures/6DAGmovieplot4.pdf used on input line 1587.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGmovieplot5.pdf, id=3173, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot5.pdf, id=3733, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot5.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot5.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot5.pdf used on input line 1398.
+Package pdftex.def Info: figures/6DAGmovieplot5.pdf used on input line 1594.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGmovieplot6.pdf, id=3174, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot6.pdf, id=3734, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot6.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot6.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot6.pdf used on input line 1405.
+Package pdftex.def Info: figures/6DAGmovieplot6.pdf used on input line 1601.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGmovieplot7.pdf, id=3175, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot7.pdf, id=3735, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot7.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot7.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot7.pdf used on input line 1412.
+Package pdftex.def Info: figures/6DAGmovieplot7.pdf used on input line 1608.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGmovieplot8.pdf, id=3176, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot8.pdf, id=3736, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot8.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot8.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot8.pdf used on input line 1419.
+Package pdftex.def Info: figures/6DAGmovieplot8.pdf used on input line 1615.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGmovieplot9.pdf, id=3177, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot9.pdf, id=3737, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot9.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot9.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot9.pdf used on input line 1426.
+Package pdftex.def Info: figures/6DAGmovieplot9.pdf used on input line 1622.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGmovieplot10.pdf, id=3178, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot10.pdf, id=3738, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot10.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot10.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot10.pdf used on input line 1433.
+Package pdftex.def Info: figures/6DAGmovieplot10.pdf used on input line 1629.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGmovieplot11.pdf, id=3179, 144.54pt x 89.33063pt>
+<figures/6DAGmovieplot11.pdf, id=3739, 144.54pt x 89.33063pt>
 File: figures/6DAGmovieplot11.pdf Graphic file (type pdf)
 
 <use figures/6DAGmovieplot11.pdf>
-Package pdftex.def Info: figures/6DAGmovieplot11.pdf used on input line 1440.
+Package pdftex.def Info: figures/6DAGmovieplot11.pdf used on input line 1636.
 (pdftex.def)             Requested size: 130.08731pt x 80.40224pt.
 
-<figures/6DAGphaseplot.pdf, id=3180, 144.54pt x 89.33063pt>
+<figures/6DAGphaseplot.pdf, id=3740, 144.54pt x 89.33063pt>
 File: figures/6DAGphaseplot.pdf Graphic file (type pdf)
 
 <use figures/6DAGphaseplot.pdf>
-Package pdftex.def Info: figures/6DAGphaseplot.pdf used on input line 1451.
+Package pdftex.def Info: figures/6DAGphaseplot.pdf used on input line 1647.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 
-<figures/6DAGrelplot.pdf, id=3181, 144.54pt x 89.33063pt>
+<figures/6DAGrelplot.pdf, id=3741, 144.54pt x 89.33063pt>
 File: figures/6DAGrelplot.pdf Graphic file (type pdf)
 
 <use figures/6DAGrelplot.pdf>
-Package pdftex.def Info: figures/6DAGrelplot.pdf used on input line 1458.
+Package pdftex.def Info: figures/6DAGrelplot.pdf used on input line 1654.
 (pdftex.def)             Requested size: 205.97214pt x 127.30424pt.
 )
 
@@ -2772,10 +3145,10 @@ Chapter 7.
 (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\chap7.aux)
 (C:\Users\cgrim_000\Documents\Research\Thesis\thesis\biblio.aux)) ) 
 Here is how much of TeX's memory you used:
- 7708 strings out of 493921
- 141182 string characters out of 3147269
- 195495 words of memory out of 3000000
- 10594 multiletter control sequences out of 15000+200000
+ 7960 strings out of 493921
+ 149382 string characters out of 3147269
+ 199919 words of memory out of 3000000
+ 10818 multiletter control sequences out of 15000+200000
  29525 words of font info for 75 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,14n,41p,1534b,540s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2807,9 +3180,9 @@ r6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (100 pages, 2433947 bytes).
+Output written on main.pdf (100 pages, 3336879 bytes).
 PDF statistics:
- 4129 PDF objects out of 4296 (max. 8388607)
+ 4689 PDF objects out of 5155 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 881 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1021 words of extra memory for PDF output out of 10000 (max. 10000000)
 
